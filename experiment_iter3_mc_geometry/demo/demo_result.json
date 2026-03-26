@@ -1,0 +1,13 @@
+{
+  "id": "exp_id1_it3__opus",
+  "type": "code",
+  "title": "MC & Geometry",
+  "summary": "Demo notebook for Monte Carlo validation of 3 lag-1 autocorrelation estimators (standard, Marriott-Pope corrected, MLE) and three-pronged geometric confound analysis on synthetic trees and real UD dependency sentences. Task A runs MC simulation across configurable parameter cells. Task B analyzes excess autocorrelation using RPL baselines. Mini demo data contains 9 UD dependency tree sentences. Visualization includes bias curves, synthetic tree excess bar charts, and real-tree excess histograms.",
+  "original_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/3_invention_loop/iter_3/gen_art/exp_id1_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/exp_id1_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/exp_id1_it3__opus/method_code_demo.ipynb"
+}

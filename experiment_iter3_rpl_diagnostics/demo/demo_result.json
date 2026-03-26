@@ -1,0 +1,13 @@
+{
+  "id": "exp_id5_it3__opus",
+  "type": "code",
+  "title": "RPL Diagnostics",
+  "summary": "Demo notebook for the Within-Treebank Distribution Diagnostics experiment. Demonstrates core RPL (Random Projective Linearization) computation functions on synthetic dependency trees, loads pre-computed results for 30 UD treebanks (56 examples across 4 datasets), and produces 4 publication-quality visualizations: forest plot, pervasiveness barplot, word-order boxplot, and case-marking scatter. Uses mini_demo_data.json with curated subset of diagnostics, subtype analyses, aggregate summary, and per-sentence details.",
+  "original_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/3_invention_loop/iter_3/gen_art/exp_id5_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/exp_id5_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/exp_id5_it3__opus/method_code_demo.ipynb"
+}

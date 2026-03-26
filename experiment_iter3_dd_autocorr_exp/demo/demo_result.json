@@ -1,0 +1,13 @@
+{
+  "id": "exp_id2_it3__opus",
+  "type": "code",
+  "title": "DD Autocorr Exp",
+  "summary": "Demo notebook for the DD Autocorrelation Excess Analysis experiment. Loads 50 pre-computed treebank results (24 language families, 4 word orders, spoken+written) from mini_demo_data.json. Runs DerSimonian-Laird random-effects meta-analysis across three baselines (RPL/FHD/SOP), language-level sensitivity analysis, OLS and mixed-effects typological regression (spoken vs. written, case morphology), and generates forest plots. Demonstrates strong negative excess autocorrelation (pooled RPL=-0.139, p=2e-127) with hierarchy |RPL|>|FHD|>|SOP| and spoken-written difference (Cohen's d=-0.843).",
+  "original_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/3_invention_loop/iter_3/gen_art/exp_id2_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/exp_id2_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/exp_id2_it3__opus/method_code_demo.ipynb"
+}

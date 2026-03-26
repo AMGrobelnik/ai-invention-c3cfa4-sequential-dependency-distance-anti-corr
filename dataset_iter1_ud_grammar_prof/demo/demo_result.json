@@ -1,0 +1,13 @@
+{
+  "id": "data_id5_it1__opus",
+  "type": "code",
+  "title": "UD Grammar Prof",
+  "summary": "Demo notebook for the UD Grammar Profiles dataset extracted from 336 Universal Dependencies treebanks. The notebook loads 10 curated examples spanning 10 language families (Abkhaz, Beja, LSE sign, Afrikaans, Akkadian, Apurina, Ika, Karo, Nahuatl, Bambara) across written/spoken/sign modalities. It demonstrates the schema conversion pipeline (converting raw treebank rows to validated input/output JSON strings with metadata), validates all examples, computes summary statistics (modality distribution, WALS 49A matches, language family counts), and visualizes structural properties (tree depth, branching factor, projectivity), head-direction profiles per dependency relation, and case proportion vs tree depth scatter plot.",
+  "original_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_ebw/3_invention_loop/iter_1/gen_art/data_id5_it1__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/data_id5_it1__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/data_id5_it1__opus/data_code_demo.ipynb"
+}

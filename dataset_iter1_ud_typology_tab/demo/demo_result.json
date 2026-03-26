@@ -1,0 +1,13 @@
+{
+  "id": "data_id4_it1__opus",
+  "type": "code",
+  "title": "UD Typology Table",
+  "summary": "Demo notebook loading a curated 40-treebank subset of the UD Typological Classification Table. Demonstrates data structure inspection, coverage statistics (WALS case/word order, Glottolog family, modality), Pearson r cross-source validation between WALS case ordinal and UD case proportion, and a 4-panel matplotlib visualization of word order distribution, case marking categories, top language families, and the case correlation scatter plot.",
+  "original_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_ebw/3_invention_loop/iter_1/gen_art/data_id4_it1__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/data_id4_it1__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/data_id4_it1__opus/data_code_demo.ipynb"
+}

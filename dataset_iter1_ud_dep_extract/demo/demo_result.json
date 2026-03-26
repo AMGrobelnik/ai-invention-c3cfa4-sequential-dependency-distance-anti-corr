@@ -1,0 +1,13 @@
+{
+  "id": "data_id3_it1__opus",
+  "type": "code",
+  "title": "UD Dep Extract",
+  "summary": "Demo notebook demonstrating the Universal Dependencies dependency structure extraction pipeline. Loads a mini subset (3 treebanks: af_afribooms, akk_riao, sq_staf; 9 sentences total) from pre-extracted UD v2.17 data. The notebook recomputes dependency distance sequences (DD_i = |position_i - head_i|) from head arrays, validates results against stored outputs, displays treebank metadata (Case proportions, spoken/written modality, sentence counts), and visualizes DD distributions per treebank and mean DD vs. sentence length. All recomputed sequences match stored values, confirming pipeline correctness.",
+  "original_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_ebw/3_invention_loop/iter_1/gen_art/data_id3_it1__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/data_id3_it1__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/data_id3_it1__opus/data_code_demo.ipynb"
+}

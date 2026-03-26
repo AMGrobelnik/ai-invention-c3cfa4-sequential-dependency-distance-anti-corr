@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "source": "commul/universal_dependencies",
+    "ud_version": "2.17",
+    "extraction_date": "2026-03-26",
+    "min_token_threshold": 15,
+    "primary_threshold": 20,
+    "total_treebanks_processed": 336,
+    "qualifying_treebanks_ge50_at_20tok": 233,
+    "total_qualifying_sentences": 976187,
+    "spoken_treebanks": 16,
+    "treebank_summaries": {
+      "af_afribooms": {
+        "treebank_id": "af_afribooms",
+        "language": "af",
+        "total_sentences": 1934,
+        "sentences_ge15": 1526,
+        "sentences_ge20": 1181,
+        "case_feature_proportion": 0.0943,
+        "is_spoken": false,
+        "genre": "unknown",
+        "mean_sentence_length": 25.47,
+        "qualifies_primary": true,
+        "multi_root_sentences": 0,
+        "skipped_validation": 0
+      },
+      "akk_riao": {
+        "treebank_id": "akk_riao",
+        "language": "akk",
+        "total_sentences": 1874,
+        "sentences_ge15": 456,
+        "sentences_ge20": 267,
+        "case_feature_proportion": 0.1988,
+        "is_spoken": false,
+        "genre": "unknown",
+        "mean_sentence_length": 12.36,
+        "qualifies_primary": true,
+        "multi_root_sentences": 0,
+        "skipped_validation": 0
+      },
+      "sq_staf": {
+        "treebank_id": "sq_staf",
+        "language": "sq",
+        "total_sentences": 200,
+        "sentences_ge15": 97,
+        "sentences_ge20": 63,
+        "case_feature_proportion": 0.3607,
+        "is_spoken": false,
+        "genre": "unknown",
+        "mean_sentence_length": 17.82,
+        "qualifies_primary": true,
+        "multi_root_sentences": 0,
+        "skipped_validation": 0
+      },
+      "abq_atb": {
+        "treebank_id": "abq_atb",
+        "language": "abq",
+        "total_sentences": 98,
+        "sentences_ge15": 4,
+        "sentences_ge20": 0,
+        "case_feature_proportion": 0.0015,
+        "is_spoken": false,
+        "genre": "unknown",
+        "mean_sentence_length": 6.65,
+        "qualifies_primary": false,
+        "multi_root_sentences": 0,
+        "skipped_validation": 0
+      },
+      "ab_abnc": {
+        "treebank_id": "ab_abnc",
+        "language": "ab",
+        "total_sentences": 1316,
+        "sentences_ge15": 118,
+        "sentences_ge20": 23,
+        "case_feature_proportion": 0.0156,
+        "is_spoken": false,
+        "genre": "unknown",
+        "mean_sentence_length": 8.04,
+        "qualifies_primary": false,
+        "multi_root_sentences": 0,
+        "skipped_validation": 0
+      },
+      "akk_pisandub": {
+        "treebank_id": "akk_pisandub",
+        "language": "akk",
+        "total_sentences": 101,
+        "sentences_ge15": 49,
+        "sentences_ge20": 34,
+        "case_feature_proportion": 0.0,
+        "is_spoken": false,
+        "genre": "unknown",
+        "mean_sentence_length": 18.34,
+        "qualifies_primary": false,
+        "multi_root_sentences": 0,
+        "skipped_validation": 0
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "af_afribooms",
+      "examples": [
+        {
+          "input": "{\"head_array\":[3,3,0,5,3,3,8,24,12,12,12,8,20,15,20,18,18,15,20,12,20,24,24,6,24,27,37,27,30,27,37,31,37,33,33,37,25,41,41,41,37,37],\"deprel_array\":[\"amod\",\"nsubj\",\"root\",\"det\",\"obj\",\"amod\",\"amod\",\"nsubj\",\"case\",\"det\",\"amod\",\"nmod\",\"case\",\"amod\",\"obj\",\"case\",\"det\",\"nmod\",\"mark\",\"xcomp\",\"punct\",\"obj\",\"aux\",\"dep\",\"amod\",\"det\",\"nsubj\",\"cc\",\"det\",\"conj\",\"amod\",\"dep\",\"obj\",\"cc\",\"conj\",\"aux\",\"dep\",\"case\",\"det\",\"amod\",\"obl\",\"punct\"]}",
+          "output": "{\"dd_sequence\":[2,1,1,2,3,1,16,3,2,1,4,7,1,5,2,1,3,1,8,1,2,1,18,1,1,10,1,1,3,6,1,4,1,2,1,12,3,2,1,4,5],\"token_count\":42}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_sentence_id": "dev-s1",
+          "metadata_token_count": "42",
+          "metadata_length_bucket": "ge20"
+        },
+        {
+          "input": "{\"head_array\":[3,3,4,0,7,7,4,7,7,11,9,15,15,15,4,18,18,15,18,18,25,21,22,25,18,31,29,29,31,31,25,31],\"deprel_array\":[\"det\",\"amod\",\"nsubj\",\"root\",\"case\",\"det\",\"obl\",\"cc\",\"conj\",\"case\",\"nmod\",\"case\",\"det\",\"amod\",\"obl\",\"case\",\"det\",\"nmod\",\"cc\",\"punct\",\"dep\",\"dep\",\"punct\",\"det\",\"conj\",\"case\",\"det\",\"amod\",\"obj\",\"mark\",\"xcomp\",\"punct\"]}",
+          "output": "{\"dd_sequence\":[2,1,1,2,1,3,1,2,1,2,3,2,1,11,2,1,3,1,2,4,1,1,1,7,5,2,1,2,1,6,1],\"token_count\":32}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_sentence_id": "dev-s2",
+          "metadata_token_count": "32",
+          "metadata_length_bucket": "ge20"
+        },
+        {
+          "input": "{\"head_array\":[6,6,6,6,6,0,8,6,17,11,17,15,15,15,17,17,8,21,21,21,17,21,17,25,17,25,29,29,37,33,32,33,29,33,33,37,26,37,52,42,42,52,46,46,46,42,48,46,51,51,48,38,52],\"deprel_array\":[\"nsubj\",\"cop\",\"case\",\"det\",\"amod\",\"root\",\"case\",\"obl\",\"case\",\"amod\",\"obj\",\"case\",\"det\",\"amod\",\"obl\",\"mark\",\"xcomp\",\"case\",\"det\",\"amod\",\"obl\",\"punct\",\"cc\",\"nsubj\",\"dep\",\"amod\",\"det\",\"amod\",\"obj\",\"nsubj\",\"det\",\"obj\",\"ccomp\",\"aux\",\"punct\",\"aux\",\"dep\",\"amod\",\"nsubj\",\"det\",\"amod\",\"obj\",\"case\",\"det\",\"amod\",\"nmod\",\"case\",\"nmod\",\"case\",\"det\",\"nmod\",\"obj\",\"punct\"]}",
+          "output": "{\"dd_sequence\":[5,4,3,2,1,1,2,8,1,6,3,2,1,2,1,9,3,2,1,4,1,6,1,8,1,2,1,8,3,1,1,4,1,2,1,11,1,13,2,1,10,3,2,1,4,1,2,2,1,3,14,1],\"token_count\":53}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_sentence_id": "dev-s3",
+          "metadata_token_count": "53",
+          "metadata_length_bucket": "ge20"
+        }
+      ]
+    },
+    {
+      "dataset": "akk_riao",
+      "examples": [
+        {
+          "input": "{\"head_array\":[0,1,2,3,2,5,6,2,8,9,10,11,9,13,14,15,16,17],\"deprel_array\":[\"root\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"nmod:poss\",\"dep\"]}",
+          "output": "{\"dd_sequence\":[1,1,1,3,1,1,6,1,1,1,1,4,1,1,1,1,1],\"token_count\":18}",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_sentence_id": "Q004591-1",
+          "metadata_token_count": "18",
+          "metadata_length_bucket": "ge15"
+        },
+        {
+          "input": "{\"head_array\":[0,1,2,1,4,1,6,7,8,7,10,7,12,13,14,13,16,17,1,21,19,21,24,19,26,24,28,26,30,28,30],\"deprel_array\":[\"root\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"dep\",\"appos\",\"case\",\"obl\",\"nmod:poss\",\"case\",\"obl\",\"cc\",\"conj\",\"case\",\"nmod\",\"case\",\"nmod\",\"nmod:poss\"]}",
+          "output": "{\"dd_sequence\":[1,1,3,1,5,1,1,1,3,1,5,1,1,1,3,1,1,18,1,2,1,1,5,1,2,1,2,1,2,1],\"token_count\":31}",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_sentence_id": "Q004495-1",
+          "metadata_token_count": "31",
+          "metadata_length_bucket": "ge20"
+        },
+        {
+          "input": "{\"head_array\":[0,1,2,3,4,1,6,7,10,8,1,11,11,13,13,15,1,17,18,17,20,1,22,23,22,25,1,27,27,27,30,1,32,33,36,34,32,37,1,39,40,39,42,1,44,45,48,46,1,49,49,51,1,53,54,55,53,57,1,59,60,59,62,63,1,65,66,69,67,73,73,71,65],\"deprel_array\":[\"root\",\"appos\",\"nmod:poss\",\"nmod:poss\",\"amod\",\"conj\",\"appos\",\"nmod:poss\",\"cc\",\"conj\",\"conj\",\"nmod:poss\",\"appos\",\"appos\",\"appos\",\"nmod:poss\",\"conj\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"conj\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"conj\",\"appos\",\"appos\",\"appos\",\"nmod:poss\",\"conj\",\"appos\",\"nmod:poss\",\"cc\",\"conj\",\"appos\",\"nmod:poss\",\"conj\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"conj\",\"appos\",\"nmod:poss\",\"cc\",\"conj\",\"conj\",\"amod\",\"appos\",\"nmod:poss\",\"conj\",\"appos\",\"nmod:poss\",\"amod\",\"appos\",\"amod\",\"conj\",\"appos\",\"nmod:poss\",\"appos\",\"nmod:poss\",\"amod\",\"conj\",\"appos\",\"nmod:poss\",\"cc\",\"conj\",\"nsubj\",\"obl\",\"nmod:poss\",\"acl:relcl\"]}",
+          "output": "{\"dd_sequence\":[1,1,1,1,5,1,1,1,2,10,1,2,1,2,1,16,1,1,3,1,21,1,1,3,1,26,1,2,3,1,31,1,1,1,2,5,1,38,1,1,3,1,43,1,1,1,2,48,1,2,1,52,1,1,1,4,1,58,1,1,3,1,1,64,1,1,1,2,3,2,1,8],\"token_count\":73}",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_sentence_id": "Q006033-1",
+          "metadata_token_count": "73",
+          "metadata_length_bucket": "ge20"
+        }
+      ]
+    },
+    {
+      "dataset": "sq_staf",
+      "examples": [
+        {
+          "input": "{\"head_array\":[2,0,2,5,3,10,10,9,7,2,10,13,15,15,10,2],\"deprel_array\":[\"nsubj\",\"root\",\"obl\",\"case\",\"nmod\",\"cc\",\"nsubj\",\"det\",\"nmod:poss\",\"conj\",\"advmod\",\"advmod\",\"advmod\",\"det\",\"xcomp\",\"punct\"]}",
+          "output": "{\"dd_sequence\":[1,1,1,2,4,3,1,2,8,1,1,2,1,5,14],\"token_count\":16}",
+          "metadata_treebank_id": "sq_staf",
+          "metadata_sentence_id": "STAF__150",
+          "metadata_token_count": "16",
+          "metadata_length_bucket": "ge15"
+        },
+        {
+          "input": "{\"head_array\":[3,3,0,5,3,3,9,9,3,11,9,14,14,9,16,14,18,16,20,3,20,23,20,25,23,23,20],\"deprel_array\":[\"nsubj\",\"mark\",\"root\",\"case\",\"obl\",\"punct\",\"case\",\"det\",\"obl\",\"det\",\"amod\",\"punct\",\"case\",\"nmod\",\"det\",\"nmod\",\"det\",\"nmod:poss\",\"mark\",\"advcl\",\"advmod\",\"case\",\"obl\",\"det\",\"amod\",\"amod\",\"punct\"]}",
+          "output": "{\"dd_sequence\":[2,1,1,2,3,2,1,6,1,2,2,1,5,1,2,1,2,1,17,1,1,3,1,2,3,7],\"token_count\":27}",
+          "metadata_treebank_id": "sq_staf",
+          "metadata_sentence_id": "STAF__82",
+          "metadata_token_count": "27",
+          "metadata_length_bucket": "ge20"
+        },
+        {
+          "input": "{\"head_array\":[4,3,1,0,4,7,5,9,5,11,9,13,9,15,13,4],\"deprel_array\":[\"obl\",\"case\",\"nmod\",\"root\",\"nsubj\",\"cc\",\"conj\",\"nsubj\",\"acl:relcl\",\"case\",\"obl\",\"case\",\"obl\",\"cc\",\"conj\",\"punct\"]}",
+          "output": "{\"dd_sequence\":[3,1,2,1,1,2,1,4,1,2,1,4,1,2,12],\"token_count\":16}",
+          "metadata_treebank_id": "sq_staf",
+          "metadata_sentence_id": "STAF__108",
+          "metadata_token_count": "16",
+          "metadata_length_bucket": "ge15"
+        }
+      ]
+    }
+  ]
+}

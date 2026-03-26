@@ -1,0 +1,13 @@
+{
+  "id": "exp_id3_it3__opus",
+  "type": "code",
+  "title": "Robustness 4-Var",
+  "summary": "Demo notebook running a 4-variant robustness analysis of dependency distance autocorrelation across 9 typologically diverse UD treebanks (72 sentences). Computes lag-1 autocorrelation excess over RPL baselines for variants A (punct-excluded >=20tok), B (punct-included >=20tok), C (punct-excluded >=15tok), D (projective-only >=20tok). Includes DerSimonian-Laird meta-analysis, pairwise variant comparisons, concrete compensatory-pattern examples, and forest/bar visualizations. All variants show negative pooled excess (A: -0.133, B: -0.102, C: -0.133, D: -0.144). Runs in 0.3s with full original permutation count (100).",
+  "original_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/3_invention_loop/iter_3/gen_art/exp_id3_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/exp_id3_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/runs/comp-ling-dobrovoljc_osk/4_gen_paper_repo/exp_id3_it3__opus/method_code_demo.ipynb"
+}
