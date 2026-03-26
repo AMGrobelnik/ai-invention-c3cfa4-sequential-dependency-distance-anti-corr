@@ -1,0 +1,10 @@
+[project]
+name = "exp-id3-it3-robustness-sensitivity"
+version = "1.0.0"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "numpy==2.2.6",
+    "scipy==1.15.3",
+    "pymare==0.0.10",
+    "loguru==0.7.3",
+]

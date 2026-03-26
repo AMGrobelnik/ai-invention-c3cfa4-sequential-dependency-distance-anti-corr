@@ -1,0 +1,76 @@
+{
+  "datasets": [
+    {
+      "dataset": "treebank_distribution_diagnostics",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"de_hdt\"}",
+          "output": "{\"n_sentences\": 77077, \"prop_negative_excess\": 0.7145, \"mean_excess_rpl\": -0.103482, \"se_mean_excess\": 0.000732, \"median_excess_rpl\": -0.121998, \"q25_excess\": -0.245997, \"q75_excess\": 0.025942, \"iqr_e...",
+          "metadata_treebank_id": "de_hdt",
+          "metadata_language": "German",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.103482",
+          "predict_prop_negative": "0.7145",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\"}",
+          "output": "{\"n_sentences\": 68065, \"prop_negative_excess\": 0.8802, \"mean_excess_rpl\": -0.193989, \"se_mean_excess\": 0.000676, \"median_excess_rpl\": -0.202015, \"q25_excess\": -0.304505, \"q75_excess\": -0.096565, \"iqr_...",
+          "metadata_treebank_id": "cs_pdtc",
+          "metadata_language": "Czech",
+          "metadata_modality": "mixed",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.193989",
+          "predict_prop_negative": "0.8802",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\"}",
+          "output": "{\"n_sentences\": 30145, \"prop_negative_excess\": 0.8888, \"mean_excess_rpl\": -0.194655, \"se_mean_excess\": 0.000994, \"median_excess_rpl\": -0.202717, \"q25_excess\": -0.303178, \"q75_excess\": -0.10243, \"iqr_e...",
+          "metadata_treebank_id": "ru_syntagrus",
+          "metadata_language": "Russian",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.194655",
+          "predict_prop_negative": "0.8888",
+          "predict_significant": "True"
+        }
+      ]
+    },
+    {
+      "dataset": "structural_subtype_analysis",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"de_hdt\"}",
+          "output": "{\"full_population\": {\"n\": 77077, \"mean_tree_depth\": 4.8548, \"mean_branching_factor\": 2.8369, \"mean_max_dd\": 15.7962, \"mean_max_dd_rel_pos\": 0.5502, \"prop_has_conj\": 0.545, \"prop_has_relcl\": 0.0, \"mean...",
+          "metadata_treebank_id": "de_hdt",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\"}",
+          "output": "{\"full_population\": {\"n\": 68065, \"mean_tree_depth\": 5.7783, \"mean_branching_factor\": 2.5103, \"mean_max_dd\": 13.6798, \"mean_max_dd_rel_pos\": 0.5069, \"prop_has_conj\": 0.6827, \"prop_has_relcl\": 0.3455, \"...",
+          "metadata_treebank_id": "cs_pdtc",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\"}",
+          "output": "{\"full_population\": {\"n\": 30145, \"mean_tree_depth\": 5.8565, \"mean_branching_factor\": 2.4179, \"mean_max_dd\": 13.697, \"mean_max_dd_rel_pos\": 0.5182, \"prop_has_conj\": 0.764, \"prop_has_relcl\": 0.2169, \"me...",
+          "metadata_treebank_id": "ru_syntagrus",
+          "predict_bottom10pct_deeper": "True"
+        }
+      ]
+    },
+    {
+      "dataset": "aggregate_summary",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"pooled_30_treebanks\"}",
+          "output": "{\"n_treebanks\": 30, \"n_pervasive\": 30, \"n_significant_p001\": 30, \"n_significant_p01\": 30, \"pooled_estimate\": -0.19398134943934636, \"median_mean_excess\": -0.225884, \"prop_treebanks_majority_negative\": ...",
+          "metadata_analysis_type": "aggregate",
+          "predict_hypothesis_supported": "True"
+        }
+      ]
+    }
+  ]
+}

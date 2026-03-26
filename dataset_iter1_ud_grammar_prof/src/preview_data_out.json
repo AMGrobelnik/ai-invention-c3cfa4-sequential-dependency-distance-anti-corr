@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "source": "commul/universal_dependencies (HuggingFace)",
+    "description": "Per-treebank grammar profiles from 336 Universal Dependencies treebanks",
+    "version": "1.0",
+    "wals_source": "cldf-datasets/wals (GitHub)",
+    "ud_version": "2.17",
+    "total_treebanks": 336
+  },
+  "datasets": [
+    {
+      "dataset": "universal_dependencies_grammar_profiles",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"ab_abnc\", \"language_prefix\": \"ab\", \"iso639_3\": \"abk\"}",
+          "output": "{\"head_direction_profile\": {\"acl:relcl\": {\"prop_head_final\": 0.8912, \"count_head_final\": 131, \"count_head_initial\": 16}, \"advcl:conv\": {\"prop_head_final\": 0.9344, \"count_head_final\": 356, \"count_head_...",
+          "metadata_fold": "all",
+          "metadata_modality": "written",
+          "metadata_wals_49a_value": 2,
+          "metadata_wals_49a_label": "2 cases",
+          "metadata_language_family": "Northwest Caucasian",
+          "metadata_language_name": "Abkhaz",
+          "metadata_row_index": 0
+        },
+        {
+          "input": "{\"treebank_id\": \"abq_atb\", \"language_prefix\": \"abq\", \"iso639_3\": \"abq\"}",
+          "output": "{\"head_direction_profile\": {\"dep:repeat\": {\"prop_head_final\": 0.0, \"count_head_final\": 0, \"count_head_initial\": 10}, \"advcl\": {\"prop_head_final\": 0.8913, \"count_head_final\": 41, \"count_head_initial\": ...",
+          "metadata_fold": "all",
+          "metadata_modality": "written",
+          "metadata_wals_49a_value": null,
+          "metadata_wals_49a_label": null,
+          "metadata_language_family": "Northwest Caucasian",
+          "metadata_language_name": "Abaza",
+          "metadata_row_index": 1
+        },
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"language_prefix\": \"af\", \"iso639_3\": \"afr\"}",
+          "output": "{\"head_direction_profile\": {\"obj\": {\"prop_head_final\": 0.7801, \"count_head_final\": 2167, \"count_head_initial\": 611}, \"xcomp\": {\"prop_head_final\": 0.1253, \"count_head_final\": 46, \"count_head_initial\": ...",
+          "metadata_fold": "all",
+          "metadata_modality": "written",
+          "metadata_wals_49a_value": null,
+          "metadata_wals_49a_label": null,
+          "metadata_language_family": "Indo-European",
+          "metadata_language_name": "Afrikaans",
+          "metadata_row_index": 2
+        }
+      ]
+    }
+  ]
+}

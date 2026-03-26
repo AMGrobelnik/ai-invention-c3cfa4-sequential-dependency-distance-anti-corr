@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "experiment_id": "experiment_iter3_dir3",
+    "title": "Robustness & Sensitivity: 4-Variant Analysis",
+    "method_name": "compensatory_anti_correlation_4variant",
+    "description": "Four pipeline variants testing sensitivity to punctuation, length threshold, and projectivity constraints on dependency distance autocorrelation excess.",
+    "n_permutations": 100,
+    "n_treebanks_selected": 50,
+    "timestamp": "2026-03-26T02:42:20.729982+00:00",
+    "variants": {
+      "A": "punct excluded, >=20 tokens",
+      "B": "punct included, >=20 tokens",
+      "C": "punct excluded, >=15 tokens",
+      "D": "punct excluded, >=20 tokens, projective only"
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "robustness_sensitivity_analysis",
+      "examples": [
+        {
+          "input": "{\"analysis_type\": \"robustness_sensitivity_4variant\", \"variants\": [\"A_punct_excl_ge20\", \"B_punct_incl_ge20\", \"C_punct_excl_ge15\", \"D_projective_ge20\"], \"n_treebanks\": 50, \"n_permutations\": 100}",
+          "output": "{\"experiment_id\": \"experiment_iter3_dir3\", \"title\": \"Robustness & Sensitivity Analyses\", \"timestamp\": \"2026-03-26T02:42:20.728159+00:00\", \"scope_quantification\": {\"total_treebanks\": 233, \"thresholds\":...",
+          "metadata_experiment_id": "experiment_iter3_dir3",
+          "metadata_analysis_type": "robustness_sensitivity",
+          "predict_variant_A": "{\"pooled_excess\": -0.20733536584208076, \"I2\": 0.9777881022007117}",
+          "predict_baseline_rpl": "{\"description\": \"Random projective linearization baseline (100 permutations per sentence)\", \"pooled_baseline_r1\": \"computed per-sentence, subtracted to get excess\"}"
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\", \"language\": \"Beja\", \"family\": \"Afro-Asiatic\", \"modality\": \"spoken\", \"n_sentences_ge20\": 226}",
+          "output": "{\"variant_A_effect\": -0.22427247451163954, \"variant_A_variance\": 0.0001244454010341448, \"variant_B_effect\": -0.3113742289701185, \"variant_C_effect\": -0.2183337651651397, \"variant_D_effect\": -0.2238539...",
+          "metadata_treebank_id": "bej_autogramm",
+          "metadata_language": "Beja",
+          "metadata_family": "Afro-Asiatic",
+          "metadata_modality": "spoken",
+          "predict_variant_A": "-0.224272",
+          "predict_baseline_rpl": "0.0"
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\", \"language\": \"Cantonese\", \"family\": \"Sino-Tibetan\", \"modality\": \"spoken\", \"n_sentences_ge20\": 247}",
+          "output": "{\"variant_A_effect\": -0.20307291007221295, \"variant_A_variance\": 0.0001753078467616057, \"variant_B_effect\": -0.1430270293253229, \"variant_C_effect\": -0.2004176399431254, \"variant_D_effect\": -0.1896867...",
+          "metadata_treebank_id": "yue_hk",
+          "metadata_language": "Cantonese",
+          "metadata_family": "Sino-Tibetan",
+          "metadata_modality": "spoken",
+          "predict_variant_A": "-0.203073",
+          "predict_baseline_rpl": "0.0"
+        }
+      ]
+    }
+  ]
+}

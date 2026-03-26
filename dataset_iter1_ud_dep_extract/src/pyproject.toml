@@ -1,0 +1,22 @@
+[project]
+name = "ud-treebank-dependency-extraction"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+description = "Extract dependency structures from Universal Dependencies treebanks (commul/universal_dependencies on HuggingFace, UD v2.17)"
+dependencies = [
+    "datasets==4.8.4",
+    "huggingface-hub==1.7.2",
+    "loguru==0.7.3",
+    "fsspec==2026.2.0",
+    "pyarrow==23.0.1",
+    "numpy==2.2.6",
+    "tqdm==4.67.3",
+    "requests==2.32.5",
+    "dill==0.4.1",
+    "multiprocess==0.70.19",
+    "xxhash==3.6.0",
+    "packaging==26.0",
+    "pyyaml==6.0.3",
+    "filelock==3.25.2",
+    "hf-xet==1.4.2",
+]

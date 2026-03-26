@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "method_name": "DD_Autocorrelation_Excess_Analysis",
+    "description": "Bias-corrected lag-1 autocorrelation of dependency-distance sequences, minus three-tier baselines (RPL/FHD/SOP), aggregated via meta-analysis and typological mixed-effects regression.",
+    "parameters": {
+      "n_perms_mini": 50,
+      "n_perms_medium": 100,
+      "n_perms_full": 100,
+      "min_tokens_after_punct": 20,
+      "autocorrelation_estimator": "r1_plus"
+    },
+    "scale_achieved": "full",
+    "n_treebanks_processed": 233,
+    "total_sentences_processed": 418806,
+    "meta_analysis": {
+      "excess_RPL": {
+        "pooled_estimate": -0.13132212443365818,
+        "pooled_se": 0.00368944332747839,
+        "ci_95": [
+          -0.13855343335551581,
+          -0.12409081551180054
+        ],
+        "tau_squared": 0.0030517220238820233,
+        "I_squared": 0.9834599561435629,
+        "prediction_interval": [
+          -0.24016652987936027,
+          -0.022477718987956086
+        ],
+        "K_treebanks": 233,
+        "p_value": 1.7334910635369498e-277,
+        "prop_negative": 0.9914163090128756,
+        "median_effect": -0.14340241517157332,
+        "mean_effect": -0.13101239112598542
+      },
+      "excess_FHD": {
+        "pooled_estimate": -0.08444712492932596,
+        "pooled_se": 0.002967587246355414,
+        "ci_95": [
+          -0.09026359593218257,
+          -0.07863065392646935
+        ],
+        "tau_squared": 0.0019249805897045232,
+        "I_squared": 0.9721498609225236,
+        "prediction_interval": [
+          -0.17089414016732335,
+          0.001999890308671426
+        ],
+        "K_treebanks": 233,
+        "p_value": 4.0501673909367016e-178,
+        "prop_negative": 0.9828326180257511,
+        "median_effect": -0.08279384349043288,
+        "mean_effect": -0.08536106711279143
+      },
+      "excess_SOP": {
+        "pooled_estimate": -0.07085932359302431,
+        "pooled_se": 0.0022089055905681505,
+        "ci_95": [
+          -0.07518877855053789,
+          -0.06652986863551073
+        ],
+        "tau_squared": 0.0010159815478731125,
+        "I_squared": 0.9424396756462181,
+        "prediction_interval": [
+          -0.13366332683920734,
+          -0.008055320346841269
+        ],
+        "K_treebanks": 233,
+        "p_value": 8.675103393585352e-226,
+        "prop_negative": 0.9914163090128756,
+        "median_effect": -0.07090179492610134,
+        "mean_effect": -0.07212604289960071
+      }
+    },
+    "language_level_sensitivity": {
+      "pooled_estimate": -0.1334634816718285,
+      "pooled_se": 0.0045655148301483196,
+      "tau_squared": 0.0022592757578674774,
+      "K_languages": 114,
+      "p_value": 7.396185313663429e-188
+    },
+    "typological_regression": {
+      "wals_ud_spearman": {
+        "rho": 0.6088247891649577,
+        "p": 1.941036575608641e-14
+      },
+      "predictor_centering": {
+        "case_mean": 0.22450997630331754,
+        "len_mean": 28.166327695962643
+      },
+      "model1_ols_summary": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:             excess_rpl   R-...",
+      "model1_ols_params": {
+        "const": {
+          "coef": -0.12954542755773318,
+          "se": 0.003829183821792702,
+          "p": 2.7620140851775267e-86
+        },
+        "is_spoken": {
+          "coef": -0.031375375124645166,
+          "se": 0.01563970941150503,
+          "p": 0.04614332458422947
+        },
+        "case_c": {
+          "coef": 0.058182190996067265,
+          "se": 0.01689631460005234,
+          "p": 0.0006949470437538816
+        },
+        "len_c": {
+          "coef": -0.001538580606598957,
+          "se": 0.0008237984226241888,
+          "p": 0.0632219165538144
+        }
+      },
+      "model1_mixed_summary": "         Mixed Linear Model Regression Results\n========================================================\nModel:            MixedLM Dependent Variable: excess_rpl\nNo. Observations: 211     Method:      ...",
+      "model1_mixed_converged": true,
+      "model1_mixed_params": {
+        "Intercept": {
+          "coef": -0.11822506718160648,
+          "se": 0.013151410910306634,
+          "p": 2.482788779369337e-19
+        },
+        "is_spoken": {
+          "coef": -0.035068401928462604,
+          "se": 0.01420513867842112,
+          "p": 0.013560015399381701
+        },
+        "case_c": {
+          "coef": 0.08042455468179277,
+          "se": 0.016660957565647408,
+          "p": 1.3851693734222418e-06
+        },
+        "len_c": {
+          "coef": -0.0005170553624492866,
+          "se": 0.0007945176957870179,
+          "p": 0.5151892142479118
+        }
+      },
+      "model1_mixed_re_variance": 0.0016414484247616642,
+      "model2_ols_summary": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:                      y   R-...",
+      "model2_ols_params": {
+        "const": {
+          "coef": -0.09654108824447832,
+          "se": 0.00960079022058061,
+          "p": 3.0625763943726084e-18
+        },
+        "SVO": {
+          "coef": -0.05065753391113529,
+          "se": 0.01063189700270751,
+          "p": 4.677632713683305e-06
+        },
+        "VSO": {
+          "coef": -0.05099526806758362,
+          "se": 0.020698682257788755,
+          "p": 0.014963204310223747
+        },
+        "is_spoken": {
+          "coef": -0.020400286914656934,
+          "se": 0.015208655141067253,
+          "p": 0.18197539524831277
+        },
+        "case_c": {
+          "coef": 0.012470578758136161,
+          "se": 0.018404435299008506,
+          "p": 0.49915277050372564
+        },
+        "len_c": {
+          "coef": -0.0023576275045845917,
+          "se": 0.0009615161552644435,
+          "p": 0.015437634207772376
+        }
+      },
+      "model2_mixed_summary": "             Mixed Linear Model Regression Results\n===============================================================\nModel:               MixedLM   Dependent Variable:   excess_rpl\nNo. Observations:    ...",
+      "model2_mixed_converged": true,
+      "n_spoken": 13,
+      "n_written": 198,
+      "spoken_written": {
+        "spoken_mean": -0.16712667085707486,
+        "written_mean": -0.12913797156646528,
+        "cohens_d": -0.8265898411070852,
+        "t_stat": -3.9422028936746045,
+        "p_value": 0.0009906949867861772
+      },
+      "FHD_descriptive": {
+        "mean": -0.08490022777588367,
+        "se": 0.003096886636490402,
+        "n": 211
+      },
+      "SOP_descriptive": {
+        "mean": -0.07180627996996182,
+        "se": 0.00239889305667788,
+        "n": 211
+      }
+    },
+    "success_criteria_evaluation": {
+      "criterion_1_pooled_negative": true,
+      "criterion_1_median_above_threshold": true,
+      "criterion_1_hierarchy_survives": true,
+      "criterion_2_spoken_written_d": -0.8265898411070852,
+      "criterion_3_case_p": 0.0006949470437538816
+    },
+    "plots_generated": [
+      "forest_plot_excess_rpl.png",
+      "forest_plot_excess_fhd.png",
+      "forest_plot_excess_sop.png"
+    ],
+    "compute_time_seconds": 1077.1
+  },
+  "datasets": [
+    {
+      "dataset": "dd_autocorrelation_excess",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"language_name\": \"Afrikaans\", \"iso639_3\": \"afr\", \"language_family\": \"Indo-European\", \"modality\": \"written\", \"wals_word_order_label\": null, \"wals_case_category\": null, \"...",
+          "output": "{\"n_sentences\": 1050, \"mean_excess_rpl\": -0.12137796662300548, \"median_excess_rpl\": -0.14543995135082025, \"se_excess_rpl\": 0.0061862187843331334, \"prop_negative_rpl\": 0.7666666666666667, \"iqr_excess_r...",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_family": "Indo-European",
+          "metadata_modality": "written",
+          "predict_excess_rpl": "-0.121378",
+          "predict_excess_fhd": "-0.073197",
+          "predict_excess_sop": "-0.106607"
+        },
+        {
+          "input": "{\"treebank_id\": \"akk_riao\", \"language_name\": \"Akkadian\", \"iso639_3\": \"akk\", \"language_family\": \"Afro-Asiatic\", \"modality\": \"written\", \"wals_word_order_label\": null, \"wals_case_category\": null, \"ud_cas...",
+          "output": "{\"n_sentences\": 267, \"mean_excess_rpl\": -0.06768235744558564, \"median_excess_rpl\": -0.1069155412062644, \"se_excess_rpl\": 0.01042097813345441, \"prop_negative_rpl\": 0.7153558052434457, \"iqr_excess_rpl\":...",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_family": "Afro-Asiatic",
+          "metadata_modality": "written",
+          "predict_excess_rpl": "-0.067682",
+          "predict_excess_fhd": "-0.011261",
+          "predict_excess_sop": "-0.019617"
+        },
+        {
+          "input": "{\"treebank_id\": \"aln_gps\", \"language_name\": \"Gheg\", \"iso639_3\": \"aln\", \"language_family\": \"Indo-European\", \"modality\": \"spoken\", \"wals_word_order_label\": null, \"wals_case_category\": null, \"ud_case_pro...",
+          "output": "{\"n_sentences\": 262, \"mean_excess_rpl\": -0.2028678328727583, \"median_excess_rpl\": -0.21365267193896403, \"se_excess_rpl\": 0.010592930942900819, \"prop_negative_rpl\": 0.9122137404580153, \"iqr_excess_rpl\"...",
+          "metadata_treebank_id": "aln_gps",
+          "metadata_language_family": "Indo-European",
+          "metadata_modality": "spoken",
+          "predict_excess_rpl": "-0.202868",
+          "predict_excess_fhd": "-0.093503",
+          "predict_excess_sop": "-0.076997"
+        }
+      ]
+    }
+  ]
+}

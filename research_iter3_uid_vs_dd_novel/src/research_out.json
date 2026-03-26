@@ -1,0 +1,78 @@
+{
+  "title": "UID vs DD Novelty Analysis",
+  "summary": "Systematic literature synthesis establishing that DD anti-correlation is NOT a special case of Uniform Information Density (UID). Three key distinctions identified: (1) UID operates on surprisal while DD operates on structural distance, and these are uncorrelated per Demberg & Keller 2008; (2) the RPL/FHD/SOP baseline hierarchy separates grammar vs. usage effects more finely than UID counterfactual baselines; (3) the morphology-modulation prediction is novel. Critical citation finding: Dou et al. (2026) EXISTS but with wrong authors -- actual authors are Dou, Ariens, Ceulemans & Lafit, not Dou, Mulder & van Buuren. Two venue corrections identified: Meister et al. is EMNLP 2021 (not TACL); Jaeger 2010 is Cognitive Psychology (not Cognitive Linguistics).",
+  "answer": "## DD Anti-Correlation vs. Uniform Information Density: A Comprehensive Analysis\n\n### Core Finding: DD Anti-Correlation Is NOT a Special Case of UID\n\nDependency distance (DD) anti-correlation within sentences is not a special case of Uniform Information Density (UID). This conclusion rests on three key distinctions, supported by systematic analysis of the UID literature.\n\n---\n\n### Distinction 1: Different Target Quantities (Structural Distance vs. Surprisal)\n\nUID predicts smoothing of surprisal (information rate). Levy (2008) established surprisal theory, where processing difficulty at word w_t is proportional to -log P(w_t | w_1...w_{t-1}) [4]. Jaeger (2010) formulated UID as a production principle in Cognitive Psychology (NOT Cognitive Linguistics): \"Within the bounds defined by grammar, speakers prefer utterances that distribute information uniformly across the signal\" [2]. Jaeger's study focuses on individual choice points during utterance planning -- whether information density at specific junctures influences local production choices -- rather than sequential dependencies between syntactic decisions [2]. Information density is measured using verb subcategorization frequency, which does not map onto dependency distances [2].\n\nMeister et al. (2021), published at EMNLP 2021 (NOT TACL), explored multiple operationalizations of UID, all defined exclusively in terms of surprisal -- no other processing-cost proxies such as dependency distance are considered [1]. They found the strongest trend is \"regression towards a mean surprisal across the language, rather than the phrase, sentence, or document\" [1]. Critically, no discussion of sequential autocorrelation of surprisal values or dependency structure appears in the paper [1].\n\nDD anti-correlation operates on structural distances -- the linear distance between syntactically related words. The critical evidence comes from Demberg & Keller (2008), who showed that DLT integration cost (which is dependency distance) and surprisal are UNCORRELATED in naturalistic reading data from the Dundee eye-tracking corpus [5]. DLT integration cost was not a significant predictor of reading times for arbitrary words -- only for nouns -- while unlexicalized surprisal predicted reading times across the board [5]. As they concluded, \"the two measures are uncorrelated, which suggests that a complete theory will need to incorporate both aspects of processing complexity\" [5].\n\nThis uncorrelatedness is the lynchpin: if DD and surprisal are uncorrelated, then anti-correlation patterns in DD sequences cannot be derived from anti-correlation patterns in surprisal sequences, even under the strongest interpretation of UID.\n\n### Distinction 2: Different Baseline Methodologies\n\nClark et al. (2023) used counterfactual word orders (reversed, shuffled, and linguistically implausible orders) as UID baselines in a study of 10 typologically diverse languages, finding that \"among SVO languages, real word orders consistently have greater uniformity than reverse word orders\" [3]. However, these baselines destroy both grammatical structure and usage-level patterns simultaneously -- they do not separate grammar-level from usage-level effects [3]. No sequential properties such as autocorrelation of surprisal were measured; only aggregate uniformity [3].\n\nThe RPL/FHD/SOP hierarchy used in the DD anti-correlation hypothesis progressively controls for grammatical regularities, isolating usage-level anti-correlation at each tier. No UID paper uses anything analogous to the SOP baseline (preserving co-dependent ordering conventions). UID baselines ask a global question (does real order have more uniform information than alternatives?), while the DD hierarchy asks a local, sequential question (does the sequential pattern of real DD values show anti-correlation beyond what grammar already produces?).\n\n### Distinction 3: Novel Morphology-Modulation Prediction\n\nStandard UID predicts uniform information rate across languages but does NOT predict that UID pressure should vary with morphological richness [1, 3]. Clark et al. (2023) found UID effects for SVO languages but did not test morphological modulation [3]. The prediction that case-marking weakens DD anti-correlation derives from an ecological analogy (resource abundance weakens compensatory dynamics), connecting within-sentence dynamics to the macro-level morphology-word-order tradeoff. No existing UID framework derives or predicts this pattern.\n\n### Bridge Paper: Futrell et al. (2020)\n\nFutrell, Gibson & Levy (2020) derived dependency locality effects from information theory via the \"information locality\" principle using lossy-context surprisal [6]. When context words are further away, they are represented with lower fidelity in memory, creating predictable difficulty patterns [6]. However, this model does not predict sequential patterns of dependency distances, does not imply that high cost at one position predicts lower cost at the next, and makes no cross-linguistic predictions about morphological richness [6]. They describe surprisal and dependency distance as \"complementary\" phenomena [6].\n\n### Literature Gap Confirmed\n\nTargeted searches for \"dependency distance autocorrelation,\" \"dependency distance time series within sentence,\" \"dependency length sequential pattern smoothing,\" and \"surprisal autocorrelation within sentence\" returned no relevant results. No prior work has analyzed the sequential autocorrelation of dependency distances within sentences. Tsipidi et al. (2024) challenged UID at the discourse level via the \"Structured Context Hypothesis,\" proposing that speakers modulate information rate based on location within hierarchically-structured discourse [7]. However, this operates on surprisal contours across discourse, not DD sequences within sentences, and does not discuss dependency distance [7].\n\n---\n\n### Citation Verification: Dou et al. (2026)\n\nCRITICAL FINDING: The paper EXISTS but the hypothesis cites WRONG AUTHORS. The hypothesis cites \"Dou, Mulder & van Buuren (2026)\" but the actual paper is by Dou, Z., Ariens, S., Ceulemans, E., & Lafit, G. (2026), published in the British Journal of Mathematical and Statistical Psychology with DOI 10.1111/bmsp.70038 [8]. The title (\"Unravelling the small sample bias in AR(1) models\") and venue are correct, but \"Mulder\" and \"van Buuren\" are NOT co-authors [8]. This is likely a hallucination confusing Stef van Buuren (prominent Dutch statistician known for MICE) with the actual co-authors. The paper analytically demonstrates the causes and consequences of small-sample OLS bias in AR(1) models and reviews bias correction methods [8]. The citation should be corrected to list the actual authors.\n\nSupplementary references for AR(1) bias correction include: Krone, Albers & Timmerman (2017), who compared r1, C-statistic, OLS, MLE, and Bayesian estimators at series lengths T=10-100, finding that the Bayesian estimator with symmetrized reference prior (Bsr) has lowest bias while r1 has lowest variability [9]. They do not test the r1-prime estimator specifically [9]. Shaman & Stine (1988) derived the foundational O(T^-1) bias formula for least-squares and Yule-Walker AR coefficient estimators [10]. Huitema & McKean (2002) introduced the r1-prime bias-corrected lag-1 autocorrelation estimator, which has lower bias and MSE than standard r1 and is recommended for samples under 50 observations [11].\n\n---\n\n### Venue Corrections Required\n\nMeister et al. (2021) was published at EMNLP 2021 (Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, pp. 963-980), NOT TACL [1]. Jaeger (2010) was published in Cognitive Psychology 61(1), 23-62, NOT Cognitive Linguistics [2].\n\n### Confidence Assessment\n\nHigh confidence that DD anti-correlation is not a special case of UID, based on: the empirical uncorrelatedness of DD and surprisal [5], the absence of sequential autocorrelation predictions in any UID paper [1, 2, 3, 4], and the confirmed literature gap. What would change this conclusion: discovery of a paper showing that surprisal autocorrelation within sentences is strongly positive and that DD mirrors this pattern.",
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://aclanthology.org/2021.emnlp-main.74/",
+      "title": "Meister et al. (2021) - Revisiting the Uniform Information Density Hypothesis, EMNLP 2021, pp. 963-980",
+      "summary": "Explores multiple operationalizations of UID, all based on surprisal. Finds regression towards mean surprisal at language level. No discussion of dependency distance, sequential autocorrelation, or syntactic structure."
+    },
+    {
+      "index": 2,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2896231/",
+      "title": "Jaeger (2010) - Redundancy and reduction: Speakers manage syntactic information density, Cognitive Psychology 61(1), 23-62",
+      "summary": "Formulates UID as production principle tested via optional that-mentioning. Focuses on individual choice points, not sequential dependencies. Information density measured via verb subcategorization frequency, not dependency distances."
+    },
+    {
+      "index": 3,
+      "url": "https://aclanthology.org/2023.tacl-1.59/",
+      "title": "Clark et al. (2023) - A Cross-Linguistic Pressure for Uniform Information Density in Word Order, TACL 11:1048-1065",
+      "summary": "Tests UID cross-linguistically in 10 languages using counterfactual word order baselines. SVO languages show UID effect. Does not test morphological modulation or measure sequential autocorrelation of surprisal."
+    },
+    {
+      "index": 4,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17662975/",
+      "title": "Levy (2008) - Expectation-based syntactic comprehension, Cognition 106(3), 1126-1177",
+      "summary": "Establishes surprisal theory: processing difficulty proportional to -log P(word|context). Treats each word independently given context. Does not predict sequential autocorrelation of processing costs."
+    },
+    {
+      "index": 5,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18930455/",
+      "title": "Demberg & Keller (2008) - Data from eye-tracking corpora as evidence for theories of syntactic processing complexity, Cognition 109(2), 193-210",
+      "summary": "CRITICAL: Shows DLT integration cost (dependency distance) and surprisal are UNCORRELATED. DLT only predicts reading times for nouns, not arbitrary words. Establishes that DD and surprisal capture fundamentally different dimensions of processing complexity."
+    },
+    {
+      "index": 6,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7065005/",
+      "title": "Futrell, Gibson & Levy (2020) - Lossy-Context Surprisal, Cognitive Science 44(3), e12814",
+      "summary": "Derives dependency locality effects from information theory via lossy memory. Does NOT predict sequential DD patterns, cost anti-correlation between consecutive words, or morphological modulation. Describes DD and surprisal as complementary."
+    },
+    {
+      "index": 7,
+      "url": "https://arxiv.org/abs/2410.16062",
+      "title": "Tsipidi et al. (2024) - Surprise! Uniform Information Density Isn't the Whole Story, EMNLP 2024",
+      "summary": "Challenges UID at discourse level, proposing Structured Context Hypothesis. Operates on surprisal contours across discourse, not DD sequences within sentences. Shows UID is insufficient for explaining information rate modulation."
+    },
+    {
+      "index": 8,
+      "url": "https://bpspsychub.onlinelibrary.wiley.com/doi/10.1111/bmsp.70038",
+      "title": "Dou, Ariens, Ceulemans & Lafit (2026) - Unravelling the small sample bias in AR(1) models, BJMSP, DOI: 10.1111/bmsp.70038",
+      "summary": "The paper EXISTS but hypothesis cites WRONG AUTHORS (Dou, Mulder & van Buuren). Actual authors: Dou, Z., Ariens, S., Ceulemans, E., & Lafit, G. Analytically demonstrates causes of small-sample OLS bias in AR(1) models and reviews bias correction methods."
+    },
+    {
+      "index": 9,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5227053/",
+      "title": "Krone, Albers & Timmerman (2017) - A comparative simulation study of AR(1) estimators in short time series, Quality & Quantity 51(1), 1-21",
+      "summary": "Compares r1, C-statistic, OLS, MLE, and Bayesian estimators at T=10-100. Bayesian Bsr has lowest bias; r1 has lowest variability. Does NOT test r1-prime (Huitema-McKean) estimator specifically."
+    },
+    {
+      "index": 10,
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1988.10478672",
+      "title": "Shaman & Stine (1988) - The bias of autoregressive coefficient estimators, JASA 83(403), 842-848",
+      "summary": "Derives O(T^-1) bias formula for least-squares and Yule-Walker AR coefficient estimators. Foundational reference for understanding AR estimation bias in short series."
+    },
+    {
+      "index": 11,
+      "url": "https://link.springer.com/article/10.1023/A:1012223430234",
+      "title": "Huitema & McKean (2002) - Autocorrelation and Bias in Short Time Series: An Alternative Estimator, Quality & Quantity",
+      "summary": "Introduces r1-prime bias-corrected lag-1 autocorrelation estimator. r1-prime has lower bias and MSE than standard r1. Recommended for samples under 50 observations."
+    }
+  ],
+  "follow_up_questions": [
+    "Does the Futrell (2020) lossy-context surprisal model make testable predictions about DD sequence autocorrelation that could be empirically compared with the DD anti-correlation findings?",
+    "Has anyone measured surprisal autocorrelation within sentences (not just across discourse as in Tsipidi et al. 2024) to compare with DD autocorrelation patterns?",
+    "Does Krone et al. (2017) or the corrected Dou et al. (2026) test the specific r1-prime estimator from Huitema & McKean, or only the standard r1 and other estimators?"
+  ]
+}

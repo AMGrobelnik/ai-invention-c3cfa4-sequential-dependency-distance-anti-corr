@@ -1,0 +1,1590 @@
+{
+  "datasets": [
+    {
+      "dataset": "treebank_distribution_diagnostics",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"de_hdt\"}",
+          "output": "{\"n_sentences\": 77077, \"prop_negative_excess\": 0.7145, \"mean_excess_rpl\": -0.103482, \"se_mean_excess\": 0.000732, \"median_excess_rpl\": -0.121998, \"q25_excess\": -0.245997, \"q75_excess\": 0.025942, \"iqr_excess\": 0.271939, \"std_excess\": 0.203312, \"skewness\": 0.3569, \"kurtosis\": -0.0071, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -141.3071, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"No dominant order\", \"case_category\": 4, \"ud_case_proportion\": 0.324183, \"language_family\": \"Indo-European\", \"language\": \"German\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.71, \"mean_branching_factor\": 2.68, \"proportion_projective\": 0.9319, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "de_hdt",
+          "metadata_language": "German",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.103482",
+          "predict_prop_negative": "0.7145",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\"}",
+          "output": "{\"n_sentences\": 68065, \"prop_negative_excess\": 0.8802, \"mean_excess_rpl\": -0.193989, \"se_mean_excess\": 0.000676, \"median_excess_rpl\": -0.202015, \"q25_excess\": -0.304505, \"q75_excess\": -0.096565, \"iqr_excess\": 0.20794, \"std_excess\": 0.176304, \"skewness\": 0.4055, \"kurtosis\": 0.955, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -287.0607, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"mixed\", \"word_order\": \"SVO\", \"case_category\": null, \"ud_case_proportion\": 0.530968, \"language_family\": \"Indo-European\", \"language\": \"Czech\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.73, \"mean_branching_factor\": 2.53, \"proportion_projective\": 0.8814, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "cs_pdtc",
+          "metadata_language": "Czech",
+          "metadata_modality": "mixed",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.193989",
+          "predict_prop_negative": "0.8802",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\"}",
+          "output": "{\"n_sentences\": 30145, \"prop_negative_excess\": 0.8888, \"mean_excess_rpl\": -0.194655, \"se_mean_excess\": 0.000994, \"median_excess_rpl\": -0.202717, \"q25_excess\": -0.303178, \"q75_excess\": -0.10243, \"iqr_excess\": 0.200748, \"std_excess\": 0.172592, \"skewness\": 0.4967, \"kurtosis\": 1.152, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -195.8152, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SVO\", \"case_category\": 6, \"ud_case_proportion\": 0.441374, \"language_family\": \"Indo-European\", \"language\": \"Russian\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 5.08, \"mean_branching_factor\": 2.41, \"proportion_projective\": 0.9324, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "metadata_language": "Russian",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.194655",
+          "predict_prop_negative": "0.8888",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_taiga\"}",
+          "output": "{\"n_sentences\": 29336, \"prop_negative_excess\": 0.8756, \"mean_excess_rpl\": -0.185768, \"se_mean_excess\": 0.00105, \"median_excess_rpl\": -0.196846, \"q25_excess\": -0.297138, \"q75_excess\": -0.09206, \"iqr_excess\": 0.205078, \"std_excess\": 0.17992, \"skewness\": 0.5748, \"kurtosis\": 1.3529, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -176.8415, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SVO\", \"case_category\": 6, \"ud_case_proportion\": 0.41613, \"language_family\": \"Indo-European\", \"language\": \"Russian\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.38, \"mean_branching_factor\": 2.47, \"proportion_projective\": 0.9403, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "ru_taiga",
+          "metadata_language": "Russian",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.185768",
+          "predict_prop_negative": "0.8756",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_bccwjluw\"}",
+          "output": "{\"n_sentences\": 19395, \"prop_negative_excess\": 0.9135, \"mean_excess_rpl\": -0.208394, \"se_mean_excess\": 0.001175, \"median_excess_rpl\": -0.218679, \"q25_excess\": -0.304625, \"q75_excess\": -0.137112, \"iqr_excess\": 0.167512, \"std_excess\": 0.163627, \"skewness\": 0.7681, \"kurtosis\": 1.9594, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -177.363, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SOV\", \"case_category\": 7, \"ud_case_proportion\": 0.0, \"language_family\": \"Japanese\", \"language\": \"Japanese\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.84, \"mean_branching_factor\": 2.46, \"proportion_projective\": 0.9972, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "ja_bccwjluw",
+          "metadata_language": "Japanese",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.208394",
+          "predict_prop_negative": "0.9135",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"is_icepahc\"}",
+          "output": "{\"n_sentences\": 19098, \"prop_negative_excess\": 0.9393, \"mean_excess_rpl\": -0.251487, \"se_mean_excess\": 0.001192, \"median_excess_rpl\": -0.252957, \"q25_excess\": -0.356305, \"q75_excess\": -0.158541, \"iqr_excess\": 0.197765, \"std_excess\": 0.164715, \"skewness\": 0.4224, \"kurtosis\": 1.1724, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -210.9914, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SVO\", \"case_category\": 4, \"ud_case_proportion\": 0.409372, \"language_family\": \"Indo-European\", \"language\": \"Icelandic\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 5.21, \"mean_branching_factor\": 2.55, \"proportion_projective\": 0.9944, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "is_icepahc",
+          "metadata_language": "Icelandic",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.251487",
+          "predict_prop_negative": "0.9393",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_nonstandard\"}",
+          "output": "{\"n_sentences\": 12991, \"prop_negative_excess\": 0.9192, \"mean_excess_rpl\": -0.25831, \"se_mean_excess\": 0.001597, \"median_excess_rpl\": -0.27192, \"q25_excess\": -0.376991, \"q75_excess\": -0.160345, \"iqr_excess\": 0.216646, \"std_excess\": 0.18201, \"skewness\": 0.5937, \"kurtosis\": 0.9452, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -161.7518, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SVO\", \"case_category\": 2, \"ud_case_proportion\": 0.493222, \"language_family\": \"Indo-European\", \"language\": \"Romanian\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 5.04, \"mean_branching_factor\": 2.84, \"proportion_projective\": 0.9457, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "ro_nonstandard",
+          "metadata_language": "Romanian",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.25831",
+          "predict_prop_negative": "0.9192",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"es_ancora\"}",
+          "output": "{\"n_sentences\": 12737, \"prop_negative_excess\": 0.9554, \"mean_excess_rpl\": -0.237844, \"se_mean_excess\": 0.001237, \"median_excess_rpl\": -0.235149, \"q25_excess\": -0.32374, \"q75_excess\": -0.157653, \"iqr_excess\": 0.166087, \"std_excess\": 0.139631, \"skewness\": 0.209, \"kurtosis\": 1.3379, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -192.2315, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SVO\", \"case_category\": 1, \"ud_case_proportion\": 0.022353, \"language_family\": \"Indo-European\", \"language\": \"Spanish\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 6.37, \"mean_branching_factor\": 2.72, \"proportion_projective\": 0.9399, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "es_ancora",
+          "metadata_language": "Spanish",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.237844",
+          "predict_prop_negative": "0.9554",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ca_ancora\"}",
+          "output": "{\"n_sentences\": 12675, \"prop_negative_excess\": 0.9685, \"mean_excess_rpl\": -0.261574, \"se_mean_excess\": 0.001243, \"median_excess_rpl\": -0.260556, \"q25_excess\": -0.34822, \"q75_excess\": -0.179331, \"iqr_excess\": 0.168889, \"std_excess\": 0.13998, \"skewness\": 0.2866, \"kurtosis\": 1.4775, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -210.3705, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SVO\", \"case_category\": 1, \"ud_case_proportion\": 0.020096, \"language_family\": \"Indo-European\", \"language\": \"Catalan\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 6.36, \"mean_branching_factor\": 2.74, \"proportion_projective\": 0.9444, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "ca_ancora",
+          "metadata_language": "Catalan",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.261574",
+          "predict_prop_negative": "0.9685",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cac\"}",
+          "output": "{\"n_sentences\": 10443, \"prop_negative_excess\": 0.9036, \"mean_excess_rpl\": -0.212786, \"se_mean_excess\": 0.001656, \"median_excess_rpl\": -0.22071, \"q25_excess\": -0.319623, \"q75_excess\": -0.121368, \"iqr_excess\": 0.198255, \"std_excess\": 0.16918, \"skewness\": 0.4924, \"kurtosis\": 1.2029, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -128.5241, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SVO\", \"case_category\": null, \"ud_case_proportion\": 0.598574, \"language_family\": \"Indo-European\", \"language\": \"Czech\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 5.53, \"mean_branching_factor\": 2.4, \"proportion_projective\": 0.8741, \"selection_group\": \"largest\"}",
+          "metadata_treebank_id": "cs_cac",
+          "metadata_language": "Czech",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.212786",
+          "predict_prop_negative": "0.9036",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"bm_crb\"}",
+          "output": "{\"n_sentences\": 173, \"prop_negative_excess\": 0.948, \"mean_excess_rpl\": -0.289712, \"se_mean_excess\": 0.013412, \"median_excess_rpl\": -0.274809, \"q25_excess\": -0.40229, \"q75_excess\": -0.170646, \"iqr_excess\": 0.231644, \"std_excess\": 0.176411, \"skewness\": -0.047, \"kurtosis\": -0.1286, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -21.538, \"p_value\": 5.187618982845352e-51, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SOV\", \"case_category\": 1, \"ud_case_proportion\": 0.0, \"language_family\": \"Mande\", \"language\": \"Bambara\", \"macroarea\": \"Africa\", \"mean_tree_depth\": 4.3, \"mean_branching_factor\": 2.62, \"proportion_projective\": 0.9708, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "bm_crb",
+          "metadata_language": "Bambara",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.289712",
+          "predict_prop_negative": "0.948",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"eu_bdt\"}",
+          "output": "{\"n_sentences\": 1534, \"prop_negative_excess\": 0.8924, \"mean_excess_rpl\": -0.207147, \"se_mean_excess\": 0.004264, \"median_excess_rpl\": -0.219888, \"q25_excess\": -0.314502, \"q75_excess\": -0.125518, \"iqr_excess\": 0.188984, \"std_excess\": 0.167011, \"skewness\": 0.6019, \"kurtosis\": 1.1694, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -48.5627, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SOV\", \"case_category\": 8, \"ud_case_proportion\": 0.348707, \"language_family\": \"Basque\", \"language\": \"Basque\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.36, \"mean_branching_factor\": 2.54, \"proportion_projective\": 0.8804, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "eu_bdt",
+          "metadata_language": "Basque",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.207147",
+          "predict_prop_negative": "0.8924",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"bor_bdt\"}",
+          "output": "{\"n_sentences\": 893, \"prop_negative_excess\": 0.8712, \"mean_excess_rpl\": -0.205745, \"se_mean_excess\": 0.006221, \"median_excess_rpl\": -0.227008, \"q25_excess\": -0.317937, \"q75_excess\": -0.117112, \"iqr_excess\": 0.200825, \"std_excess\": 0.185912, \"skewness\": 0.587, \"kurtosis\": 0.963, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -33.0525, \"p_value\": 2.33430780513453e-157, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"mixed\", \"word_order\": null, \"case_category\": null, \"ud_case_proportion\": 0.0, \"language_family\": \"Bororoan\", \"language\": \"Bororo\", \"macroarea\": \"South America\", \"mean_tree_depth\": 3.25, \"mean_branching_factor\": 2.39, \"proportion_projective\": 1.0, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "bor_bdt",
+          "metadata_language": "Bororo",
+          "metadata_modality": "mixed",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.205745",
+          "predict_prop_negative": "0.8712",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"bxr_bdt\"}",
+          "output": "{\"n_sentences\": 121, \"prop_negative_excess\": 0.876, \"mean_excess_rpl\": -0.19776, \"se_mean_excess\": 0.01548, \"median_excess_rpl\": -0.212327, \"q25_excess\": -0.302845, \"q75_excess\": -0.096686, \"iqr_excess\": 0.206159, \"std_excess\": 0.170281, \"skewness\": 0.1922, \"kurtosis\": 0.3041, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -12.7222, \"p_value\": 2.6769553036844724e-24, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": null, \"case_category\": null, \"ud_case_proportion\": 0.398547, \"language_family\": \"Mongolic-Khitan\", \"language\": \"Buryat\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.25, \"mean_branching_factor\": 2.23, \"proportion_projective\": 0.9202, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "bxr_bdt",
+          "metadata_language": "Buryat",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.19776",
+          "predict_prop_negative": "0.876",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"eo_prago\"}",
+          "output": "{\"n_sentences\": 54, \"prop_negative_excess\": 0.963, \"mean_excess_rpl\": -0.241651, \"se_mean_excess\": 0.016953, \"median_excess_rpl\": -0.246378, \"q25_excess\": -0.319791, \"q75_excess\": -0.164687, \"iqr_excess\": 0.155104, \"std_excess\": 0.124582, \"skewness\": 0.0673, \"kurtosis\": -0.2538, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -14.1212, \"p_value\": 6.658087743730791e-20, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": null, \"case_category\": null, \"ud_case_proportion\": 0.423697, \"language_family\": \"Artificial Language\", \"language\": \"Esperanto\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 5.03, \"mean_branching_factor\": 2.44, \"proportion_projective\": 0.9695, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "eo_prago",
+          "metadata_language": "Esperanto",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.241651",
+          "predict_prop_negative": "0.963",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"kk_ktb\"}",
+          "output": "{\"n_sentences\": 61, \"prop_negative_excess\": 0.8361, \"mean_excess_rpl\": -0.155222, \"se_mean_excess\": 0.019928, \"median_excess_rpl\": -0.169857, \"q25_excess\": -0.275289, \"q75_excess\": -0.045624, \"iqr_excess\": 0.229665, \"std_excess\": 0.155646, \"skewness\": 0.3324, \"kurtosis\": -0.4826, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -7.7249, \"p_value\": 7.22649218025474e-11, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": null, \"case_category\": null, \"ud_case_proportion\": 0.423975, \"language_family\": \"Turkic\", \"language\": \"Kazakh\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 3.98, \"mean_branching_factor\": 2.27, \"proportion_projective\": 0.9193, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "kk_ktb",
+          "metadata_language": "Kazakh",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.155222",
+          "predict_prop_negative": "0.8361",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"naq_kdt\"}",
+          "output": "{\"n_sentences\": 146, \"prop_negative_excess\": 0.8767, \"mean_excess_rpl\": -0.215676, \"se_mean_excess\": 0.019175, \"median_excess_rpl\": -0.216163, \"q25_excess\": -0.356821, \"q75_excess\": -0.106472, \"iqr_excess\": 0.250348, \"std_excess\": 0.23169, \"skewness\": 0.3709, \"kurtosis\": 0.4781, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -11.2093, \"p_value\": 1.0777638817815162e-21, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"mixed\", \"word_order\": \"SOV\", \"case_category\": 2, \"ud_case_proportion\": 0.249388, \"language_family\": \"Khoe-Kwadi\", \"language\": \"Khoekhoe\", \"macroarea\": \"Africa\", \"mean_tree_depth\": 2.98, \"mean_branching_factor\": 3.07, \"proportion_projective\": 0.9635, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "naq_kdt",
+          "metadata_language": "Khoekhoe",
+          "metadata_modality": "mixed",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.215676",
+          "predict_prop_negative": "0.8767",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_ttb\"}",
+          "output": "{\"n_sentences\": 143, \"prop_negative_excess\": 0.9021, \"mean_excess_rpl\": -0.20596, \"se_mean_excess\": 0.012035, \"median_excess_rpl\": -0.230694, \"q25_excess\": -0.300103, \"q75_excess\": -0.140608, \"iqr_excess\": 0.159495, \"std_excess\": 0.143918, \"skewness\": 0.8058, \"kurtosis\": 0.6428, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -17.0534, \"p_value\": 1.7527786427486185e-36, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SOV\", \"case_category\": null, \"ud_case_proportion\": 0.441708, \"language_family\": \"Dravidian\", \"language\": \"Tamil\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 5.36, \"mean_branching_factor\": 2.34, \"proportion_projective\": 0.9833, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "ta_ttb",
+          "metadata_language": "Tamil",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.20596",
+          "predict_prop_negative": "0.9021",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_vtb\"}",
+          "output": "{\"n_sentences\": 1175, \"prop_negative_excess\": 0.9515, \"mean_excess_rpl\": -0.241325, \"se_mean_excess\": 0.004434, \"median_excess_rpl\": -0.249268, \"q25_excess\": -0.338487, \"q75_excess\": -0.151696, \"iqr_excess\": 0.186791, \"std_excess\": 0.151984, \"skewness\": 0.6128, \"kurtosis\": 1.5338, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -54.405, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": \"SVO\", \"case_category\": 1, \"ud_case_proportion\": 0.0, \"language_family\": \"Austro-Asiatic\", \"language\": \"Vietnamese\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 5.02, \"mean_branching_factor\": 2.54, \"proportion_projective\": 0.9955, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "vi_vtb",
+          "metadata_language": "Vietnamese",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.241325",
+          "predict_prop_negative": "0.9515",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"sjo_xdt\"}",
+          "output": "{\"n_sentences\": 229, \"prop_negative_excess\": 0.8079, \"mean_excess_rpl\": -0.104182, \"se_mean_excess\": 0.008708, \"median_excess_rpl\": -0.131187, \"q25_excess\": -0.177909, \"q75_excess\": -0.035618, \"iqr_excess\": 0.142291, \"std_excess\": 0.131773, \"skewness\": 0.6853, \"kurtosis\": 0.8783, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -11.9381, \"p_value\": 3.856883380927155e-26, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"written\", \"word_order\": null, \"case_category\": null, \"ud_case_proportion\": 0.132978, \"language_family\": \"Tungusic\", \"language\": \"Xibe\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.74, \"mean_branching_factor\": 2.31, \"proportion_projective\": 0.9704, \"selection_group\": \"diverse\"}",
+          "metadata_treebank_id": "sjo_xdt",
+          "metadata_language": "Xibe",
+          "metadata_modality": "written",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.104182",
+          "predict_prop_negative": "0.8079",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\"}",
+          "output": "{\"n_sentences\": 226, \"prop_negative_excess\": 0.9027, \"mean_excess_rpl\": -0.226304, \"se_mean_excess\": 0.011629, \"median_excess_rpl\": -0.224936, \"q25_excess\": -0.34621, \"q75_excess\": -0.134338, \"iqr_excess\": 0.211872, \"std_excess\": 0.174822, \"skewness\": 0.4911, \"kurtosis\": 0.5938, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -19.4172, \"p_value\": 2.7444913796348093e-50, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"spoken\", \"word_order\": \"SOV\", \"case_category\": 2, \"ud_case_proportion\": 0.149109, \"language_family\": \"Afro-Asiatic\", \"language\": \"Beja\", \"macroarea\": \"Africa\", \"mean_tree_depth\": 5.53, \"mean_branching_factor\": 2.2, \"proportion_projective\": 0.9279, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "bej_autogramm",
+          "metadata_language": "Beja",
+          "metadata_modality": "spoken",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.226304",
+          "predict_prop_negative": "0.9027",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\"}",
+          "output": "{\"n_sentences\": 247, \"prop_negative_excess\": 0.8502, \"mean_excess_rpl\": -0.202842, \"se_mean_excess\": 0.013294, \"median_excess_rpl\": -0.232814, \"q25_excess\": -0.341348, \"q75_excess\": -0.090601, \"iqr_excess\": 0.250748, \"std_excess\": 0.208933, \"skewness\": 0.7959, \"kurtosis\": 0.8602, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -15.2271, \"p_value\": 1.2322055563311675e-37, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"spoken\", \"word_order\": \"SVO\", \"case_category\": null, \"ud_case_proportion\": 0.0, \"language_family\": \"Sino-Tibetan\", \"language\": \"Cantonese\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 3.89, \"mean_branching_factor\": 2.92, \"proportion_projective\": 0.8825, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "yue_hk",
+          "metadata_language": "Cantonese",
+          "metadata_modality": "spoken",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.202842",
+          "predict_prop_negative": "0.8502",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_hk\"}",
+          "output": "{\"n_sentences\": 96, \"prop_negative_excess\": 0.9062, \"mean_excess_rpl\": -0.225464, \"se_mean_excess\": 0.022448, \"median_excess_rpl\": -0.271521, \"q25_excess\": -0.363156, \"q75_excess\": -0.141459, \"iqr_excess\": 0.221697, \"std_excess\": 0.219942, \"skewness\": 1.4623, \"kurtosis\": 2.9973, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -9.9915, \"p_value\": 8.613959184189535e-17, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"spoken\", \"word_order\": \"SVO\", \"case_category\": 1, \"ud_case_proportion\": 0.0, \"language_family\": \"Sino-Tibetan\", \"language\": \"Chinese\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 3.5, \"mean_branching_factor\": 2.75, \"proportion_projective\": 0.9612, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "zh_hk",
+          "metadata_language": "Chinese",
+          "metadata_modality": "spoken",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.225464",
+          "predict_prop_negative": "0.9062",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"da_ddt\"}",
+          "output": "{\"n_sentences\": 2145, \"prop_negative_excess\": 0.9166, \"mean_excess_rpl\": -0.24821, \"se_mean_excess\": 0.003869, \"median_excess_rpl\": -0.259693, \"q25_excess\": -0.367822, \"q75_excess\": -0.142235, \"iqr_excess\": 0.225587, \"std_excess\": 0.179202, \"skewness\": 0.3508, \"kurtosis\": 0.6737, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -64.1338, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"mixed\", \"word_order\": \"SVO\", \"case_category\": null, \"ud_case_proportion\": 0.062283, \"language_family\": \"Indo-European\", \"language\": \"Danish\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.91, \"mean_branching_factor\": 2.75, \"proportion_projective\": 0.8168, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "da_ddt",
+          "metadata_language": "Danish",
+          "metadata_modality": "mixed",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.24821",
+          "predict_prop_negative": "0.9166",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_childes\"}",
+          "output": "{\"n_sentences\": 247, \"prop_negative_excess\": 0.9595, \"mean_excess_rpl\": -0.27589, \"se_mean_excess\": 0.010471, \"median_excess_rpl\": -0.27516, \"q25_excess\": -0.390859, \"q75_excess\": -0.172272, \"iqr_excess\": 0.218587, \"std_excess\": 0.164565, \"skewness\": 0.3918, \"kurtosis\": 0.5463, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -26.2945, \"p_value\": 1.0198647085927493e-73, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"spoken\", \"word_order\": \"SVO\", \"case_category\": 2, \"ud_case_proportion\": 0.0, \"language_family\": \"Indo-European\", \"language\": \"English\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 2.74, \"mean_branching_factor\": 2.96, \"proportion_projective\": 0.9865, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "en_childes",
+          "metadata_language": "English",
+          "metadata_modality": "spoken",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.27589",
+          "predict_prop_negative": "0.9595",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_eslspok\"}",
+          "output": "{\"n_sentences\": 142, \"prop_negative_excess\": 0.9085, \"mean_excess_rpl\": -0.247612, \"se_mean_excess\": 0.016064, \"median_excess_rpl\": -0.245854, \"q25_excess\": -0.385407, \"q75_excess\": -0.123744, \"iqr_excess\": 0.261663, \"std_excess\": 0.191423, \"skewness\": 0.0588, \"kurtosis\": 0.0511, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -15.3598, \"p_value\": 3.307213940674209e-32, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"spoken\", \"word_order\": \"SVO\", \"case_category\": 2, \"ud_case_proportion\": 0.0, \"language_family\": \"Indo-European\", \"language\": \"English\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 3.22, \"mean_branching_factor\": 3.03, \"proportion_projective\": 0.994, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "en_eslspok",
+          "metadata_language": "English",
+          "metadata_modality": "spoken",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.247612",
+          "predict_prop_negative": "0.9085",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gentle\"}",
+          "output": "{\"n_sentences\": 282, \"prop_negative_excess\": 0.8972, \"mean_excess_rpl\": -0.228558, \"se_mean_excess\": 0.010108, \"median_excess_rpl\": -0.23493, \"q25_excess\": -0.334692, \"q75_excess\": -0.138164, \"iqr_excess\": 0.196528, \"std_excess\": 0.169735, \"skewness\": 0.1204, \"kurtosis\": 1.1061, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -22.5724, \"p_value\": 2.2780855516128313e-65, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"mixed\", \"word_order\": \"SVO\", \"case_category\": 2, \"ud_case_proportion\": 0.052419, \"language_family\": \"Indo-European\", \"language\": \"English\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.08, \"mean_branching_factor\": 2.35, \"proportion_projective\": 0.9798, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "en_gentle",
+          "metadata_language": "English",
+          "metadata_modality": "mixed",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.228558",
+          "predict_prop_negative": "0.8972",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gum\"}",
+          "output": "{\"n_sentences\": 4917, \"prop_negative_excess\": 0.9156, \"mean_excess_rpl\": -0.235533, \"se_mean_excess\": 0.002434, \"median_excess_rpl\": -0.246165, \"q25_excess\": -0.345414, \"q75_excess\": -0.137127, \"iqr_excess\": 0.208287, \"std_excess\": 0.170707, \"skewness\": 0.3896, \"kurtosis\": 0.8944, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -96.74, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"mixed\", \"word_order\": \"SVO\", \"case_category\": 2, \"ud_case_proportion\": 0.065662, \"language_family\": \"Indo-European\", \"language\": \"English\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.58, \"mean_branching_factor\": 2.66, \"proportion_projective\": 0.9704, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "en_gum",
+          "metadata_language": "English",
+          "metadata_modality": "mixed",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.235533",
+          "predict_prop_negative": "0.9156",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_lines\"}",
+          "output": "{\"n_sentences\": 2127, \"prop_negative_excess\": 0.9394, \"mean_excess_rpl\": -0.247925, \"se_mean_excess\": 0.003548, \"median_excess_rpl\": -0.251039, \"q25_excess\": -0.351249, \"q75_excess\": -0.151614, \"iqr_excess\": 0.199635, \"std_excess\": 0.163638, \"skewness\": 0.3846, \"kurtosis\": 1.1025, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -69.8582, \"p_value\": 0.0, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"mixed\", \"word_order\": \"SVO\", \"case_category\": 2, \"ud_case_proportion\": 0.071163, \"language_family\": \"Indo-European\", \"language\": \"English\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.81, \"mean_branching_factor\": 2.81, \"proportion_projective\": 0.9436, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "en_lines",
+          "metadata_language": "English",
+          "metadata_modality": "mixed",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.247925",
+          "predict_prop_negative": "0.9394",
+          "predict_significant": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_parisstories\"}",
+          "output": "{\"n_sentences\": 742, \"prop_negative_excess\": 0.8558, \"mean_excess_rpl\": -0.239213, \"se_mean_excess\": 0.008231, \"median_excess_rpl\": -0.271998, \"q25_excess\": -0.393263, \"q75_excess\": -0.118909, \"iqr_excess\": 0.274355, \"std_excess\": 0.224211, \"skewness\": 0.6457, \"kurtosis\": 0.4015, \"pervasiveness_class\": \"pervasive\", \"t_statistic\": -29.0428, \"p_value\": 1.0269683493961551e-124, \"sig_p001\": true, \"sig_p01\": true, \"modality\": \"spoken\", \"word_order\": \"SVO\", \"case_category\": 1, \"ud_case_proportion\": 0.089229, \"language_family\": \"Indo-European\", \"language\": \"French\", \"macroarea\": \"Eurasia\", \"mean_tree_depth\": 4.04, \"mean_branching_factor\": 2.93, \"proportion_projective\": 0.933, \"selection_group\": \"spoken\"}",
+          "metadata_treebank_id": "fr_parisstories",
+          "metadata_language": "French",
+          "metadata_modality": "spoken",
+          "metadata_pervasiveness": "pervasive",
+          "predict_mean_excess_rpl": "-0.239213",
+          "predict_prop_negative": "0.8558",
+          "predict_significant": "True"
+        }
+      ]
+    },
+    {
+      "dataset": "structural_subtype_analysis",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"de_hdt\"}",
+          "output": "{\"full_population\": {\"n\": 77077, \"mean_tree_depth\": 4.8548, \"mean_branching_factor\": 2.8369, \"mean_max_dd\": 15.7962, \"mean_max_dd_rel_pos\": 0.5502, \"prop_has_conj\": 0.545, \"prop_has_relcl\": 0.0, \"mean_token_count\": 27.5213, \"mean_dd_length_nopunct\": 23.3423}, \"bottom_10pct\": {\"n\": 7707, \"mean_tree_depth\": 5.1692, \"mean_branching_factor\": 2.9996, \"mean_max_dd\": 13.5418, \"mean_max_dd_rel_pos\": 0.5706, \"prop_has_conj\": 0.5268, \"prop_has_relcl\": 0.0, \"mean_token_count\": 26.9891, \"mean_dd_length_nopunct\": 22.6102}, \"comparisons\": {\"tree_depth\": {\"U\": 337694540.0, \"p\": 5.171274200500849e-94, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 362830087.5, \"p\": 1.156731023356868e-226, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 229941751.5, \"p\": 7.360248069174556e-236, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 284040858.5, \"p\": 2.1940262574878565e-10, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.5268, \"full_prop\": 0.545}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "de_hdt",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\"}",
+          "output": "{\"full_population\": {\"n\": 68065, \"mean_tree_depth\": 5.7783, \"mean_branching_factor\": 2.5103, \"mean_max_dd\": 13.6798, \"mean_max_dd_rel_pos\": 0.5069, \"prop_has_conj\": 0.6827, \"prop_has_relcl\": 0.3455, \"mean_token_count\": 29.1964, \"mean_dd_length_nopunct\": 23.9279}, \"bottom_10pct\": {\"n\": 6806, \"mean_tree_depth\": 6.4246, \"mean_branching_factor\": 2.6581, \"mean_max_dd\": 8.7953, \"mean_max_dd_rel_pos\": 0.5225, \"prop_has_conj\": 0.6875, \"prop_has_relcl\": 0.4609, \"mean_token_count\": 27.0435, \"mean_dd_length_nopunct\": 22.2989}, \"comparisons\": {\"tree_depth\": {\"U\": 280084495.0, \"p\": 7.66488299302999e-186, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 277669903.5, \"p\": 1.3066589298613552e-161, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 110709955.0, \"p\": 0.0, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 196060515.5, \"p\": 1.7644036606817554e-97, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.6875, \"full_prop\": 0.6827}, \"has_relcl\": {\"bottom_10pct_prop\": 0.4609, \"full_prop\": 0.3455}}}",
+          "metadata_treebank_id": "cs_pdtc",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\"}",
+          "output": "{\"full_population\": {\"n\": 30145, \"mean_tree_depth\": 5.8565, \"mean_branching_factor\": 2.4179, \"mean_max_dd\": 13.697, \"mean_max_dd_rel_pos\": 0.5182, \"prop_has_conj\": 0.764, \"prop_has_relcl\": 0.2169, \"mean_token_count\": 29.1401, \"mean_dd_length_nopunct\": 22.9055}, \"bottom_10pct\": {\"n\": 3014, \"mean_tree_depth\": 6.6815, \"mean_branching_factor\": 2.5355, \"mean_max_dd\": 8.72, \"mean_max_dd_rel_pos\": 0.5196, \"prop_has_conj\": 0.7475, \"prop_has_relcl\": 0.3245, \"mean_token_count\": 27.5985, \"mean_dd_length_nopunct\": 21.7419}, \"comparisons\": {\"tree_depth\": {\"U\": 57284002.5, \"p\": 3.13028451230395e-128, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 53402043.0, \"p\": 4.8135845557279015e-57, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 22353339.0, \"p\": 0.0, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 40979179.5, \"p\": 5.856193334232955e-19, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.7475, \"full_prop\": 0.764}, \"has_relcl\": {\"bottom_10pct_prop\": 0.3245, \"full_prop\": 0.2169}}}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_taiga\"}",
+          "output": "{\"full_population\": {\"n\": 29336, \"mean_tree_depth\": 5.5628, \"mean_branching_factor\": 2.5261, \"mean_max_dd\": 14.4829, \"mean_max_dd_rel_pos\": 0.5457, \"prop_has_conj\": 0.8576, \"prop_has_relcl\": 0.1754, \"mean_token_count\": 29.796, \"mean_dd_length_nopunct\": 22.4454}, \"bottom_10pct\": {\"n\": 2933, \"mean_tree_depth\": 6.1838, \"mean_branching_factor\": 2.6638, \"mean_max_dd\": 9.1483, \"mean_max_dd_rel_pos\": 0.5357, \"prop_has_conj\": 0.8227, \"prop_has_relcl\": 0.2799, \"mean_token_count\": 27.3744, \"mean_dd_length_nopunct\": 20.8793}, \"comparisons\": {\"tree_depth\": {\"U\": 51928481.5, \"p\": 8.407353772546645e-80, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 51280825.5, \"p\": 4.0988850972557296e-66, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 21982561.0, \"p\": 0.0, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 37662117.5, \"p\": 6.296057871789999e-29, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.8227, \"full_prop\": 0.8576}, \"has_relcl\": {\"bottom_10pct_prop\": 0.2799, \"full_prop\": 0.1754}}}",
+          "metadata_treebank_id": "ru_taiga",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_bccwjluw\"}",
+          "output": "{\"full_population\": {\"n\": 19395, \"mean_tree_depth\": 5.9529, \"mean_branching_factor\": 2.5803, \"mean_max_dd\": 20.6863, \"mean_max_dd_rel_pos\": 0.1957, \"prop_has_conj\": 0.0, \"prop_has_relcl\": 0.0, \"mean_token_count\": 32.5582, \"mean_dd_length_nopunct\": 27.0441}, \"bottom_10pct\": {\"n\": 1939, \"mean_tree_depth\": 6.1325, \"mean_branching_factor\": 2.7522, \"mean_max_dd\": 12.212, \"mean_max_dd_rel_pos\": 0.2965, \"prop_has_conj\": 0.0, \"prop_has_relcl\": 0.0, \"mean_token_count\": 30.7385, \"mean_dd_length_nopunct\": 25.7323}, \"comparisons\": {\"tree_depth\": {\"U\": 20006914.5, \"p\": 2.1421535119653326e-06, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 23709239.5, \"p\": 2.7195196583690427e-80, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 8641545.5, \"p\": 0.0, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 16992252.5, \"p\": 2.3543438959100976e-12, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "ja_bccwjluw",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"is_icepahc\"}",
+          "output": "{\"full_population\": {\"n\": 19098, \"mean_tree_depth\": 5.5451, \"mean_branching_factor\": 2.6761, \"mean_max_dd\": 19.7926, \"mean_max_dd_rel_pos\": 0.6206, \"prop_has_conj\": 0.8254, \"prop_has_relcl\": 0.423, \"mean_token_count\": 36.4462, \"mean_dd_length_nopunct\": 31.5611}, \"bottom_10pct\": {\"n\": 1909, \"mean_tree_depth\": 6.2913, \"mean_branching_factor\": 2.7488, \"mean_max_dd\": 10.1729, \"mean_max_dd_rel_pos\": 0.5398, \"prop_has_conj\": 0.7459, \"prop_has_relcl\": 0.4505, \"mean_token_count\": 30.1613, \"mean_dd_length_nopunct\": 26.0152}, \"comparisons\": {\"tree_depth\": {\"U\": 22829570.0, \"p\": 4.338497526959758e-77, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 19987673.0, \"p\": 3.3430983312965946e-12, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 8190839.0, \"p\": 0.0, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 14561794.0, \"p\": 8.21293659207511e-48, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.7459, \"full_prop\": 0.8254}, \"has_relcl\": {\"bottom_10pct_prop\": 0.4505, \"full_prop\": 0.423}}}",
+          "metadata_treebank_id": "is_icepahc",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_nonstandard\"}",
+          "output": "{\"full_population\": {\"n\": 12991, \"mean_tree_depth\": 5.0503, \"mean_branching_factor\": 2.8915, \"mean_max_dd\": 14.8073, \"mean_max_dd_rel_pos\": 0.5573, \"prop_has_conj\": 0.825, \"prop_has_relcl\": 0.0, \"mean_token_count\": 31.1879, \"mean_dd_length_nopunct\": 25.735}, \"bottom_10pct\": {\"n\": 1299, \"mean_tree_depth\": 5.7644, \"mean_branching_factor\": 3.14, \"mean_max_dd\": 9.6728, \"mean_max_dd_rel_pos\": 0.5436, \"prop_has_conj\": 0.7937, \"prop_has_relcl\": 0.0, \"mean_token_count\": 30.0855, \"mean_dd_length_nopunct\": 24.9392}, \"comparisons\": {\"tree_depth\": {\"U\": 10660458.5, \"p\": 2.3230826874181476e-58, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 10819731.5, \"p\": 2.100395020500647e-63, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 4252384.5, \"p\": 3.1975857385448505e-192, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 8109262.5, \"p\": 0.02038972807042574, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.7937, \"full_prop\": 0.825}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "ro_nonstandard",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"es_ancora\"}",
+          "output": "{\"full_population\": {\"n\": 12737, \"mean_tree_depth\": 6.2492, \"mean_branching_factor\": 2.7364, \"mean_max_dd\": 17.221, \"mean_max_dd_rel_pos\": 0.4674, \"prop_has_conj\": 0.672, \"prop_has_relcl\": 0.003, \"mean_token_count\": 39.2445, \"mean_dd_length_nopunct\": 33.8226}, \"bottom_10pct\": {\"n\": 1273, \"mean_tree_depth\": 7.2011, \"mean_branching_factor\": 2.7675, \"mean_max_dd\": 9.8233, \"mean_max_dd_rel_pos\": 0.4837, \"prop_has_conj\": 0.6269, \"prop_has_relcl\": 0.0024, \"mean_token_count\": 35.2286, \"mean_dd_length_nopunct\": 30.85}, \"comparisons\": {\"tree_depth\": {\"U\": 10236638.5, \"p\": 1.0846392993719607e-55, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 8520622.5, \"p\": 0.0026464193978150336, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 3423718.5, \"p\": 1.9508713406795834e-254, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 6739286.0, \"p\": 2.6743405856336484e-23, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.6269, \"full_prop\": 0.672}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0024, \"full_prop\": 0.003}}}",
+          "metadata_treebank_id": "es_ancora",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ca_ancora\"}",
+          "output": "{\"full_population\": {\"n\": 12675, \"mean_tree_depth\": 6.0335, \"mean_branching_factor\": 2.761, \"mean_max_dd\": 17.0255, \"mean_max_dd_rel_pos\": 0.4972, \"prop_has_conj\": 0.6568, \"prop_has_relcl\": 0.0402, \"mean_token_count\": 39.039, \"mean_dd_length_nopunct\": 34.0454}, \"bottom_10pct\": {\"n\": 1267, \"mean_tree_depth\": 6.7972, \"mean_branching_factor\": 2.836, \"mean_max_dd\": 9.7222, \"mean_max_dd_rel_pos\": 0.4823, \"prop_has_conj\": 0.577, \"prop_has_relcl\": 0.0331, \"mean_token_count\": 34.4152, \"mean_dd_length_nopunct\": 30.4033}, \"comparisons\": {\"tree_depth\": {\"U\": 9862585.5, \"p\": 2.0292803566959353e-42, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 8944663.0, \"p\": 2.076499163942142e-11, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 3495054.0, \"p\": 3.759770521747448e-242, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 6607668.5, \"p\": 2.1613861166498615e-25, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.577, \"full_prop\": 0.6568}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0331, \"full_prop\": 0.0402}}}",
+          "metadata_treebank_id": "ca_ancora",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cac\"}",
+          "output": "{\"full_population\": {\"n\": 10443, \"mean_tree_depth\": 6.0603, \"mean_branching_factor\": 2.4481, \"mean_max_dd\": 14.2607, \"mean_max_dd_rel_pos\": 0.5458, \"prop_has_conj\": 0.8461, \"prop_has_relcl\": 0.3649, \"mean_token_count\": 31.1375, \"mean_dd_length_nopunct\": 26.4819}, \"bottom_10pct\": {\"n\": 1044, \"mean_tree_depth\": 6.8851, \"mean_branching_factor\": 2.574, \"mean_max_dd\": 8.7462, \"mean_max_dd_rel_pos\": 0.5333, \"prop_has_conj\": 0.795, \"prop_has_relcl\": 0.5364, \"mean_token_count\": 28.6695, \"mean_dd_length_nopunct\": 24.3238}, \"comparisons\": {\"tree_depth\": {\"U\": 6829660.0, \"p\": 7.1471006788526885e-43, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 6487763.0, \"p\": 3.382169688293773e-24, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 2614139.0, \"p\": 2.5305607941227638e-170, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 4853702.5, \"p\": 4.7310504856756e-09, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.795, \"full_prop\": 0.8461}, \"has_relcl\": {\"bottom_10pct_prop\": 0.5364, \"full_prop\": 0.3649}}}",
+          "metadata_treebank_id": "cs_cac",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"bm_crb\"}",
+          "output": "{\"full_population\": {\"n\": 173, \"mean_tree_depth\": 5.8671, \"mean_branching_factor\": 2.8662, \"mean_max_dd\": 10.815, \"mean_max_dd_rel_pos\": 0.5768, \"prop_has_conj\": 0.1156, \"prop_has_relcl\": 0.0, \"mean_token_count\": 30.7919, \"mean_dd_length_nopunct\": 26.0347}, \"bottom_10pct\": {\"n\": 17, \"mean_tree_depth\": 5.8235, \"mean_branching_factor\": 3.1576, \"mean_max_dd\": 7.8824, \"mean_max_dd_rel_pos\": 0.5178, \"prop_has_conj\": 0.1176, \"prop_has_relcl\": 0.0, \"mean_token_count\": 28.2353, \"mean_dd_length_nopunct\": 23.5294}, \"comparisons\": {\"tree_depth\": {\"U\": 1457.5, \"p\": 0.9526485169724107, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 1960.5, \"p\": 0.023605227297992505, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 848.5, \"p\": 0.003883082352512489, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 1390.5, \"p\": 0.7125824405329722, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.1176, \"full_prop\": 0.1156}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "bm_crb",
+          "predict_bottom10pct_deeper": "False"
+        },
+        {
+          "input": "{\"treebank_id\": \"eu_bdt\"}",
+          "output": "{\"full_population\": {\"n\": 1534, \"mean_tree_depth\": 4.895, \"mean_branching_factor\": 2.4016, \"mean_max_dd\": 13.1219, \"mean_max_dd_rel_pos\": 0.5793, \"prop_has_conj\": 0.822, \"prop_has_relcl\": 0.0, \"mean_token_count\": 24.279, \"mean_dd_length_nopunct\": 19.4472}, \"bottom_10pct\": {\"n\": 153, \"mean_tree_depth\": 4.8301, \"mean_branching_factor\": 2.6243, \"mean_max_dd\": 10.9346, \"mean_max_dd_rel_pos\": 0.5672, \"prop_has_conj\": 0.8758, \"prop_has_relcl\": 0.0, \"mean_token_count\": 24.0523, \"mean_dd_length_nopunct\": 19.1176}, \"comparisons\": {\"tree_depth\": {\"U\": 115572.5, \"p\": 0.7483345224096263, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 152148.0, \"p\": 1.3700162875620208e-09, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 80271.5, \"p\": 9.723568338017376e-11, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 115810.5, \"p\": 0.7873592641079273, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.8758, \"full_prop\": 0.822}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "eu_bdt",
+          "predict_bottom10pct_deeper": "False"
+        },
+        {
+          "input": "{\"treebank_id\": \"bor_bdt\"}",
+          "output": "{\"full_population\": {\"n\": 893, \"mean_tree_depth\": 4.9888, \"mean_branching_factor\": 2.4999, \"mean_max_dd\": 12.1377, \"mean_max_dd_rel_pos\": 0.6573, \"prop_has_conj\": 0.5823, \"prop_has_relcl\": 0.0, \"mean_token_count\": 24.9653, \"mean_dd_length_nopunct\": 19.8231}, \"bottom_10pct\": {\"n\": 89, \"mean_tree_depth\": 5.382, \"mean_branching_factor\": 2.7919, \"mean_max_dd\": 8.2135, \"mean_max_dd_rel_pos\": 0.5657, \"prop_has_conj\": 0.4607, \"prop_has_relcl\": 0.0, \"mean_token_count\": 24.8876, \"mean_dd_length_nopunct\": 19.7079}, \"comparisons\": {\"tree_depth\": {\"U\": 48001.0, \"p\": 0.0008523094132675008, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 53803.5, \"p\": 3.499202209060106e-08, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 19542.5, \"p\": 2.088605477097462e-15, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 39668.0, \"p\": 0.9779928061928446, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.4607, \"full_prop\": 0.5823}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "bor_bdt",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"bxr_bdt\"}",
+          "output": "{\"full_population\": {\"n\": 121, \"mean_tree_depth\": 5.5041, \"mean_branching_factor\": 2.1948, \"mean_max_dd\": 13.4298, \"mean_max_dd_rel_pos\": 0.4015, \"prop_has_conj\": 0.595, \"prop_has_relcl\": 0.0, \"mean_token_count\": 24.6198, \"mean_dd_length_nopunct\": 19.4463}, \"bottom_10pct\": {\"n\": 12, \"mean_tree_depth\": 5.4167, \"mean_branching_factor\": 2.4672, \"mean_max_dd\": 10.1667, \"mean_max_dd_rel_pos\": 0.363, \"prop_has_conj\": 0.6667, \"prop_has_relcl\": 0.0, \"mean_token_count\": 24.1667, \"mean_dd_length_nopunct\": 18.5833}, \"comparisons\": {\"tree_depth\": {\"U\": 725.5, \"p\": 1.0, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 1039.5, \"p\": 0.01389831831150092, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 461.0, \"p\": 0.037205540482698016, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 708.5, \"p\": 0.8931124120592794, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.6667, \"full_prop\": 0.595}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "bxr_bdt",
+          "predict_bottom10pct_deeper": "False"
+        },
+        {
+          "input": "{\"treebank_id\": \"eo_prago\"}",
+          "output": "{\"full_population\": {\"n\": 54, \"mean_tree_depth\": 6.6852, \"mean_branching_factor\": 2.6745, \"mean_max_dd\": 23.9815, \"mean_max_dd_rel_pos\": 0.4151, \"prop_has_conj\": 0.8148, \"prop_has_relcl\": 0.4074, \"mean_token_count\": 48.5, \"mean_dd_length_nopunct\": 41.4259}, \"bottom_10pct\": {\"n\": 5, \"mean_tree_depth\": 6.4, \"mean_branching_factor\": 2.5822, \"mean_max_dd\": 10.2, \"mean_max_dd_rel_pos\": 0.5442, \"prop_has_conj\": 0.4, \"prop_has_relcl\": 0.4, \"mean_token_count\": 23.6, \"mean_dd_length_nopunct\": 20.0}, \"comparisons\": {\"tree_depth\": {\"U\": 122.5, \"p\": 0.7403136863343622, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 111.0, \"p\": 0.5220443402201889, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 59.5, \"p\": 0.04082727941088805, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 48.5, \"p\": 0.019021130629520325, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.4, \"full_prop\": 0.8148}, \"has_relcl\": {\"bottom_10pct_prop\": 0.4, \"full_prop\": 0.4074}}}",
+          "metadata_treebank_id": "eo_prago",
+          "predict_bottom10pct_deeper": "False"
+        },
+        {
+          "input": "{\"treebank_id\": \"kk_ktb\"}",
+          "output": "{\"full_population\": {\"n\": 61, \"mean_tree_depth\": 5.4262, \"mean_branching_factor\": 2.2266, \"mean_max_dd\": 18.6721, \"mean_max_dd_rel_pos\": 0.2472, \"prop_has_conj\": 0.8197, \"prop_has_relcl\": 0.1803, \"mean_token_count\": 25.8852, \"mean_dd_length_nopunct\": 19.1475}, \"bottom_10pct\": {\"n\": 6, \"mean_tree_depth\": 5.6667, \"mean_branching_factor\": 2.5582, \"mean_max_dd\": 16.8333, \"mean_max_dd_rel_pos\": 0.4005, \"prop_has_conj\": 1.0, \"prop_has_relcl\": 0.1667, \"mean_token_count\": 25.1667, \"mean_dd_length_nopunct\": 20.6667}, \"comparisons\": {\"tree_depth\": {\"U\": 195.0, \"p\": 0.7948841818023061, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 224.0, \"p\": 0.3735291996836272, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 159.0, \"p\": 0.6049482233070684, \"significant_05\": \"False\"}, \"token_count\": {\"U\": 194.0, \"p\": 0.8164833446791333, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 1.0, \"full_prop\": 0.8197}, \"has_relcl\": {\"bottom_10pct_prop\": 0.1667, \"full_prop\": 0.1803}}}",
+          "metadata_treebank_id": "kk_ktb",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"naq_kdt\"}",
+          "output": "{\"full_population\": {\"n\": 146, \"mean_tree_depth\": 4.274, \"mean_branching_factor\": 3.373, \"mean_max_dd\": 14.6233, \"mean_max_dd_rel_pos\": 0.5115, \"prop_has_conj\": 0.5479, \"prop_has_relcl\": 0.3493, \"mean_token_count\": 24.911, \"mean_dd_length_nopunct\": 21.6164}, \"bottom_10pct\": {\"n\": 14, \"mean_tree_depth\": 4.7857, \"mean_branching_factor\": 3.6943, \"mean_max_dd\": 10.2857, \"mean_max_dd_rel_pos\": 0.5214, \"prop_has_conj\": 0.2857, \"prop_has_relcl\": 0.2143, \"mean_token_count\": 23.5714, \"mean_dd_length_nopunct\": 20.1429}, \"comparisons\": {\"tree_depth\": {\"U\": 1308.5, \"p\": 0.07048752318633068, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 1337.0, \"p\": 0.05732875345164523, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 505.0, \"p\": 0.0017667024100908226, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 880.5, \"p\": 0.3917176832696715, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.2857, \"full_prop\": 0.5479}, \"has_relcl\": {\"bottom_10pct_prop\": 0.2143, \"full_prop\": 0.3493}}}",
+          "metadata_treebank_id": "naq_kdt",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_ttb\"}",
+          "output": "{\"full_population\": {\"n\": 143, \"mean_tree_depth\": 6.1888, \"mean_branching_factor\": 2.3228, \"mean_max_dd\": 15.6084, \"mean_max_dd_rel_pos\": 0.2486, \"prop_has_conj\": 0.4895, \"prop_has_relcl\": 0.1678, \"mean_token_count\": 27.3287, \"mean_dd_length_nopunct\": 23.7343}, \"bottom_10pct\": {\"n\": 14, \"mean_tree_depth\": 6.5714, \"mean_branching_factor\": 2.3023, \"mean_max_dd\": 10.5714, \"mean_max_dd_rel_pos\": 0.2637, \"prop_has_conj\": 0.3571, \"prop_has_relcl\": 0.0714, \"mean_token_count\": 25.0, \"mean_dd_length_nopunct\": 22.5}, \"comparisons\": {\"tree_depth\": {\"U\": 1202.5, \"p\": 0.20629512320802512, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 1036.5, \"p\": 0.8292700258968924, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 577.5, \"p\": 0.009044348848140574, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 884.0, \"p\": 0.4713088148778878, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.3571, \"full_prop\": 0.4895}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0714, \"full_prop\": 0.1678}}}",
+          "metadata_treebank_id": "ta_ttb",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_vtb\"}",
+          "output": "{\"full_population\": {\"n\": 1175, \"mean_tree_depth\": 5.3685, \"mean_branching_factor\": 2.4437, \"mean_max_dd\": 12.6119, \"mean_max_dd_rel_pos\": 0.4463, \"prop_has_conj\": 0.7064, \"prop_has_relcl\": 0.0153, \"mean_token_count\": 26.6136, \"mean_dd_length_nopunct\": 22.0885}, \"bottom_10pct\": {\"n\": 117, \"mean_tree_depth\": 5.6496, \"mean_branching_factor\": 2.6573, \"mean_max_dd\": 8.4444, \"mean_max_dd_rel_pos\": 0.4151, \"prop_has_conj\": 0.7692, \"prop_has_relcl\": 0.0171, \"mean_token_count\": 25.6581, \"mean_dd_length_nopunct\": 21.5299}, \"comparisons\": {\"tree_depth\": {\"U\": 74741.0, \"p\": 0.10940783174664771, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 90239.0, \"p\": 2.283652685370768e-08, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 35676.5, \"p\": 7.254444045354489e-18, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 65381.0, \"p\": 0.38097877909413014, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.7692, \"full_prop\": 0.7064}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0171, \"full_prop\": 0.0153}}}",
+          "metadata_treebank_id": "vi_vtb",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"sjo_xdt\"}",
+          "output": "{\"full_population\": {\"n\": 229, \"mean_tree_depth\": 5.7511, \"mean_branching_factor\": 2.2658, \"mean_max_dd\": 29.6943, \"mean_max_dd_rel_pos\": 0.2313, \"prop_has_conj\": 0.6987, \"prop_has_relcl\": 0.4716, \"mean_token_count\": 41.9127, \"mean_dd_length_nopunct\": 36.4934}, \"bottom_10pct\": {\"n\": 22, \"mean_tree_depth\": 4.9545, \"mean_branching_factor\": 2.3975, \"mean_max_dd\": 16.4091, \"mean_max_dd_rel_pos\": 0.2692, \"prop_has_conj\": 0.7273, \"prop_has_relcl\": 0.2727, \"mean_token_count\": 27.7273, \"mean_dd_length_nopunct\": 23.0}, \"comparisons\": {\"tree_depth\": {\"U\": 1642.0, \"p\": 0.005428738600662444, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 2745.5, \"p\": 0.48707626023358586, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 1120.0, \"p\": 1.6958136911231734e-05, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 1317.0, \"p\": 0.00021924706833259227, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.7273, \"full_prop\": 0.6987}, \"has_relcl\": {\"bottom_10pct_prop\": 0.2727, \"full_prop\": 0.4716}}}",
+          "metadata_treebank_id": "sjo_xdt",
+          "predict_bottom10pct_deeper": "False"
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\"}",
+          "output": "{\"full_population\": {\"n\": 226, \"mean_tree_depth\": 7.3894, \"mean_branching_factor\": 2.1936, \"mean_max_dd\": 13.1858, \"mean_max_dd_rel_pos\": 0.3187, \"prop_has_conj\": 0.5575, \"prop_has_relcl\": 0.4867, \"mean_token_count\": 29.3805, \"mean_dd_length_nopunct\": 22.7301}, \"bottom_10pct\": {\"n\": 22, \"mean_tree_depth\": 7.3182, \"mean_branching_factor\": 2.4576, \"mean_max_dd\": 10.1818, \"mean_max_dd_rel_pos\": 0.3299, \"prop_has_conj\": 0.6364, \"prop_has_relcl\": 0.4545, \"mean_token_count\": 28.6364, \"mean_dd_length_nopunct\": 22.1364}, \"comparisons\": {\"tree_depth\": {\"U\": 2458.0, \"p\": 0.9310016382897052, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 3278.0, \"p\": 0.013692526276857887, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 1745.5, \"p\": 0.0209028252606824, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 2473.0, \"p\": 0.9689040998920139, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.6364, \"full_prop\": 0.5575}, \"has_relcl\": {\"bottom_10pct_prop\": 0.4545, \"full_prop\": 0.4867}}}",
+          "metadata_treebank_id": "bej_autogramm",
+          "predict_bottom10pct_deeper": "False"
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\"}",
+          "output": "{\"full_population\": {\"n\": 247, \"mean_tree_depth\": 5.1741, \"mean_branching_factor\": 2.7617, \"mean_max_dd\": 17.0567, \"mean_max_dd_rel_pos\": 0.5555, \"prop_has_conj\": 0.6721, \"prop_has_relcl\": 0.0, \"mean_token_count\": 30.502, \"mean_dd_length_nopunct\": 23.915}, \"bottom_10pct\": {\"n\": 24, \"mean_tree_depth\": 4.5833, \"mean_branching_factor\": 3.0223, \"mean_max_dd\": 12.25, \"mean_max_dd_rel_pos\": 0.5627, \"prop_has_conj\": 0.5833, \"prop_has_relcl\": 0.0, \"mean_token_count\": 25.9583, \"mean_dd_length_nopunct\": 20.125}, \"comparisons\": {\"tree_depth\": {\"U\": 2384.0, \"p\": 0.10519610559262658, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 3871.5, \"p\": 0.01332494172551096, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 1859.0, \"p\": 0.002552277793014129, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 2196.5, \"p\": 0.03612357003637262, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.5833, \"full_prop\": 0.6721}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "yue_hk",
+          "predict_bottom10pct_deeper": "False"
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_hk\"}",
+          "output": "{\"full_population\": {\"n\": 96, \"mean_tree_depth\": 4.9062, \"mean_branching_factor\": 2.6614, \"mean_max_dd\": 14.3542, \"mean_max_dd_rel_pos\": 0.4292, \"prop_has_conj\": 0.6979, \"prop_has_relcl\": 0.0, \"mean_token_count\": 25.6458, \"mean_dd_length_nopunct\": 20.7708}, \"bottom_10pct\": {\"n\": 9, \"mean_tree_depth\": 5.4444, \"mean_branching_factor\": 2.6324, \"mean_max_dd\": 11.6667, \"mean_max_dd_rel_pos\": 0.3952, \"prop_has_conj\": 0.7778, \"prop_has_relcl\": 0.0, \"mean_token_count\": 27.2222, \"mean_dd_length_nopunct\": 21.3333}, \"comparisons\": {\"tree_depth\": {\"U\": 518.5, \"p\": 0.30864236855802885, \"significant_05\": \"False\"}, \"branching_factor\": {\"U\": 440.5, \"p\": 0.926972162531296, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 275.0, \"p\": 0.07229859429223473, \"significant_05\": \"False\"}, \"token_count\": {\"U\": 458.5, \"p\": 0.7647342899507421, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.7778, \"full_prop\": 0.6979}, \"has_relcl\": {\"bottom_10pct_prop\": 0.0, \"full_prop\": 0.0}}}",
+          "metadata_treebank_id": "zh_hk",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"da_ddt\"}",
+          "output": "{\"full_population\": {\"n\": 2145, \"mean_tree_depth\": 5.5692, \"mean_branching_factor\": 2.8141, \"mean_max_dd\": 13.7152, \"mean_max_dd_rel_pos\": 0.5026, \"prop_has_conj\": 0.649, \"prop_has_relcl\": 0.4886, \"mean_token_count\": 29.9198, \"mean_dd_length_nopunct\": 24.9776}, \"bottom_10pct\": {\"n\": 214, \"mean_tree_depth\": 6.3785, \"mean_branching_factor\": 2.921, \"mean_max_dd\": 8.8224, \"mean_max_dd_rel_pos\": 0.5083, \"prop_has_conj\": 0.7103, \"prop_has_relcl\": 0.5748, \"mean_token_count\": 28.9252, \"mean_dd_length_nopunct\": 24.3271}, \"comparisons\": {\"tree_depth\": {\"U\": 292851.0, \"p\": 9.82952161183561e-12, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 257581.0, \"p\": 0.003125950108617867, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 114842.5, \"p\": 1.1593694660148946e-33, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 211712.5, \"p\": 0.0606064591062523, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.7103, \"full_prop\": 0.649}, \"has_relcl\": {\"bottom_10pct_prop\": 0.5748, \"full_prop\": 0.4886}}}",
+          "metadata_treebank_id": "da_ddt",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_childes\"}",
+          "output": "{\"full_population\": {\"n\": 247, \"mean_tree_depth\": 4.3644, \"mean_branching_factor\": 3.0361, \"mean_max_dd\": 12.8704, \"mean_max_dd_rel_pos\": 0.6574, \"prop_has_conj\": 0.6761, \"prop_has_relcl\": 0.1822, \"mean_token_count\": 24.4575, \"mean_dd_length_nopunct\": 22.4575}, \"bottom_10pct\": {\"n\": 24, \"mean_tree_depth\": 5.1667, \"mean_branching_factor\": 3.107, \"mean_max_dd\": 7.4583, \"mean_max_dd_rel_pos\": 0.6135, \"prop_has_conj\": 0.7083, \"prop_has_relcl\": 0.1667, \"mean_token_count\": 23.0417, \"mean_dd_length_nopunct\": 21.0417}, \"comparisons\": {\"tree_depth\": {\"U\": 4101.5, \"p\": 0.001068687276047647, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 3182.0, \"p\": 0.5525703564120461, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 972.0, \"p\": 5.134357463874072e-08, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 2973.0, \"p\": 0.9813172095484047, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.7083, \"full_prop\": 0.6761}, \"has_relcl\": {\"bottom_10pct_prop\": 0.1667, \"full_prop\": 0.1822}}}",
+          "metadata_treebank_id": "en_childes",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_eslspok\"}",
+          "output": "{\"full_population\": {\"n\": 142, \"mean_tree_depth\": 4.2958, \"mean_branching_factor\": 3.1317, \"mean_max_dd\": 13.0493, \"mean_max_dd_rel_pos\": 0.5923, \"prop_has_conj\": 0.7817, \"prop_has_relcl\": 0.169, \"mean_token_count\": 26.0493, \"mean_dd_length_nopunct\": 21.9155}, \"bottom_10pct\": {\"n\": 14, \"mean_tree_depth\": 5.0714, \"mean_branching_factor\": 3.273, \"mean_max_dd\": 9.5714, \"mean_max_dd_rel_pos\": 0.6381, \"prop_has_conj\": 0.9286, \"prop_has_relcl\": 0.2857, \"mean_token_count\": 25.5714, \"mean_dd_length_nopunct\": 22.3571}, \"comparisons\": {\"tree_depth\": {\"U\": 1299.0, \"p\": 0.048621523519458636, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 1124.0, \"p\": 0.42160111559371816, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 619.0, \"p\": 0.019862623119025605, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 1085.0, \"p\": 0.5726737846923666, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.9286, \"full_prop\": 0.7817}, \"has_relcl\": {\"bottom_10pct_prop\": 0.2857, \"full_prop\": 0.169}}}",
+          "metadata_treebank_id": "en_eslspok",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gentle\"}",
+          "output": "{\"full_population\": {\"n\": 282, \"mean_tree_depth\": 5.4007, \"mean_branching_factor\": 2.7512, \"mean_max_dd\": 15.8582, \"mean_max_dd_rel_pos\": 0.5598, \"prop_has_conj\": 0.7908, \"prop_has_relcl\": 0.2872, \"mean_token_count\": 32.6277, \"mean_dd_length_nopunct\": 27.0071}, \"bottom_10pct\": {\"n\": 28, \"mean_tree_depth\": 6.25, \"mean_branching_factor\": 2.803, \"mean_max_dd\": 8.2857, \"mean_max_dd_rel_pos\": 0.529, \"prop_has_conj\": 0.6786, \"prop_has_relcl\": 0.3929, \"mean_token_count\": 27.6786, \"mean_dd_length_nopunct\": 23.6071}, \"comparisons\": {\"tree_depth\": {\"U\": 4942.5, \"p\": 0.024569569665521984, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 4125.0, \"p\": 0.696277658592288, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 1567.5, \"p\": 1.3617210886350946e-07, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 3398.5, \"p\": 0.22409650079719423, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.6786, \"full_prop\": 0.7908}, \"has_relcl\": {\"bottom_10pct_prop\": 0.3929, \"full_prop\": 0.2872}}}",
+          "metadata_treebank_id": "en_gentle",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gum\"}",
+          "output": "{\"full_population\": {\"n\": 4917, \"mean_tree_depth\": 5.4299, \"mean_branching_factor\": 2.7552, \"mean_max_dd\": 14.9528, \"mean_max_dd_rel_pos\": 0.5391, \"prop_has_conj\": 0.6992, \"prop_has_relcl\": 0.3051, \"mean_token_count\": 31.6502, \"mean_dd_length_nopunct\": 26.7305}, \"bottom_10pct\": {\"n\": 491, \"mean_tree_depth\": 6.0978, \"mean_branching_factor\": 2.8518, \"mean_max_dd\": 9.6375, \"mean_max_dd_rel_pos\": 0.5078, \"prop_has_conj\": 0.6741, \"prop_has_relcl\": 0.4399, \"mean_token_count\": 29.0916, \"mean_dd_length_nopunct\": 25.057}, \"comparisons\": {\"tree_depth\": {\"U\": 1489572.0, \"p\": 2.0019251555045582e-18, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 1361959.0, \"p\": 2.665641639367688e-06, \"significant_05\": \"True\"}, \"max_dd\": {\"U\": 622643.0, \"p\": 1.8841673351377475e-70, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 1054520.0, \"p\": 3.6431083353345117e-06, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.6741, \"full_prop\": 0.6992}, \"has_relcl\": {\"bottom_10pct_prop\": 0.4399, \"full_prop\": 0.3051}}}",
+          "metadata_treebank_id": "en_gum",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_lines\"}",
+          "output": "{\"full_population\": {\"n\": 2127, \"mean_tree_depth\": 5.3268, \"mean_branching_factor\": 2.8422, \"mean_max_dd\": 14.6465, \"mean_max_dd_rel_pos\": 0.5567, \"prop_has_conj\": 0.7217, \"prop_has_relcl\": 0.2915, \"mean_token_count\": 30.7748, \"mean_dd_length_nopunct\": 26.4006}, \"bottom_10pct\": {\"n\": 212, \"mean_tree_depth\": 6.0943, \"mean_branching_factor\": 2.8949, \"mean_max_dd\": 8.9906, \"mean_max_dd_rel_pos\": 0.4729, \"prop_has_conj\": 0.6368, \"prop_has_relcl\": 0.3915, \"mean_token_count\": 27.6887, \"mean_dd_length_nopunct\": 23.9764}, \"comparisons\": {\"tree_depth\": {\"U\": 286161.0, \"p\": 3.567905655916067e-11, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 242563.0, \"p\": 0.0680772443693507, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 109091.0, \"p\": 1.8337300692327696e-35, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 189731.0, \"p\": 0.00013561664869132022, \"significant_05\": \"True\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.6368, \"full_prop\": 0.7217}, \"has_relcl\": {\"bottom_10pct_prop\": 0.3915, \"full_prop\": 0.2915}}}",
+          "metadata_treebank_id": "en_lines",
+          "predict_bottom10pct_deeper": "True"
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_parisstories\"}",
+          "output": "{\"full_population\": {\"n\": 742, \"mean_tree_depth\": 4.7561, \"mean_branching_factor\": 2.9522, \"mean_max_dd\": 14.7574, \"mean_max_dd_rel_pos\": 0.4977, \"prop_has_conj\": 0.4596, \"prop_has_relcl\": 0.2534, \"mean_token_count\": 29.8154, \"mean_dd_length_nopunct\": 23.2722}, \"bottom_10pct\": {\"n\": 74, \"mean_tree_depth\": 5.3649, \"mean_branching_factor\": 3.0287, \"mean_max_dd\": 11.2432, \"mean_max_dd_rel_pos\": 0.6108, \"prop_has_conj\": 0.4324, \"prop_has_relcl\": 0.4459, \"mean_token_count\": 29.0, \"mean_dd_length_nopunct\": 23.1486}, \"comparisons\": {\"tree_depth\": {\"U\": 34090.5, \"p\": 0.0004317684991048621, \"significant_05\": \"True\"}, \"branching_factor\": {\"U\": 30572.5, \"p\": 0.10658263123442702, \"significant_05\": \"False\"}, \"max_dd\": {\"U\": 18336.5, \"p\": 2.3114106612060035e-06, \"significant_05\": \"True\"}, \"token_count\": {\"U\": 26893.0, \"p\": 0.7715062637143872, \"significant_05\": \"False\"}, \"has_conj\": {\"bottom_10pct_prop\": 0.4324, \"full_prop\": 0.4596}, \"has_relcl\": {\"bottom_10pct_prop\": 0.4459, \"full_prop\": 0.2534}}}",
+          "metadata_treebank_id": "fr_parisstories",
+          "predict_bottom10pct_deeper": "True"
+        }
+      ]
+    },
+    {
+      "dataset": "aggregate_summary",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"pooled_30_treebanks\"}",
+          "output": "{\"n_treebanks\": 30, \"n_pervasive\": 30, \"n_significant_p001\": 30, \"n_significant_p01\": 30, \"pooled_estimate\": -0.19398134943934636, \"median_mean_excess\": -0.225884, \"prop_treebanks_majority_negative\": 1.0, \"aggregate_subtype_enrichment\": {\"tree_depth\": {\"n_significant\": 19, \"n_total\": 30, \"dominant_direction\": \"higher\"}, \"branching_factor\": {\"n_significant\": 19, \"n_total\": 30, \"dominant_direction\": \"higher\"}, \"max_dd\": {\"n_significant\": 28, \"n_total\": 30, \"dominant_direction\": \"lower\"}, \"token_count\": {\"n_significant\": 15, \"n_total\": 30, \"dominant_direction\": \"lower\"}}, \"spearman_case_vs_excess\": {\"rho\": 0.36875657776037823, \"p\": 0.04493758077594705}, \"figures_generated\": [\"fig1_excess_rpl_histogram.png\", \"fig2_excess_by_wordorder.png\", \"fig3_case_vs_excess.png\", \"fig4_length_threshold_by_modality.png\", \"fig5_forest_plot.png\", \"fig6_pervasiveness_barplot.png\"], \"selection_groups\": {\"largest\": [\"de_hdt\", \"cs_pdtc\", \"ru_syntagrus\", \"ru_taiga\", \"ja_bccwjluw\", \"is_icepahc\", \"ro_nonstandard\", \"es_ancora\", \"ca_ancora\", \"cs_cac\"], \"diverse\": [\"bm_crb\", \"eu_bdt\", \"bor_bdt\", \"bxr_bdt\", \"eo_prago\", \"kk_ktb\", \"naq_kdt\", \"ta_ttb\", \"vi_vtb\", \"sjo_xdt\"], \"spoken\": [\"bej_autogramm\", \"yue_hk\", \"zh_hk\", \"da_ddt\", \"en_childes\", \"en_eslspok\", \"en_gentle\", \"en_gum\", \"en_lines\", \"fr_parisstories\"]}}",
+          "metadata_analysis_type": "aggregate",
+          "predict_hypothesis_supported": "True"
+        }
+      ]
+    },
+    {
+      "dataset": "per_sentence_details",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"de_hdt\", \"sentence_id\": \"hdt-s148627\"}",
+          "output": "{\"sentence_id\": \"hdt-s148627\", \"token_count\": 24, \"dd_length_nopunct\": 18, \"observed_r1\": -0.661142, \"rpl_mean_r1\": 0.182183, \"rpl_std_r1\": 0.294265, \"excess_rpl\": -0.843325, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.875, \"max_dd\": 3, \"max_dd_relative_pos\": 0.111, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "de_hdt",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.843325"
+        },
+        {
+          "input": "{\"treebank_id\": \"de_hdt\", \"sentence_id\": \"hdt-s90386\"}",
+          "output": "{\"sentence_id\": \"hdt-s90386\", \"token_count\": 34, \"dd_length_nopunct\": 21, \"observed_r1\": -0.659271, \"rpl_mean_r1\": 0.183583, \"rpl_std_r1\": 0.227104, \"excess_rpl\": -0.842854, \"n_valid_perms\": 50, \"tree_depth\": 13, \"branching_factor\": 2.538, \"max_dd\": 4, \"max_dd_relative_pos\": 0.714, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 12}",
+          "metadata_treebank_id": "de_hdt",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.842854"
+        },
+        {
+          "input": "{\"treebank_id\": \"de_hdt\", \"sentence_id\": \"hdt-s196782\"}",
+          "output": "{\"sentence_id\": \"hdt-s196782\", \"token_count\": 22, \"dd_length_nopunct\": 18, \"observed_r1\": -0.710999, \"rpl_mean_r1\": 0.129281, \"rpl_std_r1\": 0.230611, \"excess_rpl\": -0.840279, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.333, \"max_dd\": 3, \"max_dd_relative_pos\": 0.056, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "de_hdt",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.840279"
+        },
+        {
+          "input": "{\"treebank_id\": \"de_hdt\", \"sentence_id\": \"hdt-s66572\"}",
+          "output": "{\"sentence_id\": \"hdt-s66572\", \"token_count\": 47, \"dd_length_nopunct\": 38, \"observed_r1\": -0.507272, \"rpl_mean_r1\": 0.308085, \"rpl_std_r1\": 0.206066, \"excess_rpl\": -0.815358, \"n_valid_perms\": 50, \"tree_depth\": 12, \"branching_factor\": 3.538, \"max_dd\": 6, \"max_dd_relative_pos\": 0.632, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 8}",
+          "metadata_treebank_id": "de_hdt",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.815358"
+        },
+        {
+          "input": "{\"treebank_id\": \"de_hdt\", \"sentence_id\": \"hdt-s205070\"}",
+          "output": "{\"sentence_id\": \"hdt-s205070\", \"token_count\": 23, \"dd_length_nopunct\": 20, \"observed_r1\": -0.508491, \"rpl_mean_r1\": 0.301738, \"rpl_std_r1\": 0.269709, \"excess_rpl\": -0.810229, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 3.143, \"max_dd\": 7, \"max_dd_relative_pos\": 0.1, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "de_hdt",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.810229"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\", \"sentence_id\": \"wsj2372-001-p1s2\"}",
+          "output": "{\"sentence_id\": \"wsj2372-001-p1s2\", \"token_count\": 22, \"dd_length_nopunct\": 18, \"observed_r1\": -0.553005, \"rpl_mean_r1\": 0.3521, \"rpl_std_r1\": 0.283504, \"excess_rpl\": -0.905105, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.0, \"max_dd\": 5, \"max_dd_relative_pos\": 0.889, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "cs_pdtc",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.905105"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\", \"sentence_id\": \"ln94205-21-p3s1\"}",
+          "output": "{\"sentence_id\": \"ln94205-21-p3s1\", \"token_count\": 21, \"dd_length_nopunct\": 16, \"observed_r1\": -0.597724, \"rpl_mean_r1\": 0.296042, \"rpl_std_r1\": 0.249574, \"excess_rpl\": -0.893766, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.857, \"max_dd\": 4, \"max_dd_relative_pos\": 0.25, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "cs_pdtc",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.893766"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\", \"sentence_id\": \"wsj0490-001-p1s7\"}",
+          "output": "{\"sentence_id\": \"wsj0490-001-p1s7\", \"token_count\": 23, \"dd_length_nopunct\": 20, \"observed_r1\": -0.594282, \"rpl_mean_r1\": 0.284832, \"rpl_std_r1\": 0.250068, \"excess_rpl\": -0.879114, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.75, \"max_dd\": 4, \"max_dd_relative_pos\": 0.3, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "cs_pdtc",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.879114"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\", \"sentence_id\": \"wsj0559-001-p1s27\"}",
+          "output": "{\"sentence_id\": \"wsj0559-001-p1s27\", \"token_count\": 23, \"dd_length_nopunct\": 17, \"observed_r1\": -0.491195, \"rpl_mean_r1\": 0.365794, \"rpl_std_r1\": 0.291399, \"excess_rpl\": -0.856989, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.75, \"max_dd\": 5, \"max_dd_relative_pos\": 0.471, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "cs_pdtc",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.856989"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_pdtc\", \"sentence_id\": \"wsj0955-001-p1s22\"}",
+          "output": "{\"sentence_id\": \"wsj0955-001-p1s22\", \"token_count\": 33, \"dd_length_nopunct\": 30, \"observed_r1\": -0.628353, \"rpl_mean_r1\": 0.223881, \"rpl_std_r1\": 0.224078, \"excess_rpl\": -0.852234, \"n_valid_perms\": 50, \"tree_depth\": 12, \"branching_factor\": 2.286, \"max_dd\": 4, \"max_dd_relative_pos\": 0.8, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "cs_pdtc",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.852234"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\", \"sentence_id\": \"uppsalaKorp_725.xml_15\"}",
+          "output": "{\"sentence_id\": \"uppsalaKorp_725.xml_15\", \"token_count\": 23, \"dd_length_nopunct\": 18, \"observed_r1\": -0.632349, \"rpl_mean_r1\": 0.206188, \"rpl_std_r1\": 0.306423, \"excess_rpl\": -0.838537, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.75, \"max_dd\": 4, \"max_dd_relative_pos\": 0.5, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.838537"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\", \"sentence_id\": \"2020_RFFIMoskva_2042.xml_446\"}",
+          "output": "{\"sentence_id\": \"2020_RFFIMoskva_2042.xml_446\", \"token_count\": 28, \"dd_length_nopunct\": 20, \"observed_r1\": -0.674437, \"rpl_mean_r1\": 0.158458, \"rpl_std_r1\": 0.222822, \"excess_rpl\": -0.832895, \"n_valid_perms\": 50, \"tree_depth\": 10, \"branching_factor\": 2.455, \"max_dd\": 3, \"max_dd_relative_pos\": 0.05, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 7}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.832895"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\", \"sentence_id\": \"2003Dvoe_v_dekabre.xml_142\"}",
+          "output": "{\"sentence_id\": \"2003Dvoe_v_dekabre.xml_142\", \"token_count\": 22, \"dd_length_nopunct\": 18, \"observed_r1\": -0.433999, \"rpl_mean_r1\": 0.358557, \"rpl_std_r1\": 0.288812, \"excess_rpl\": -0.792556, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.0, \"max_dd\": 5, \"max_dd_relative_pos\": 0.278, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.792556"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\", \"sentence_id\": \"2003Chto_doktor_propisal.xml_53\"}",
+          "output": "{\"sentence_id\": \"2003Chto_doktor_propisal.xml_53\", \"token_count\": 22, \"dd_length_nopunct\": 17, \"observed_r1\": -0.484224, \"rpl_mean_r1\": 0.301676, \"rpl_std_r1\": 0.274306, \"excess_rpl\": -0.7859, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.0, \"max_dd\": 3, \"max_dd_relative_pos\": 0.176, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.7859"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_syntagrus\", \"sentence_id\": \"2013Poslednyaya_taina.xml_19\"}",
+          "output": "{\"sentence_id\": \"2013Poslednyaya_taina.xml_19\", \"token_count\": 23, \"dd_length_nopunct\": 18, \"observed_r1\": -0.50801, \"rpl_mean_r1\": 0.262861, \"rpl_std_r1\": 0.239589, \"excess_rpl\": -0.770871, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.444, \"max_dd\": 4, \"max_dd_relative_pos\": 0.222, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "ru_syntagrus",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.770871"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_taiga\", \"sentence_id\": \"otvet.mail.ru-question-222206948-5\"}",
+          "output": "{\"sentence_id\": \"otvet.mail.ru-question-222206948-5\", \"token_count\": 20, \"dd_length_nopunct\": 17, \"observed_r1\": -0.807852, \"rpl_mean_r1\": 0.195062, \"rpl_std_r1\": 0.239867, \"excess_rpl\": -1.002913, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.111, \"max_dd\": 2, \"max_dd_relative_pos\": 0.0, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "ru_taiga",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-1.002913"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_taiga\", \"sentence_id\": \"uch-nauch--narovchatov--narovchatov-6780\"}",
+          "output": "{\"sentence_id\": \"uch-nauch--narovchatov--narovchatov-6780\", \"token_count\": 22, \"dd_length_nopunct\": 17, \"observed_r1\": -0.606792, \"rpl_mean_r1\": 0.342419, \"rpl_std_r1\": 0.244868, \"excess_rpl\": -0.949211, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.0, \"max_dd\": 4, \"max_dd_relative_pos\": 0.647, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "ru_taiga",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.949211"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_taiga\", \"sentence_id\": \"uch-nauch--encicl_litved--slovar-liter1988_157-10\"}",
+          "output": "{\"sentence_id\": \"uch-nauch--encicl_litved--slovar-liter1988_157-10\", \"token_count\": 22, \"dd_length_nopunct\": 13, \"observed_r1\": -0.524523, \"rpl_mean_r1\": 0.318472, \"rpl_std_r1\": 0.272538, \"excess_rpl\": -0.842995, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.0, \"max_dd\": 4, \"max_dd_relative_pos\": 0.231, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 8}",
+          "metadata_treebank_id": "ru_taiga",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.842995"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_taiga\", \"sentence_id\": \"uch-nauch--vartanyan--vartanyan_puteshestvie_v_slovo-1657\"}",
+          "output": "{\"sentence_id\": \"uch-nauch--vartanyan--vartanyan_puteshestvie_v_slovo-1657\", \"token_count\": 20, \"dd_length_nopunct\": 13, \"observed_r1\": -0.517075, \"rpl_mean_r1\": 0.312923, \"rpl_std_r1\": 0.224045, \"excess_rpl\": -0.829998, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.375, \"max_dd\": 3, \"max_dd_relative_pos\": 0.462, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "ru_taiga",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.829998"
+        },
+        {
+          "input": "{\"treebank_id\": \"ru_taiga\", \"sentence_id\": \"fiction-kids--charskaya--charskaya_50-1491\"}",
+          "output": "{\"sentence_id\": \"fiction-kids--charskaya--charskaya_50-1491\", \"token_count\": 26, \"dd_length_nopunct\": 18, \"observed_r1\": -0.620992, \"rpl_mean_r1\": 0.202895, \"rpl_std_r1\": 0.225452, \"excess_rpl\": -0.823887, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.5, \"max_dd\": 4, \"max_dd_relative_pos\": 0.056, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 7}",
+          "metadata_treebank_id": "ru_taiga",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.823887"
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_bccwjluw\", \"sentence_id\": \"C038p_OW6X_00054-21\"}",
+          "output": "{\"sentence_id\": \"C038p_OW6X_00054-21\", \"token_count\": 32, \"dd_length_nopunct\": 21, \"observed_r1\": -0.947216, \"rpl_mean_r1\": 0.173375, \"rpl_std_r1\": 0.243526, \"excess_rpl\": -1.120591, \"n_valid_perms\": 50, \"tree_depth\": 11, \"branching_factor\": 2.818, \"max_dd\": 3, \"max_dd_relative_pos\": 0.048, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 10}",
+          "metadata_treebank_id": "ja_bccwjluw",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-1.120591"
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_bccwjluw\", \"sentence_id\": \"C046n_PM41_00113-9\"}",
+          "output": "{\"sentence_id\": \"C046n_PM41_00113-9\", \"token_count\": 24, \"dd_length_nopunct\": 15, \"observed_r1\": -0.922593, \"rpl_mean_r1\": 0.168888, \"rpl_std_r1\": 0.292096, \"excess_rpl\": -1.091481, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 1.438, \"max_dd\": 3, \"max_dd_relative_pos\": 0.067, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 8}",
+          "metadata_treebank_id": "ja_bccwjluw",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-1.091481"
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_bccwjluw\", \"sentence_id\": \"OC06_01630-2\"}",
+          "output": "{\"sentence_id\": \"OC06_01630-2\", \"token_count\": 23, \"dd_length_nopunct\": 10, \"observed_r1\": -0.627143, \"rpl_mean_r1\": 0.331958, \"rpl_std_r1\": 0.256113, \"excess_rpl\": -0.959101, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 4.4, \"max_dd\": 2, \"max_dd_relative_pos\": 0.0, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 12}",
+          "metadata_treebank_id": "ja_bccwjluw",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.959101"
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_bccwjluw\", \"sentence_id\": \"D249n_PN1b_00016-3\"}",
+          "output": "{\"sentence_id\": \"D249n_PN1b_00016-3\", \"token_count\": 21, \"dd_length_nopunct\": 18, \"observed_r1\": -0.602321, \"rpl_mean_r1\": 0.308051, \"rpl_std_r1\": 0.280445, \"excess_rpl\": -0.910373, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 4.0, \"max_dd\": 4, \"max_dd_relative_pos\": 0.111, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "ja_bccwjluw",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.910373"
+        },
+        {
+          "input": "{\"treebank_id\": \"ja_bccwjluw\", \"sentence_id\": \"A004p_PB22_00002-86\"}",
+          "output": "{\"sentence_id\": \"A004p_PB22_00002-86\", \"token_count\": 22, \"dd_length_nopunct\": 17, \"observed_r1\": -0.547949, \"rpl_mean_r1\": 0.303916, \"rpl_std_r1\": 0.299587, \"excess_rpl\": -0.851866, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.0, \"max_dd\": 4, \"max_dd_relative_pos\": 0.235, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "ja_bccwjluw",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.851866"
+        },
+        {
+          "input": "{\"treebank_id\": \"is_icepahc\", \"sentence_id\": \"1300.ALEXANDER.NAR-SAG,1066.6416\"}",
+          "output": "{\"sentence_id\": \"1300.ALEXANDER.NAR-SAG,1066.6416\", \"token_count\": 34, \"dd_length_nopunct\": 27, \"observed_r1\": -0.491984, \"rpl_mean_r1\": 0.37468, \"rpl_std_r1\": 0.247592, \"excess_rpl\": -0.866664, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.3, \"max_dd\": 7, \"max_dd_relative_pos\": 0.444, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "is_icepahc",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.866664"
+        },
+        {
+          "input": "{\"treebank_id\": \"is_icepahc\", \"sentence_id\": \"1791.JONSTEINGRIMS.BIO-AUT,478.23462\"}",
+          "output": "{\"sentence_id\": \"1791.JONSTEINGRIMS.BIO-AUT,478.23462\", \"token_count\": 21, \"dd_length_nopunct\": 18, \"observed_r1\": -0.236409, \"rpl_mean_r1\": 0.560943, \"rpl_std_r1\": 0.241176, \"excess_rpl\": -0.797353, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 3.333, \"max_dd\": 7, \"max_dd_relative_pos\": 0.556, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "is_icepahc",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.797353"
+        },
+        {
+          "input": "{\"treebank_id\": \"is_icepahc\", \"sentence_id\": \"1150.HOMILIUBOK.REL-SER,1414.1414\"}",
+          "output": "{\"sentence_id\": \"1150.HOMILIUBOK.REL-SER,1414.1414\", \"token_count\": 32, \"dd_length_nopunct\": 28, \"observed_r1\": -0.368542, \"rpl_mean_r1\": 0.418784, \"rpl_std_r1\": 0.246285, \"excess_rpl\": -0.787326, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.818, \"max_dd\": 7, \"max_dd_relative_pos\": 0.357, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "is_icepahc",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.787326"
+        },
+        {
+          "input": "{\"treebank_id\": \"is_icepahc\", \"sentence_id\": \"1920.ARIN.REL-SER,13.4237\"}",
+          "output": "{\"sentence_id\": \"1920.ARIN.REL-SER,13.4237\", \"token_count\": 20, \"dd_length_nopunct\": 13, \"observed_r1\": -0.323436, \"rpl_mean_r1\": 0.463482, \"rpl_std_r1\": 0.205665, \"excess_rpl\": -0.786917, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 2.111, \"max_dd\": 12, \"max_dd_relative_pos\": 0.692, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "is_icepahc",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.786917"
+        },
+        {
+          "input": "{\"treebank_id\": \"is_icepahc\", \"sentence_id\": \"1985.MARGSAGA.NAR-FIC,235.30762\"}",
+          "output": "{\"sentence_id\": \"1985.MARGSAGA.NAR-FIC,235.30762\", \"token_count\": 36, \"dd_length_nopunct\": 34, \"observed_r1\": -0.407092, \"rpl_mean_r1\": 0.368038, \"rpl_std_r1\": 0.23645, \"excess_rpl\": -0.77513, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.917, \"max_dd\": 7, \"max_dd_relative_pos\": 0.765, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "is_icepahc",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.77513"
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_nonstandard\", \"sentence_id\": \"train-4074\"}",
+          "output": "{\"sentence_id\": \"train-4074\", \"token_count\": 22, \"dd_length_nopunct\": 17, \"observed_r1\": -0.529402, \"rpl_mean_r1\": 0.322706, \"rpl_std_r1\": 0.266707, \"excess_rpl\": -0.852108, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.625, \"max_dd\": 5, \"max_dd_relative_pos\": 0.706, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "ro_nonstandard",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.852108"
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_nonstandard\", \"sentence_id\": \"train-21228\"}",
+          "output": "{\"sentence_id\": \"train-21228\", \"token_count\": 25, \"dd_length_nopunct\": 22, \"observed_r1\": -0.44688, \"rpl_mean_r1\": 0.392943, \"rpl_std_r1\": 0.271907, \"excess_rpl\": -0.839823, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 4.0, \"max_dd\": 7, \"max_dd_relative_pos\": 0.409, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "ro_nonstandard",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.839823"
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_nonstandard\", \"sentence_id\": \"train-20283\"}",
+          "output": "{\"sentence_id\": \"train-20283\", \"token_count\": 27, \"dd_length_nopunct\": 23, \"observed_r1\": -0.354572, \"rpl_mean_r1\": 0.442989, \"rpl_std_r1\": 0.263804, \"excess_rpl\": -0.797562, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 4.333, \"max_dd\": 7, \"max_dd_relative_pos\": 0.87, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "ro_nonstandard",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.797562"
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_nonstandard\", \"sentence_id\": \"train-11472\"}",
+          "output": "{\"sentence_id\": \"train-11472\", \"token_count\": 21, \"dd_length_nopunct\": 17, \"observed_r1\": -0.487743, \"rpl_mean_r1\": 0.299651, \"rpl_std_r1\": 0.312571, \"excess_rpl\": -0.787394, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.857, \"max_dd\": 5, \"max_dd_relative_pos\": 0.882, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "ro_nonstandard",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.787394"
+        },
+        {
+          "input": "{\"treebank_id\": \"ro_nonstandard\", \"sentence_id\": \"train-23206\"}",
+          "output": "{\"sentence_id\": \"train-23206\", \"token_count\": 21, \"dd_length_nopunct\": 17, \"observed_r1\": -0.489651, \"rpl_mean_r1\": 0.296421, \"rpl_std_r1\": 0.316847, \"excess_rpl\": -0.786072, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 5.0, \"max_dd\": 6, \"max_dd_relative_pos\": 0.294, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "ro_nonstandard",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.786072"
+        },
+        {
+          "input": "{\"treebank_id\": \"es_ancora\", \"sentence_id\": \"CESS-CAST-P-19991001-59-s7\"}",
+          "output": "{\"sentence_id\": \"CESS-CAST-P-19991001-59-s7\", \"token_count\": 27, \"dd_length_nopunct\": 24, \"observed_r1\": -0.563919, \"rpl_mean_r1\": 0.236567, \"rpl_std_r1\": 0.237209, \"excess_rpl\": -0.800486, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.364, \"max_dd\": 4, \"max_dd_relative_pos\": 0.458, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "es_ancora",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.800486"
+        },
+        {
+          "input": "{\"treebank_id\": \"es_ancora\", \"sentence_id\": \"CESS-CAST-P-20011202-14-s6C\"}",
+          "output": "{\"sentence_id\": \"CESS-CAST-P-20011202-14-s6C\", \"token_count\": 21, \"dd_length_nopunct\": 18, \"observed_r1\": -0.467976, \"rpl_mean_r1\": 0.320794, \"rpl_std_r1\": 0.276508, \"excess_rpl\": -0.788771, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.333, \"max_dd\": 4, \"max_dd_relative_pos\": 0.889, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "es_ancora",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.788771"
+        },
+        {
+          "input": "{\"treebank_id\": \"es_ancora\", \"sentence_id\": \"CESS-CAST-AA-20000310-8368-s8\"}",
+          "output": "{\"sentence_id\": \"CESS-CAST-AA-20000310-8368-s8\", \"token_count\": 30, \"dd_length_nopunct\": 24, \"observed_r1\": -0.45076, \"rpl_mean_r1\": 0.334717, \"rpl_std_r1\": 0.257507, \"excess_rpl\": -0.785477, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 3.222, \"max_dd\": 5, \"max_dd_relative_pos\": 0.25, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "es_ancora",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.785477"
+        },
+        {
+          "input": "{\"treebank_id\": \"es_ancora\", \"sentence_id\": \"CESS-CAST-AA-20000929-24844-s14\"}",
+          "output": "{\"sentence_id\": \"CESS-CAST-AA-20000929-24844-s14\", \"token_count\": 36, \"dd_length_nopunct\": 32, \"observed_r1\": -0.402343, \"rpl_mean_r1\": 0.370649, \"rpl_std_r1\": 0.258611, \"excess_rpl\": -0.772993, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.917, \"max_dd\": 10, \"max_dd_relative_pos\": 0.625, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "es_ancora",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.772993"
+        },
+        {
+          "input": "{\"treebank_id\": \"es_ancora\", \"sentence_id\": \"CESS-CAST-P-20000202-21_b-s31\"}",
+          "output": "{\"sentence_id\": \"CESS-CAST-P-20000202-21_b-s31\", \"token_count\": 21, \"dd_length_nopunct\": 17, \"observed_r1\": -0.548132, \"rpl_mean_r1\": 0.223117, \"rpl_std_r1\": 0.305068, \"excess_rpl\": -0.771249, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.333, \"max_dd\": 4, \"max_dd_relative_pos\": 0.882, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "es_ancora",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.771249"
+        },
+        {
+          "input": "{\"treebank_id\": \"ca_ancora\", \"sentence_id\": \"CESS-CAT-AAP-19990302-23-s66\"}",
+          "output": "{\"sentence_id\": \"CESS-CAT-AAP-19990302-23-s66\", \"token_count\": 24, \"dd_length_nopunct\": 18, \"observed_r1\": -0.581121, \"rpl_mean_r1\": 0.287195, \"rpl_std_r1\": 0.298099, \"excess_rpl\": -0.868316, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.556, \"max_dd\": 4, \"max_dd_relative_pos\": 0.389, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "ca_ancora",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.868316"
+        },
+        {
+          "input": "{\"treebank_id\": \"ca_ancora\", \"sentence_id\": \"CESS-CAT-AAP-20000402-22_a-s41\"}",
+          "output": "{\"sentence_id\": \"CESS-CAT-AAP-20000402-22_a-s41\", \"token_count\": 24, \"dd_length_nopunct\": 20, \"observed_r1\": -0.498859, \"rpl_mean_r1\": 0.300766, \"rpl_std_r1\": 0.26551, \"excess_rpl\": -0.799625, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.875, \"max_dd\": 6, \"max_dd_relative_pos\": 0.4, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "ca_ancora",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.799625"
+        },
+        {
+          "input": "{\"treebank_id\": \"ca_ancora\", \"sentence_id\": \"CESS-CAT-AAP-20020509-54863-s2\"}",
+          "output": "{\"sentence_id\": \"CESS-CAT-AAP-20020509-54863-s2\", \"token_count\": 28, \"dd_length_nopunct\": 25, \"observed_r1\": -0.360929, \"rpl_mean_r1\": 0.425166, \"rpl_std_r1\": 0.258951, \"excess_rpl\": -0.786096, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.375, \"max_dd\": 8, \"max_dd_relative_pos\": 0.64, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "ca_ancora",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.786096"
+        },
+        {
+          "input": "{\"treebank_id\": \"ca_ancora\", \"sentence_id\": \"3LB-CAT-204nou-s7\"}",
+          "output": "{\"sentence_id\": \"3LB-CAT-204nou-s7\", \"token_count\": 21, \"dd_length_nopunct\": 17, \"observed_r1\": -0.576012, \"rpl_mean_r1\": 0.19415, \"rpl_std_r1\": 0.295386, \"excess_rpl\": -0.770162, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.857, \"max_dd\": 4, \"max_dd_relative_pos\": 0.353, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "ca_ancora",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.770162"
+        },
+        {
+          "input": "{\"treebank_id\": \"ca_ancora\", \"sentence_id\": \"CESS-CAT-AAP-20020402-16-s39\"}",
+          "output": "{\"sentence_id\": \"CESS-CAT-AAP-20020402-16-s39\", \"token_count\": 28, \"dd_length_nopunct\": 22, \"observed_r1\": -0.507919, \"rpl_mean_r1\": 0.253243, \"rpl_std_r1\": 0.275016, \"excess_rpl\": -0.761162, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.0, \"max_dd\": 5, \"max_dd_relative_pos\": 0.5, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "ca_ancora",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.761162"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cac\", \"sentence_id\": \"n17w-s54\"}",
+          "output": "{\"sentence_id\": \"n17w-s54\", \"token_count\": 21, \"dd_length_nopunct\": 16, \"observed_r1\": -0.509916, \"rpl_mean_r1\": 0.352636, \"rpl_std_r1\": 0.240839, \"excess_rpl\": -0.862552, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.857, \"max_dd\": 4, \"max_dd_relative_pos\": 0.875, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "cs_cac",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.862552"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cac\", \"sentence_id\": \"a04w-s18\"}",
+          "output": "{\"sentence_id\": \"a04w-s18\", \"token_count\": 29, \"dd_length_nopunct\": 24, \"observed_r1\": -0.472421, \"rpl_mean_r1\": 0.36416, \"rpl_std_r1\": 0.259335, \"excess_rpl\": -0.836581, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.5, \"max_dd\": 6, \"max_dd_relative_pos\": 0.958, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "cs_cac",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.836581"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cac\", \"sentence_id\": \"s29w-s114\"}",
+          "output": "{\"sentence_id\": \"s29w-s114\", \"token_count\": 24, \"dd_length_nopunct\": 20, \"observed_r1\": -0.392771, \"rpl_mean_r1\": 0.421001, \"rpl_std_r1\": 0.227072, \"excess_rpl\": -0.813772, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.556, \"max_dd\": 4, \"max_dd_relative_pos\": 0.25, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "cs_cac",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.813772"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cac\", \"sentence_id\": \"s49w-s90\"}",
+          "output": "{\"sentence_id\": \"s49w-s90\", \"token_count\": 23, \"dd_length_nopunct\": 18, \"observed_r1\": -0.57259, \"rpl_mean_r1\": 0.203758, \"rpl_std_r1\": 0.255998, \"excess_rpl\": -0.776348, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.444, \"max_dd\": 4, \"max_dd_relative_pos\": 0.444, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "cs_cac",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.776348"
+        },
+        {
+          "input": "{\"treebank_id\": \"cs_cac\", \"sentence_id\": \"s03w-s29\"}",
+          "output": "{\"sentence_id\": \"s03w-s29\", \"token_count\": 23, \"dd_length_nopunct\": 18, \"observed_r1\": -0.529964, \"rpl_mean_r1\": 0.226264, \"rpl_std_r1\": 0.276306, \"excess_rpl\": -0.756228, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.143, \"max_dd\": 6, \"max_dd_relative_pos\": 0.833, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "cs_cac",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.756228"
+        },
+        {
+          "input": "{\"treebank_id\": \"bm_crb\", \"sentence_id\": \"meyer_gorog-contes_bambara_11namaramatu_denin_karogelen.dis.html:71\"}",
+          "output": "{\"sentence_id\": \"meyer_gorog-contes_bambara_11namaramatu_denin_karogelen.dis.html:71\", \"token_count\": 20, \"dd_length_nopunct\": 17, \"observed_r1\": -0.528912, \"rpl_mean_r1\": 0.223266, \"rpl_std_r1\": 0.2527, \"excess_rpl\": -0.752178, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.714, \"max_dd\": 6, \"max_dd_relative_pos\": 0.471, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "bm_crb",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.752178"
+        },
+        {
+          "input": "{\"treebank_id\": \"bm_crb\", \"sentence_id\": \"meyer_gorog-contes_bambara_06subagamuso_ani_a_biranmuso.dis.html:87\"}",
+          "output": "{\"sentence_id\": \"meyer_gorog-contes_bambara_06subagamuso_ani_a_biranmuso.dis.html:87\", \"token_count\": 23, \"dd_length_nopunct\": 19, \"observed_r1\": -0.374819, \"rpl_mean_r1\": 0.310741, \"rpl_std_r1\": 0.286569, \"excess_rpl\": -0.685561, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 3.143, \"max_dd\": 8, \"max_dd_relative_pos\": 0.579, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "bm_crb",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.685561"
+        },
+        {
+          "input": "{\"treebank_id\": \"bm_crb\", \"sentence_id\": \"meyer_gorog-contes_bambara_03baninyegene_furuli.dis.html:11\"}",
+          "output": "{\"sentence_id\": \"meyer_gorog-contes_bambara_03baninyegene_furuli.dis.html:11\", \"token_count\": 27, \"dd_length_nopunct\": 22, \"observed_r1\": -0.31136, \"rpl_mean_r1\": 0.364142, \"rpl_std_r1\": 0.294327, \"excess_rpl\": -0.675502, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.714, \"max_dd\": 6, \"max_dd_relative_pos\": 0.318, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "bm_crb",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.675502"
+        },
+        {
+          "input": "{\"treebank_id\": \"bm_crb\", \"sentence_id\": \"meyer_gorog-contes_bambara_10amadu_tara.dis.html:48\"}",
+          "output": "{\"sentence_id\": \"meyer_gorog-contes_bambara_10amadu_tara.dis.html:48\", \"token_count\": 39, \"dd_length_nopunct\": 35, \"observed_r1\": -0.34687, \"rpl_mean_r1\": 0.293768, \"rpl_std_r1\": 0.216404, \"excess_rpl\": -0.640638, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.714, \"max_dd\": 8, \"max_dd_relative_pos\": 0.829, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "bm_crb",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.640638"
+        },
+        {
+          "input": "{\"treebank_id\": \"bm_crb\", \"sentence_id\": \"meyer_gorog-contes_bambara_06subagamuso_ani_a_biranmuso.dis.html:66\"}",
+          "output": "{\"sentence_id\": \"meyer_gorog-contes_bambara_06subagamuso_ani_a_biranmuso.dis.html:66\", \"token_count\": 23, \"dd_length_nopunct\": 19, \"observed_r1\": -0.374819, \"rpl_mean_r1\": 0.258105, \"rpl_std_r1\": 0.281425, \"excess_rpl\": -0.632924, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 3.143, \"max_dd\": 8, \"max_dd_relative_pos\": 0.579, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "bm_crb",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.632924"
+        },
+        {
+          "input": "{\"treebank_id\": \"eu_bdt\", \"sentence_id\": \"train-s3178\"}",
+          "output": "{\"sentence_id\": \"train-s3178\", \"token_count\": 20, \"dd_length_nopunct\": 14, \"observed_r1\": -0.197618, \"rpl_mean_r1\": 0.545622, \"rpl_std_r1\": 0.25163, \"excess_rpl\": -0.743241, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.375, \"max_dd\": 12, \"max_dd_relative_pos\": 0.857, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "eu_bdt",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.743241"
+        },
+        {
+          "input": "{\"treebank_id\": \"eu_bdt\", \"sentence_id\": \"test-s1485\"}",
+          "output": "{\"sentence_id\": \"test-s1485\", \"token_count\": 20, \"dd_length_nopunct\": 15, \"observed_r1\": -0.431801, \"rpl_mean_r1\": 0.290551, \"rpl_std_r1\": 0.27494, \"excess_rpl\": -0.722351, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.167, \"max_dd\": 6, \"max_dd_relative_pos\": 0.867, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "eu_bdt",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.722351"
+        },
+        {
+          "input": "{\"treebank_id\": \"eu_bdt\", \"sentence_id\": \"train-s3032\"}",
+          "output": "{\"sentence_id\": \"train-s3032\", \"token_count\": 21, \"dd_length_nopunct\": 13, \"observed_r1\": -0.368798, \"rpl_mean_r1\": 0.31577, \"rpl_std_r1\": 0.241551, \"excess_rpl\": -0.684568, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 2.857, \"max_dd\": 10, \"max_dd_relative_pos\": 0.846, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 7}",
+          "metadata_treebank_id": "eu_bdt",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.684568"
+        },
+        {
+          "input": "{\"treebank_id\": \"eu_bdt\", \"sentence_id\": \"test-s927\"}",
+          "output": "{\"sentence_id\": \"test-s927\", \"token_count\": 31, \"dd_length_nopunct\": 25, \"observed_r1\": -0.375591, \"rpl_mean_r1\": 0.289665, \"rpl_std_r1\": 0.287604, \"excess_rpl\": -0.665257, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.333, \"max_dd\": 10, \"max_dd_relative_pos\": 0.32, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "eu_bdt",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.665257"
+        },
+        {
+          "input": "{\"treebank_id\": \"eu_bdt\", \"sentence_id\": \"train-s4308\"}",
+          "output": "{\"sentence_id\": \"train-s4308\", \"token_count\": 20, \"dd_length_nopunct\": 15, \"observed_r1\": -0.361722, \"rpl_mean_r1\": 0.290849, \"rpl_std_r1\": 0.298645, \"excess_rpl\": -0.65257, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.167, \"max_dd\": 6, \"max_dd_relative_pos\": 0.867, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "eu_bdt",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.65257"
+        },
+        {
+          "input": "{\"treebank_id\": \"bor_bdt\", \"sentence_id\": \"adugo_biri-0168\"}",
+          "output": "{\"sentence_id\": \"adugo_biri-0168\", \"token_count\": 22, \"dd_length_nopunct\": 15, \"observed_r1\": -0.708856, \"rpl_mean_r1\": 0.217669, \"rpl_std_r1\": 0.28274, \"excess_rpl\": -0.926525, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.0, \"max_dd\": 4, \"max_dd_relative_pos\": 0.267, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "bor_bdt",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.926525"
+        },
+        {
+          "input": "{\"treebank_id\": \"bor_bdt\", \"sentence_id\": \"novo_testamento_ochoa-1679\"}",
+          "output": "{\"sentence_id\": \"novo_testamento_ochoa-1679\", \"token_count\": 24, \"dd_length_nopunct\": 18, \"observed_r1\": -0.464316, \"rpl_mean_r1\": 0.258201, \"rpl_std_r1\": 0.284696, \"excess_rpl\": -0.722517, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.875, \"max_dd\": 4, \"max_dd_relative_pos\": 0.444, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "bor_bdt",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.722517"
+        },
+        {
+          "input": "{\"treebank_id\": \"bor_bdt\", \"sentence_id\": \"novo_testamento_ochoa-6471\"}",
+          "output": "{\"sentence_id\": \"novo_testamento_ochoa-6471\", \"token_count\": 25, \"dd_length_nopunct\": 19, \"observed_r1\": -0.377919, \"rpl_mean_r1\": 0.317489, \"rpl_std_r1\": 0.292668, \"excess_rpl\": -0.695408, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.0, \"max_dd\": 8, \"max_dd_relative_pos\": 0.842, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "bor_bdt",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.695408"
+        },
+        {
+          "input": "{\"treebank_id\": \"bor_bdt\", \"sentence_id\": \"novo_testamento_ochoa-6642\"}",
+          "output": "{\"sentence_id\": \"novo_testamento_ochoa-6642\", \"token_count\": 22, \"dd_length_nopunct\": 19, \"observed_r1\": -0.466724, \"rpl_mean_r1\": 0.179585, \"rpl_std_r1\": 0.294969, \"excess_rpl\": -0.646309, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 4.2, \"max_dd\": 5, \"max_dd_relative_pos\": 0.105, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "bor_bdt",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.646309"
+        },
+        {
+          "input": "{\"treebank_id\": \"bor_bdt\", \"sentence_id\": \"novo_testamento_ochoa-5687\"}",
+          "output": "{\"sentence_id\": \"novo_testamento_ochoa-5687\", \"token_count\": 32, \"dd_length_nopunct\": 26, \"observed_r1\": -0.303917, \"rpl_mean_r1\": 0.325567, \"rpl_std_r1\": 0.24903, \"excess_rpl\": -0.629484, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.818, \"max_dd\": 10, \"max_dd_relative_pos\": 0.346, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "bor_bdt",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.629484"
+        },
+        {
+          "input": "{\"treebank_id\": \"bxr_bdt\", \"sentence_id\": \"bxr-ud3::466\"}",
+          "output": "{\"sentence_id\": \"bxr-ud3::466\", \"token_count\": 24, \"dd_length_nopunct\": 19, \"observed_r1\": -0.17963, \"rpl_mean_r1\": 0.455641, \"rpl_std_r1\": 0.286569, \"excess_rpl\": -0.635272, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.3, \"max_dd\": 13, \"max_dd_relative_pos\": 0.263, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "bxr_bdt",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.635272"
+        },
+        {
+          "input": "{\"treebank_id\": \"bxr_bdt\", \"sentence_id\": \"bxr-ud3::892\"}",
+          "output": "{\"sentence_id\": \"bxr-ud3::892\", \"token_count\": 25, \"dd_length_nopunct\": 20, \"observed_r1\": -0.354584, \"rpl_mean_r1\": 0.247518, \"rpl_std_r1\": 0.293911, \"excess_rpl\": -0.602102, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.667, \"max_dd\": 6, \"max_dd_relative_pos\": 0.6, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "bxr_bdt",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.602102"
+        },
+        {
+          "input": "{\"treebank_id\": \"bxr_bdt\", \"sentence_id\": \"bxr-ud3::796\"}",
+          "output": "{\"sentence_id\": \"bxr-ud3::796\", \"token_count\": 20, \"dd_length_nopunct\": 16, \"observed_r1\": -0.268345, \"rpl_mean_r1\": 0.294646, \"rpl_std_r1\": 0.264664, \"excess_rpl\": -0.562991, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.375, \"max_dd\": 13, \"max_dd_relative_pos\": 0.875, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "bxr_bdt",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.562991"
+        },
+        {
+          "input": "{\"treebank_id\": \"bxr_bdt\", \"sentence_id\": \"bxr-ud3::856\"}",
+          "output": "{\"sentence_id\": \"bxr-ud3::856\", \"token_count\": 28, \"dd_length_nopunct\": 22, \"observed_r1\": -0.257714, \"rpl_mean_r1\": 0.271226, \"rpl_std_r1\": 0.23145, \"excess_rpl\": -0.528939, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.25, \"max_dd\": 6, \"max_dd_relative_pos\": 0.0, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "bxr_bdt",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.528939"
+        },
+        {
+          "input": "{\"treebank_id\": \"bxr_bdt\", \"sentence_id\": \"bxr-ud3::461\"}",
+          "output": "{\"sentence_id\": \"bxr-ud3::461\", \"token_count\": 23, \"dd_length_nopunct\": 16, \"observed_r1\": -0.357178, \"rpl_mean_r1\": 0.134092, \"rpl_std_r1\": 0.287427, \"excess_rpl\": -0.491271, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 3.143, \"max_dd\": 10, \"max_dd_relative_pos\": 0.562, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "bxr_bdt",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.491271"
+        },
+        {
+          "input": "{\"treebank_id\": \"eo_prago\", \"sentence_id\": \"prago-022\"}",
+          "output": "{\"sentence_id\": \"prago-022\", \"token_count\": 27, \"dd_length_nopunct\": 23, \"observed_r1\": -0.360822, \"rpl_mean_r1\": 0.138482, \"rpl_std_r1\": 0.25428, \"excess_rpl\": -0.499305, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.889, \"max_dd\": 10, \"max_dd_relative_pos\": 0.391, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "eo_prago",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.499305"
+        },
+        {
+          "input": "{\"treebank_id\": \"eo_prago\", \"sentence_id\": \"DpH-020-005\"}",
+          "output": "{\"sentence_id\": \"DpH-020-005\", \"token_count\": 21, \"dd_length_nopunct\": 18, \"observed_r1\": -0.168395, \"rpl_mean_r1\": 0.326756, \"rpl_std_r1\": 0.254226, \"excess_rpl\": -0.495151, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.5, \"max_dd\": 8, \"max_dd_relative_pos\": 0.833, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "eo_prago",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.495151"
+        },
+        {
+          "input": "{\"treebank_id\": \"eo_prago\", \"sentence_id\": \"prago-045\"}",
+          "output": "{\"sentence_id\": \"prago-045\", \"token_count\": 23, \"dd_length_nopunct\": 19, \"observed_r1\": -0.26612, \"rpl_mean_r1\": 0.194364, \"rpl_std_r1\": 0.239392, \"excess_rpl\": -0.460484, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.444, \"max_dd\": 10, \"max_dd_relative_pos\": 0.474, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "eo_prago",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.460484"
+        },
+        {
+          "input": "{\"treebank_id\": \"eo_prago\", \"sentence_id\": \"prago-028\"}",
+          "output": "{\"sentence_id\": \"prago-028\", \"token_count\": 27, \"dd_length_nopunct\": 23, \"observed_r1\": -0.232923, \"rpl_mean_r1\": 0.21822, \"rpl_std_r1\": 0.250692, \"excess_rpl\": -0.451143, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.364, \"max_dd\": 12, \"max_dd_relative_pos\": 0.435, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "eo_prago",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.451143"
+        },
+        {
+          "input": "{\"treebank_id\": \"eo_prago\", \"sentence_id\": \"prago-015\"}",
+          "output": "{\"sentence_id\": \"prago-015\", \"token_count\": 20, \"dd_length_nopunct\": 17, \"observed_r1\": -0.300042, \"rpl_mean_r1\": 0.131811, \"rpl_std_r1\": 0.273438, \"excess_rpl\": -0.431853, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.714, \"max_dd\": 11, \"max_dd_relative_pos\": 0.588, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "eo_prago",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.431853"
+        },
+        {
+          "input": "{\"treebank_id\": \"kk_ktb\", \"sentence_id\": \"sholpan.tagged.txt:6:222\"}",
+          "output": "{\"sentence_id\": \"sholpan.tagged.txt:6:222\", \"token_count\": 30, \"dd_length_nopunct\": 24, \"observed_r1\": -0.226672, \"rpl_mean_r1\": 0.225076, \"rpl_std_r1\": 0.238117, \"excess_rpl\": -0.451747, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.071, \"max_dd\": 15, \"max_dd_relative_pos\": 0.375, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "kk_ktb",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.451747"
+        },
+        {
+          "input": "{\"treebank_id\": \"kk_ktb\", \"sentence_id\": \"\\u0428\\u044b\\u043c\\u043a\\u0435\\u043d\\u0442.tagged.txt:9:253\"}",
+          "output": "{\"sentence_id\": \"\\u0428\\u044b\\u043c\\u043a\\u0435\\u043d\\u0442.tagged.txt:9:253\", \"token_count\": 26, \"dd_length_nopunct\": 23, \"observed_r1\": -0.329855, \"rpl_mean_r1\": 0.075307, \"rpl_std_r1\": 0.197733, \"excess_rpl\": -0.405162, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 2.5, \"max_dd\": 10, \"max_dd_relative_pos\": 0.957, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "kk_ktb",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.405162"
+        },
+        {
+          "input": "{\"treebank_id\": \"kk_ktb\", \"sentence_id\": \"\\u0418\\u0440\\u0430\\u043d.tagged.txt:46:1251\"}",
+          "output": "{\"sentence_id\": \"\\u0418\\u0440\\u0430\\u043d.tagged.txt:46:1251\", \"token_count\": 25, \"dd_length_nopunct\": 22, \"observed_r1\": -0.247203, \"rpl_mean_r1\": 0.151194, \"rpl_std_r1\": 0.207923, \"excess_rpl\": -0.398397, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.0, \"max_dd\": 17, \"max_dd_relative_pos\": 0.909, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "kk_ktb",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.398397"
+        },
+        {
+          "input": "{\"treebank_id\": \"kk_ktb\", \"sentence_id\": \"\\u0418\\u0440\\u0430\\u043d.tagged.txt:101:2945\"}",
+          "output": "{\"sentence_id\": \"\\u0418\\u0440\\u0430\\u043d.tagged.txt:101:2945\", \"token_count\": 20, \"dd_length_nopunct\": 15, \"observed_r1\": -0.224426, \"rpl_mean_r1\": 0.165853, \"rpl_std_r1\": 0.248745, \"excess_rpl\": -0.390279, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.111, \"max_dd\": 16, \"max_dd_relative_pos\": 0.067, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "kk_ktb",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.390279"
+        },
+        {
+          "input": "{\"treebank_id\": \"kk_ktb\", \"sentence_id\": \"\\u0416\\u0438\\u044b\\u0440\\u043c\\u0430_\\u0411\\u0435\\u0441\\u0456\\u043d\\u0448\\u0456_\\u0421\\u04e9\\u0437.tagged.txt:33:880\"}",
+          "output": "{\"sentence_id\": \"\\u0416\\u0438\\u044b\\u0440\\u043c\\u0430_\\u0411\\u0435\\u0441\\u0456\\u043d\\u0448\\u0456_\\u0421\\u04e9\\u0437.tagged.txt:33:880\", \"token_count\": 25, \"dd_length_nopunct\": 19, \"observed_r1\": -0.129925, \"rpl_mean_r1\": 0.243393, \"rpl_std_r1\": 0.297648, \"excess_rpl\": -0.373318, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 4.0, \"max_dd\": 22, \"max_dd_relative_pos\": 0.0, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "kk_ktb",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.373318"
+        },
+        {
+          "input": "{\"treebank_id\": \"naq_kdt\", \"sentence_id\": \"conversation_Windhoek5_62\"}",
+          "output": "{\"sentence_id\": \"conversation_Windhoek5_62\", \"token_count\": 24, \"dd_length_nopunct\": 21, \"observed_r1\": -0.324885, \"rpl_mean_r1\": 0.438942, \"rpl_std_r1\": 0.284535, \"excess_rpl\": -0.763827, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.833, \"max_dd\": 8, \"max_dd_relative_pos\": 0.619, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "naq_kdt",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.763827"
+        },
+        {
+          "input": "{\"treebank_id\": \"naq_kdt\", \"sentence_id\": \"film_Bridge_635\"}",
+          "output": "{\"sentence_id\": \"film_Bridge_635\", \"token_count\": 23, \"dd_length_nopunct\": 21, \"observed_r1\": -0.309425, \"rpl_mean_r1\": 0.43574, \"rpl_std_r1\": 0.262252, \"excess_rpl\": -0.745165, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 4.4, \"max_dd\": 8, \"max_dd_relative_pos\": 0.524, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "naq_kdt",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.745165"
+        },
+        {
+          "input": "{\"treebank_id\": \"naq_kdt\", \"sentence_id\": \"film_Bridge_872\"}",
+          "output": "{\"sentence_id\": \"film_Bridge_872\", \"token_count\": 29, \"dd_length_nopunct\": 26, \"observed_r1\": -0.43443, \"rpl_mean_r1\": 0.307793, \"rpl_std_r1\": 0.2642, \"excess_rpl\": -0.742223, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.111, \"max_dd\": 6, \"max_dd_relative_pos\": 0.538, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "naq_kdt",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.742223"
+        },
+        {
+          "input": "{\"treebank_id\": \"naq_kdt\", \"sentence_id\": \"film_Bridge_1457\"}",
+          "output": "{\"sentence_id\": \"film_Bridge_1457\", \"token_count\": 21, \"dd_length_nopunct\": 19, \"observed_r1\": -0.34341, \"rpl_mean_r1\": 0.333512, \"rpl_std_r1\": 0.311232, \"excess_rpl\": -0.676922, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.333, \"max_dd\": 11, \"max_dd_relative_pos\": 0.895, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "naq_kdt",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.676922"
+        },
+        {
+          "input": "{\"treebank_id\": \"naq_kdt\", \"sentence_id\": \"film_Bridge_1593\"}",
+          "output": "{\"sentence_id\": \"film_Bridge_1593\", \"token_count\": 21, \"dd_length_nopunct\": 15, \"observed_r1\": -0.294362, \"rpl_mean_r1\": 0.317502, \"rpl_std_r1\": 0.326196, \"excess_rpl\": -0.611864, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 4.0, \"max_dd\": 6, \"max_dd_relative_pos\": 0.467, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "naq_kdt",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.611864"
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_ttb\", \"sentence_id\": \"test-s63\"}",
+          "output": "{\"sentence_id\": \"test-s63\", \"token_count\": 26, \"dd_length_nopunct\": 24, \"observed_r1\": -0.231999, \"rpl_mean_r1\": 0.255491, \"rpl_std_r1\": 0.270769, \"excess_rpl\": -0.48749, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.273, \"max_dd\": 6, \"max_dd_relative_pos\": 0.042, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "ta_ttb",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.48749"
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_ttb\", \"sentence_id\": \"train-s226\"}",
+          "output": "{\"sentence_id\": \"train-s226\", \"token_count\": 25, \"dd_length_nopunct\": 23, \"observed_r1\": -0.362365, \"rpl_mean_r1\": 0.084888, \"rpl_std_r1\": 0.206954, \"excess_rpl\": -0.447253, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.0, \"max_dd\": 7, \"max_dd_relative_pos\": 0.217, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "ta_ttb",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.447253"
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_ttb\", \"sentence_id\": \"train-s251\"}",
+          "output": "{\"sentence_id\": \"train-s251\", \"token_count\": 20, \"dd_length_nopunct\": 17, \"observed_r1\": -0.178015, \"rpl_mean_r1\": 0.267283, \"rpl_std_r1\": 0.277238, \"excess_rpl\": -0.445298, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.111, \"max_dd\": 10, \"max_dd_relative_pos\": 0.412, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "ta_ttb",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.445298"
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_ttb\", \"sentence_id\": \"train-s59\"}",
+          "output": "{\"sentence_id\": \"train-s59\", \"token_count\": 28, \"dd_length_nopunct\": 26, \"observed_r1\": -0.231308, \"rpl_mean_r1\": 0.203715, \"rpl_std_r1\": 0.261742, \"excess_rpl\": -0.435023, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.25, \"max_dd\": 11, \"max_dd_relative_pos\": 0.077, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "ta_ttb",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.435023"
+        },
+        {
+          "input": "{\"treebank_id\": \"ta_ttb\", \"sentence_id\": \"test-s55\"}",
+          "output": "{\"sentence_id\": \"test-s55\", \"token_count\": 22, \"dd_length_nopunct\": 20, \"observed_r1\": -0.120052, \"rpl_mean_r1\": 0.310628, \"rpl_std_r1\": 0.246214, \"excess_rpl\": -0.43068, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 1.75, \"max_dd\": 10, \"max_dd_relative_pos\": 0.15, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "ta_ttb",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.43068"
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_vtb\", \"sentence_id\": \"train-s1121\"}",
+          "output": "{\"sentence_id\": \"train-s1121\", \"token_count\": 20, \"dd_length_nopunct\": 18, \"observed_r1\": -0.480045, \"rpl_mean_r1\": 0.18874, \"rpl_std_r1\": 0.261444, \"excess_rpl\": -0.668785, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.111, \"max_dd\": 4, \"max_dd_relative_pos\": 0.556, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "vi_vtb",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.668785"
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_vtb\", \"sentence_id\": \"dev-500\"}",
+          "output": "{\"sentence_id\": \"dev-500\", \"token_count\": 32, \"dd_length_nopunct\": 27, \"observed_r1\": -0.293508, \"rpl_mean_r1\": 0.341892, \"rpl_std_r1\": 0.290227, \"excess_rpl\": -0.6354, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.583, \"max_dd\": 8, \"max_dd_relative_pos\": 0.889, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "vi_vtb",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.6354"
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_vtb\", \"sentence_id\": \"dev-197\"}",
+          "output": "{\"sentence_id\": \"dev-197\", \"token_count\": 29, \"dd_length_nopunct\": 23, \"observed_r1\": -0.349744, \"rpl_mean_r1\": 0.254383, \"rpl_std_r1\": 0.214041, \"excess_rpl\": -0.604128, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.8, \"max_dd\": 6, \"max_dd_relative_pos\": 0.957, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "vi_vtb",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.604128"
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_vtb\", \"sentence_id\": \"text-s104\"}",
+          "output": "{\"sentence_id\": \"text-s104\", \"token_count\": 22, \"dd_length_nopunct\": 18, \"observed_r1\": -0.395875, \"rpl_mean_r1\": 0.203621, \"rpl_std_r1\": 0.228285, \"excess_rpl\": -0.599496, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 3.0, \"max_dd\": 6, \"max_dd_relative_pos\": 0.056, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "vi_vtb",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.599496"
+        },
+        {
+          "input": "{\"treebank_id\": \"vi_vtb\", \"sentence_id\": \"train-s809\"}",
+          "output": "{\"sentence_id\": \"train-s809\", \"token_count\": 21, \"dd_length_nopunct\": 15, \"observed_r1\": -0.450567, \"rpl_mean_r1\": 0.146428, \"rpl_std_r1\": 0.251126, \"excess_rpl\": -0.596995, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 2.857, \"max_dd\": 6, \"max_dd_relative_pos\": 0.467, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "vi_vtb",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.596995"
+        },
+        {
+          "input": "{\"treebank_id\": \"sjo_xdt\", \"sentence_id\": \"20190101P2_25\"}",
+          "output": "{\"sentence_id\": \"20190101P2_25\", \"token_count\": 22, \"dd_length_nopunct\": 18, \"observed_r1\": -0.214833, \"rpl_mean_r1\": 0.221152, \"rpl_std_r1\": 0.220311, \"excess_rpl\": -0.435985, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.333, \"max_dd\": 12, \"max_dd_relative_pos\": 0.444, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "sjo_xdt",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.435985"
+        },
+        {
+          "input": "{\"treebank_id\": \"sjo_xdt\", \"sentence_id\": \"20190104P1_3\"}",
+          "output": "{\"sentence_id\": \"20190104P1_3\", \"token_count\": 23, \"dd_length_nopunct\": 20, \"observed_r1\": -0.311032, \"rpl_mean_r1\": 0.103737, \"rpl_std_r1\": 0.216144, \"excess_rpl\": -0.414769, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.0, \"max_dd\": 7, \"max_dd_relative_pos\": 0.65, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "sjo_xdt",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.414769"
+        },
+        {
+          "input": "{\"treebank_id\": \"sjo_xdt\", \"sentence_id\": \"20190130P1_3\"}",
+          "output": "{\"sentence_id\": \"20190130P1_3\", \"token_count\": 34, \"dd_length_nopunct\": 29, \"observed_r1\": -0.196616, \"rpl_mean_r1\": 0.192364, \"rpl_std_r1\": 0.260061, \"excess_rpl\": -0.38898, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.357, \"max_dd\": 11, \"max_dd_relative_pos\": 0.345, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "sjo_xdt",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.38898"
+        },
+        {
+          "input": "{\"treebank_id\": \"sjo_xdt\", \"sentence_id\": \"20190111P2_2\"}",
+          "output": "{\"sentence_id\": \"20190111P2_2\", \"token_count\": 32, \"dd_length_nopunct\": 21, \"observed_r1\": -0.267236, \"rpl_mean_r1\": 0.112024, \"rpl_std_r1\": 0.215917, \"excess_rpl\": -0.37926, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.818, \"max_dd\": 27, \"max_dd_relative_pos\": 0.095, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 10}",
+          "metadata_treebank_id": "sjo_xdt",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.37926"
+        },
+        {
+          "input": "{\"treebank_id\": \"sjo_xdt\", \"sentence_id\": \"grammarbook_sjo_p3_94\"}",
+          "output": "{\"sentence_id\": \"grammarbook_sjo_p3_94\", \"token_count\": 23, \"dd_length_nopunct\": 18, \"observed_r1\": -0.160715, \"rpl_mean_r1\": 0.201181, \"rpl_std_r1\": 0.207454, \"excess_rpl\": -0.361896, \"n_valid_perms\": 50, \"tree_depth\": 3, \"branching_factor\": 3.143, \"max_dd\": 15, \"max_dd_relative_pos\": 0.167, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "sjo_xdt",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.361896"
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\", \"sentence_id\": \"BEJ_MV_NARR_07_cold_43-50\"}",
+          "output": "{\"sentence_id\": \"BEJ_MV_NARR_07_cold_43-50\", \"token_count\": 22, \"dd_length_nopunct\": 16, \"observed_r1\": -0.425816, \"rpl_mean_r1\": 0.215645, \"rpl_std_r1\": 0.286782, \"excess_rpl\": -0.641461, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.333, \"max_dd\": 6, \"max_dd_relative_pos\": 0.188, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "bej_autogramm",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.641461"
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\", \"sentence_id\": \"BEJ_MV_NARR_05_eritrea_134-139\"}",
+          "output": "{\"sentence_id\": \"BEJ_MV_NARR_05_eritrea_134-139\", \"token_count\": 22, \"dd_length_nopunct\": 16, \"observed_r1\": -0.25936, \"rpl_mean_r1\": 0.348305, \"rpl_std_r1\": 0.210863, \"excess_rpl\": -0.607665, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 1.909, \"max_dd\": 7, \"max_dd_relative_pos\": 0.812, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 5}",
+          "metadata_treebank_id": "bej_autogramm",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.607665"
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\", \"sentence_id\": \"BEJ_MV_NARR_15_leopard_061-068\"}",
+          "output": "{\"sentence_id\": \"BEJ_MV_NARR_15_leopard_061-068\", \"token_count\": 21, \"dd_length_nopunct\": 16, \"observed_r1\": -0.436346, \"rpl_mean_r1\": 0.166193, \"rpl_std_r1\": 0.210794, \"excess_rpl\": -0.602539, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.5, \"max_dd\": 7, \"max_dd_relative_pos\": 0.562, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "bej_autogramm",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.602539"
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\", \"sentence_id\": \"BEJ_MV_NARR_04_djinn_177-187\"}",
+          "output": "{\"sentence_id\": \"BEJ_MV_NARR_04_djinn_177-187\", \"token_count\": 28, \"dd_length_nopunct\": 21, \"observed_r1\": -0.345963, \"rpl_mean_r1\": 0.225037, \"rpl_std_r1\": 0.267821, \"excess_rpl\": -0.571, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.375, \"max_dd\": 10, \"max_dd_relative_pos\": 0.333, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "bej_autogramm",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.571"
+        },
+        {
+          "input": "{\"treebank_id\": \"bej_autogramm\", \"sentence_id\": \"BEJ_MV_NARR_05_eritrea_085-092\"}",
+          "output": "{\"sentence_id\": \"BEJ_MV_NARR_05_eritrea_085-092\", \"token_count\": 43, \"dd_length_nopunct\": 36, \"observed_r1\": -0.184234, \"rpl_mean_r1\": 0.363349, \"rpl_std_r1\": 0.216831, \"excess_rpl\": -0.547582, \"n_valid_perms\": 50, \"tree_depth\": 13, \"branching_factor\": 2.0, \"max_dd\": 14, \"max_dd_relative_pos\": 0.111, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "bej_autogramm",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.547582"
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\", \"sentence_id\": \"709\"}",
+          "output": "{\"sentence_id\": \"709\", \"token_count\": 27, \"dd_length_nopunct\": 22, \"observed_r1\": -0.425551, \"rpl_mean_r1\": 0.20744, \"rpl_std_r1\": 0.214084, \"excess_rpl\": -0.632991, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.364, \"max_dd\": 8, \"max_dd_relative_pos\": 0.364, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "yue_hk",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.632991"
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\", \"sentence_id\": \"1003\"}",
+          "output": "{\"sentence_id\": \"1003\", \"token_count\": 29, \"dd_length_nopunct\": 21, \"observed_r1\": -0.207933, \"rpl_mean_r1\": 0.414722, \"rpl_std_r1\": 0.237103, \"excess_rpl\": -0.622654, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.111, \"max_dd\": 16, \"max_dd_relative_pos\": 0.762, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 7}",
+          "metadata_treebank_id": "yue_hk",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.622654"
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\", \"sentence_id\": \"531\"}",
+          "output": "{\"sentence_id\": \"531\", \"token_count\": 20, \"dd_length_nopunct\": 15, \"observed_r1\": -0.250643, \"rpl_mean_r1\": 0.355034, \"rpl_std_r1\": 0.300437, \"excess_rpl\": -0.605677, \"n_valid_perms\": 50, \"tree_depth\": 2, \"branching_factor\": 4.75, \"max_dd\": 7, \"max_dd_relative_pos\": 0.0, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "yue_hk",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.605677"
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\", \"sentence_id\": \"675\"}",
+          "output": "{\"sentence_id\": \"675\", \"token_count\": 35, \"dd_length_nopunct\": 30, \"observed_r1\": -0.20875, \"rpl_mean_r1\": 0.377986, \"rpl_std_r1\": 0.262825, \"excess_rpl\": -0.586736, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.615, \"max_dd\": 12, \"max_dd_relative_pos\": 0.433, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "yue_hk",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.586736"
+        },
+        {
+          "input": "{\"treebank_id\": \"yue_hk\", \"sentence_id\": \"500\"}",
+          "output": "{\"sentence_id\": \"500\", \"token_count\": 20, \"dd_length_nopunct\": 15, \"observed_r1\": -0.030282, \"rpl_mean_r1\": 0.540912, \"rpl_std_r1\": 0.214965, \"excess_rpl\": -0.571194, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 2.714, \"max_dd\": 11, \"max_dd_relative_pos\": 0.933, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "yue_hk",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.571194"
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_hk\", \"sentence_id\": \"825\"}",
+          "output": "{\"sentence_id\": \"825\", \"token_count\": 20, \"dd_length_nopunct\": 16, \"observed_r1\": -0.442536, \"rpl_mean_r1\": 0.14416, \"rpl_std_r1\": 0.269866, \"excess_rpl\": -0.586696, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 2.714, \"max_dd\": 8, \"max_dd_relative_pos\": 0.438, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "zh_hk",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.586696"
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_hk\", \"sentence_id\": \"1003\"}",
+          "output": "{\"sentence_id\": \"1003\", \"token_count\": 21, \"dd_length_nopunct\": 14, \"observed_r1\": -0.310446, \"rpl_mean_r1\": 0.237801, \"rpl_std_r1\": 0.305235, \"excess_rpl\": -0.548247, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.5, \"max_dd\": 7, \"max_dd_relative_pos\": 0.571, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "zh_hk",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.548247"
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_hk\", \"sentence_id\": \"797\"}",
+          "output": "{\"sentence_id\": \"797\", \"token_count\": 30, \"dd_length_nopunct\": 25, \"observed_r1\": -0.316441, \"rpl_mean_r1\": 0.228043, \"rpl_std_r1\": 0.27357, \"excess_rpl\": -0.544484, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.071, \"max_dd\": 11, \"max_dd_relative_pos\": 0.48, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "zh_hk",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.544484"
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_hk\", \"sentence_id\": \"421\"}",
+          "output": "{\"sentence_id\": \"421\", \"token_count\": 27, \"dd_length_nopunct\": 20, \"observed_r1\": -0.209781, \"rpl_mean_r1\": 0.307858, \"rpl_std_r1\": 0.265605, \"excess_rpl\": -0.51764, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.25, \"max_dd\": 9, \"max_dd_relative_pos\": 0.8, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "zh_hk",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.51764"
+        },
+        {
+          "input": "{\"treebank_id\": \"zh_hk\", \"sentence_id\": \"938\"}",
+          "output": "{\"sentence_id\": \"938\", \"token_count\": 22, \"dd_length_nopunct\": 18, \"observed_r1\": -0.191058, \"rpl_mean_r1\": 0.301726, \"rpl_std_r1\": 0.276412, \"excess_rpl\": -0.492784, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 3.0, \"max_dd\": 14, \"max_dd_relative_pos\": 0.167, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "zh_hk",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.492784"
+        },
+        {
+          "input": "{\"treebank_id\": \"da_ddt\", \"sentence_id\": \"train-v2-2763\"}",
+          "output": "{\"sentence_id\": \"train-v2-2763\", \"token_count\": 23, \"dd_length_nopunct\": 19, \"observed_r1\": -0.535703, \"rpl_mean_r1\": 0.280754, \"rpl_std_r1\": 0.280716, \"excess_rpl\": -0.816457, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.143, \"max_dd\": 4, \"max_dd_relative_pos\": 0.368, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "da_ddt",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.816457"
+        },
+        {
+          "input": "{\"treebank_id\": \"da_ddt\", \"sentence_id\": \"train-v2-3694\"}",
+          "output": "{\"sentence_id\": \"train-v2-3694\", \"token_count\": 22, \"dd_length_nopunct\": 19, \"observed_r1\": -0.390841, \"rpl_mean_r1\": 0.395986, \"rpl_std_r1\": 0.311825, \"excess_rpl\": -0.786827, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.5, \"max_dd\": 6, \"max_dd_relative_pos\": 0.263, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "da_ddt",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.786827"
+        },
+        {
+          "input": "{\"treebank_id\": \"da_ddt\", \"sentence_id\": \"train-v2-890\"}",
+          "output": "{\"sentence_id\": \"train-v2-890\", \"token_count\": 34, \"dd_length_nopunct\": 29, \"observed_r1\": -0.334242, \"rpl_mean_r1\": 0.44881, \"rpl_std_r1\": 0.268633, \"excess_rpl\": -0.783052, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 3.0, \"max_dd\": 6, \"max_dd_relative_pos\": 0.276, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "da_ddt",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.783052"
+        },
+        {
+          "input": "{\"treebank_id\": \"da_ddt\", \"sentence_id\": \"train-v2-503\"}",
+          "output": "{\"sentence_id\": \"train-v2-503\", \"token_count\": 23, \"dd_length_nopunct\": 19, \"observed_r1\": -0.542716, \"rpl_mean_r1\": 0.237786, \"rpl_std_r1\": 0.321295, \"excess_rpl\": -0.780503, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.143, \"max_dd\": 6, \"max_dd_relative_pos\": 0.263, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "da_ddt",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.780503"
+        },
+        {
+          "input": "{\"treebank_id\": \"da_ddt\", \"sentence_id\": \"train-v2-3500\"}",
+          "output": "{\"sentence_id\": \"train-v2-3500\", \"token_count\": 21, \"dd_length_nopunct\": 17, \"observed_r1\": -0.500618, \"rpl_mean_r1\": 0.261749, \"rpl_std_r1\": 0.289126, \"excess_rpl\": -0.762367, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.333, \"max_dd\": 6, \"max_dd_relative_pos\": 0.294, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "da_ddt",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.762367"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_childes\", \"sentence_id\": \"15428\"}",
+          "output": "{\"sentence_id\": \"15428\", \"token_count\": 23, \"dd_length_nopunct\": 21, \"observed_r1\": -0.356219, \"rpl_mean_r1\": 0.310339, \"rpl_std_r1\": 0.264338, \"excess_rpl\": -0.666558, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.667, \"max_dd\": 5, \"max_dd_relative_pos\": 0.762, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_childes",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.666558"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_childes\", \"sentence_id\": \"28806\"}",
+          "output": "{\"sentence_id\": \"28806\", \"token_count\": 20, \"dd_length_nopunct\": 18, \"observed_r1\": -0.389265, \"rpl_mean_r1\": 0.250108, \"rpl_std_r1\": 0.266404, \"excess_rpl\": -0.639374, \"n_valid_perms\": 50, \"tree_depth\": 3, \"branching_factor\": 3.8, \"max_dd\": 7, \"max_dd_relative_pos\": 0.667, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_childes",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.639374"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_childes\", \"sentence_id\": \"4220\"}",
+          "output": "{\"sentence_id\": \"4220\", \"token_count\": 24, \"dd_length_nopunct\": 22, \"observed_r1\": -0.284186, \"rpl_mean_r1\": 0.345553, \"rpl_std_r1\": 0.302269, \"excess_rpl\": -0.629739, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.286, \"max_dd\": 9, \"max_dd_relative_pos\": 0.591, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_childes",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.629739"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_childes\", \"sentence_id\": \"46634\"}",
+          "output": "{\"sentence_id\": \"46634\", \"token_count\": 21, \"dd_length_nopunct\": 19, \"observed_r1\": -0.515705, \"rpl_mean_r1\": 0.110705, \"rpl_std_r1\": 0.270382, \"excess_rpl\": -0.626411, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.222, \"max_dd\": 5, \"max_dd_relative_pos\": 0.421, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_childes",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.626411"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_childes\", \"sentence_id\": \"41357\"}",
+          "output": "{\"sentence_id\": \"41357\", \"token_count\": 22, \"dd_length_nopunct\": 20, \"observed_r1\": -0.302304, \"rpl_mean_r1\": 0.314347, \"rpl_std_r1\": 0.263573, \"excess_rpl\": -0.616651, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.0, \"max_dd\": 7, \"max_dd_relative_pos\": 0.75, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_childes",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.616651"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_eslspok\", \"sentence_id\": \"file01255.txt_103\"}",
+          "output": "{\"sentence_id\": \"file01255.txt_103\", \"token_count\": 21, \"dd_length_nopunct\": 19, \"observed_r1\": -0.307431, \"rpl_mean_r1\": 0.410424, \"rpl_std_r1\": 0.290659, \"excess_rpl\": -0.717855, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.333, \"max_dd\": 7, \"max_dd_relative_pos\": 0.474, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_eslspok",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.717855"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_eslspok\", \"sentence_id\": \"file01245.txt_42\"}",
+          "output": "{\"sentence_id\": \"file01245.txt_42\", \"token_count\": 25, \"dd_length_nopunct\": 23, \"observed_r1\": -0.416942, \"rpl_mean_r1\": 0.280748, \"rpl_std_r1\": 0.280013, \"excess_rpl\": -0.69769, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.667, \"max_dd\": 6, \"max_dd_relative_pos\": 0.435, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_eslspok",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.69769"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_eslspok\", \"sentence_id\": \"file01226.txt_128\"}",
+          "output": "{\"sentence_id\": \"file01226.txt_128\", \"token_count\": 29, \"dd_length_nopunct\": 26, \"observed_r1\": -0.338346, \"rpl_mean_r1\": 0.351867, \"rpl_std_r1\": 0.268547, \"excess_rpl\": -0.690213, \"n_valid_perms\": 50, \"tree_depth\": 4, \"branching_factor\": 4.667, \"max_dd\": 12, \"max_dd_relative_pos\": 0.615, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "en_eslspok",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.690213"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_eslspok\", \"sentence_id\": \"file01235.txt_84\"}",
+          "output": "{\"sentence_id\": \"file01235.txt_84\", \"token_count\": 23, \"dd_length_nopunct\": 20, \"observed_r1\": -0.313282, \"rpl_mean_r1\": 0.367569, \"rpl_std_r1\": 0.255365, \"excess_rpl\": -0.680851, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.143, \"max_dd\": 7, \"max_dd_relative_pos\": 0.4, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "en_eslspok",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.680851"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_eslspok\", \"sentence_id\": \"file01209.txt_101\"}",
+          "output": "{\"sentence_id\": \"file01209.txt_101\", \"token_count\": 21, \"dd_length_nopunct\": 19, \"observed_r1\": -0.38652, \"rpl_mean_r1\": 0.257466, \"rpl_std_r1\": 0.30248, \"excess_rpl\": -0.643987, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.857, \"max_dd\": 8, \"max_dd_relative_pos\": 0.526, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_eslspok",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.643987"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gentle\", \"sentence_id\": \"GENTLE_dictionary_trust-31\"}",
+          "output": "{\"sentence_id\": \"GENTLE_dictionary_trust-31\", \"token_count\": 21, \"dd_length_nopunct\": 19, \"observed_r1\": -0.62571, \"rpl_mean_r1\": 0.229265, \"rpl_std_r1\": 0.236331, \"excess_rpl\": -0.854975, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.222, \"max_dd\": 3, \"max_dd_relative_pos\": 0.211, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_gentle",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.854975"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gentle\", \"sentence_id\": \"GENTLE_esports_fifa-18\"}",
+          "output": "{\"sentence_id\": \"GENTLE_esports_fifa-18\", \"token_count\": 24, \"dd_length_nopunct\": 21, \"observed_r1\": -0.549764, \"rpl_mean_r1\": 0.207369, \"rpl_std_r1\": 0.244001, \"excess_rpl\": -0.757133, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.556, \"max_dd\": 5, \"max_dd_relative_pos\": 0.667, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "en_gentle",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.757133"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gentle\", \"sentence_id\": \"GENTLE_threat_dillard-15\"}",
+          "output": "{\"sentence_id\": \"GENTLE_threat_dillard-15\", \"token_count\": 27, \"dd_length_nopunct\": 25, \"observed_r1\": -0.312802, \"rpl_mean_r1\": 0.400984, \"rpl_std_r1\": 0.254401, \"excess_rpl\": -0.713787, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.714, \"max_dd\": 6, \"max_dd_relative_pos\": 0.72, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_gentle",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.713787"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gentle\", \"sentence_id\": \"GENTLE_legal_service-31\"}",
+          "output": "{\"sentence_id\": \"GENTLE_legal_service-31\", \"token_count\": 26, \"dd_length_nopunct\": 22, \"observed_r1\": -0.324652, \"rpl_mean_r1\": 0.314173, \"rpl_std_r1\": 0.2827, \"excess_rpl\": -0.638825, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.778, \"max_dd\": 5, \"max_dd_relative_pos\": 0.182, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "en_gentle",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.638825"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gentle\", \"sentence_id\": \"GENTLE_legal_service-16\"}",
+          "output": "{\"sentence_id\": \"GENTLE_legal_service-16\", \"token_count\": 22, \"dd_length_nopunct\": 20, \"observed_r1\": -0.326453, \"rpl_mean_r1\": 0.308943, \"rpl_std_r1\": 0.261112, \"excess_rpl\": -0.635396, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 2.625, \"max_dd\": 7, \"max_dd_relative_pos\": 0.6, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_gentle",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.635396"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gum\", \"sentence_id\": \"GUM_fiction_rose-26\"}",
+          "output": "{\"sentence_id\": \"GUM_fiction_rose-26\", \"token_count\": 20, \"dd_length_nopunct\": 18, \"observed_r1\": -0.736124, \"rpl_mean_r1\": 0.299188, \"rpl_std_r1\": 0.29195, \"excess_rpl\": -1.035312, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.714, \"max_dd\": 3, \"max_dd_relative_pos\": 0.222, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_gum",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-1.035312"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gum\", \"sentence_id\": \"GUM_bio_jespersen-33\"}",
+          "output": "{\"sentence_id\": \"GUM_bio_jespersen-33\", \"token_count\": 24, \"dd_length_nopunct\": 21, \"observed_r1\": -0.562828, \"rpl_mean_r1\": 0.261493, \"rpl_std_r1\": 0.280719, \"excess_rpl\": -0.824321, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.556, \"max_dd\": 4, \"max_dd_relative_pos\": 0.619, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "en_gum",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.824321"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gum\", \"sentence_id\": \"GUM_speech_impeachment-4\"}",
+          "output": "{\"sentence_id\": \"GUM_speech_impeachment-4\", \"token_count\": 22, \"dd_length_nopunct\": 19, \"observed_r1\": -0.430596, \"rpl_mean_r1\": 0.363578, \"rpl_std_r1\": 0.239325, \"excess_rpl\": -0.794174, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.333, \"max_dd\": 5, \"max_dd_relative_pos\": 0.632, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "en_gum",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.794174"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gum\", \"sentence_id\": \"GUM_podcast_collaboration-44\"}",
+          "output": "{\"sentence_id\": \"GUM_podcast_collaboration-44\", \"token_count\": 23, \"dd_length_nopunct\": 21, \"observed_r1\": -0.41023, \"rpl_mean_r1\": 0.379776, \"rpl_std_r1\": 0.263252, \"excess_rpl\": -0.790006, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.75, \"max_dd\": 5, \"max_dd_relative_pos\": 0.381, \"has_conj\": true, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_gum",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.790006"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_gum\", \"sentence_id\": \"GUM_podcast_bangladesh-15\"}",
+          "output": "{\"sentence_id\": \"GUM_podcast_bangladesh-15\", \"token_count\": 21, \"dd_length_nopunct\": 19, \"observed_r1\": -0.397377, \"rpl_mean_r1\": 0.382929, \"rpl_std_r1\": 0.280944, \"excess_rpl\": -0.780306, \"n_valid_perms\": 50, \"tree_depth\": 9, \"branching_factor\": 2.222, \"max_dd\": 3, \"max_dd_relative_pos\": 0.0, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_gum",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.780306"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_lines\", \"sentence_id\": \"en_lines-ud-train-doc7-2672\"}",
+          "output": "{\"sentence_id\": \"en_lines-ud-train-doc7-2672\", \"token_count\": 22, \"dd_length_nopunct\": 20, \"observed_r1\": -0.57087, \"rpl_mean_r1\": 0.27341, \"rpl_std_r1\": 0.259506, \"excess_rpl\": -0.84428, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.0, \"max_dd\": 4, \"max_dd_relative_pos\": 0.25, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_lines",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.84428"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_lines\", \"sentence_id\": \"en_lines-ud-train-doc5-1893\"}",
+          "output": "{\"sentence_id\": \"en_lines-ud-train-doc5-1893\", \"token_count\": 23, \"dd_length_nopunct\": 21, \"observed_r1\": -0.464024, \"rpl_mean_r1\": 0.294496, \"rpl_std_r1\": 0.290947, \"excess_rpl\": -0.758519, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.143, \"max_dd\": 5, \"max_dd_relative_pos\": 0.238, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 1}",
+          "metadata_treebank_id": "en_lines",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.758519"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_lines\", \"sentence_id\": \"en_lines-ud-train-doc4-1516\"}",
+          "output": "{\"sentence_id\": \"en_lines-ud-train-doc4-1516\", \"token_count\": 27, \"dd_length_nopunct\": 22, \"observed_r1\": -0.240243, \"rpl_mean_r1\": 0.490389, \"rpl_std_r1\": 0.274773, \"excess_rpl\": -0.730632, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.25, \"max_dd\": 7, \"max_dd_relative_pos\": 0.364, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "en_lines",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.730632"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_lines\", \"sentence_id\": \"en_lines-ud-test-doc8-5223\"}",
+          "output": "{\"sentence_id\": \"en_lines-ud-test-doc8-5223\", \"token_count\": 25, \"dd_length_nopunct\": 22, \"observed_r1\": -0.533181, \"rpl_mean_r1\": 0.183325, \"rpl_std_r1\": 0.286402, \"excess_rpl\": -0.716506, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 3.0, \"max_dd\": 6, \"max_dd_relative_pos\": 0.545, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "en_lines",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.716506"
+        },
+        {
+          "input": "{\"treebank_id\": \"en_lines\", \"sentence_id\": \"en_lines-ud-train-doc5-1671\"}",
+          "output": "{\"sentence_id\": \"en_lines-ud-train-doc5-1671\", \"token_count\": 23, \"dd_length_nopunct\": 20, \"observed_r1\": -0.483398, \"rpl_mean_r1\": 0.224573, \"rpl_std_r1\": 0.285027, \"excess_rpl\": -0.707971, \"n_valid_perms\": 50, \"tree_depth\": 7, \"branching_factor\": 2.444, \"max_dd\": 4, \"max_dd_relative_pos\": 0.95, \"has_conj\": true, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "en_lines",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.707971"
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_parisstories\", \"sentence_id\": \"ParisStories_2022_2_g\\u00e9n\\u00e9rationsXY__21\"}",
+          "output": "{\"sentence_id\": \"ParisStories_2022_2_g\\u00e9n\\u00e9rationsXY__21\", \"token_count\": 23, \"dd_length_nopunct\": 18, \"observed_r1\": -0.460038, \"rpl_mean_r1\": 0.34408, \"rpl_std_r1\": 0.306373, \"excess_rpl\": -0.804118, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 3.143, \"max_dd\": 7, \"max_dd_relative_pos\": 0.556, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 4}",
+          "metadata_treebank_id": "fr_parisstories",
+          "metadata_extremity_rank": "0",
+          "predict_excess_rpl": "-0.804118"
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_parisstories\", \"sentence_id\": \"ParisStories_2019_stagePrimaire_11\"}",
+          "output": "{\"sentence_id\": \"ParisStories_2019_stagePrimaire_11\", \"token_count\": 30, \"dd_length_nopunct\": 27, \"observed_r1\": -0.362579, \"rpl_mean_r1\": 0.437819, \"rpl_std_r1\": 0.305173, \"excess_rpl\": -0.800398, \"n_valid_perms\": 50, \"tree_depth\": 6, \"branching_factor\": 3.625, \"max_dd\": 14, \"max_dd_relative_pos\": 0.963, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 2}",
+          "metadata_treebank_id": "fr_parisstories",
+          "metadata_extremity_rank": "1",
+          "predict_excess_rpl": "-0.800398"
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_parisstories\", \"sentence_id\": \"ParisStories_2022_14_r\\u00e2teauAuTravail__67\"}",
+          "output": "{\"sentence_id\": \"ParisStories_2022_14_r\\u00e2teauAuTravail__67\", \"token_count\": 20, \"dd_length_nopunct\": 16, \"observed_r1\": -0.394778, \"rpl_mean_r1\": 0.382, \"rpl_std_r1\": 0.295505, \"excess_rpl\": -0.776777, \"n_valid_perms\": 50, \"tree_depth\": 5, \"branching_factor\": 2.714, \"max_dd\": 6, \"max_dd_relative_pos\": 0.438, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 3}",
+          "metadata_treebank_id": "fr_parisstories",
+          "metadata_extremity_rank": "2",
+          "predict_excess_rpl": "-0.776777"
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_parisstories\", \"sentence_id\": \"ParisStories_2020_histoireOurs_27\"}",
+          "output": "{\"sentence_id\": \"ParisStories_2020_histoireOurs_27\", \"token_count\": 23, \"dd_length_nopunct\": 16, \"observed_r1\": -0.485778, \"rpl_mean_r1\": 0.288958, \"rpl_std_r1\": 0.291702, \"excess_rpl\": -0.774735, \"n_valid_perms\": 50, \"tree_depth\": 3, \"branching_factor\": 3.143, \"max_dd\": 8, \"max_dd_relative_pos\": 0.125, \"has_conj\": false, \"has_relcl\": false, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "fr_parisstories",
+          "metadata_extremity_rank": "3",
+          "predict_excess_rpl": "-0.774735"
+        },
+        {
+          "input": "{\"treebank_id\": \"fr_parisstories\", \"sentence_id\": \"ParisStories_2019_prepaScientifique_25\"}",
+          "output": "{\"sentence_id\": \"ParisStories_2019_prepaScientifique_25\", \"token_count\": 28, \"dd_length_nopunct\": 21, \"observed_r1\": -0.390647, \"rpl_mean_r1\": 0.323541, \"rpl_std_r1\": 0.297034, \"excess_rpl\": -0.714189, \"n_valid_perms\": 50, \"tree_depth\": 8, \"branching_factor\": 2.7, \"max_dd\": 7, \"max_dd_relative_pos\": 0.905, \"has_conj\": false, \"has_relcl\": true, \"n_punct_tokens\": 6}",
+          "metadata_treebank_id": "fr_parisstories",
+          "metadata_extremity_rank": "4",
+          "predict_excess_rpl": "-0.714189"
+        }
+      ]
+    }
+  ]
+}

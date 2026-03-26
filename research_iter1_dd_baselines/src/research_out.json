@@ -1,0 +1,545 @@
+{
+  "title": "RPL/FHD/SOP Baseline Algorithms & DD Autocorrelation Gap Analysis",
+  "summary": "Comprehensive literature survey documenting precise algorithms for three dependency-tree linearization baselines (RPL, FHD, SOP), the r1-prime bias-corrected autocorrelation estimator for short series, UD spoken/written treebank metadata conventions, WALS case-marking data access methods, and a systematic gap analysis confirming that no prior work studies within-sentence lag-1 autocorrelation of dependency distance sequences.",
+  "sections": {
+    "section_1_RPL_algorithm": {
+      "title": "RPL Algorithm - Random Projective Linearization",
+      "findings": {
+        "origin": "The RPL baseline originates from Gildea & Temperley (2007, 2010) and was adopted by Futrell et al. (2015). Temperley & Gildea (2018) provide the canonical description in their Annual Review article.",
+        "canonical_description": "For generating random projective linearizations, one simply chooses a random assignment of each dependent to either the left or right of its head, and a random ordering within each side (Gildea & Temperley 2010, Temperley & Gildea 2018).",
+        "futrell_description": "Starting at the root node of a dependency tree, collect the head word and its dependents and order them randomly. Then repeat the process for each dependent (Futrell et al. 2015).",
+        "num_samples": "Futrell et al. (2015) used 100 random linearizations per sentence. The hypothesis proposes 200 permutations with convergence checks (SE of mean autocorrelation < 0.01).",
+        "pseudocode": {
+          "function_name": "RPL_linearize",
+          "parameters": ["tree", "root"],
+          "steps": [
+            "1. COLLECT dependents: For the current node (starting at root), collect all direct dependents from the dependency tree.",
+            "2. CREATE ordering group: Form a group consisting of the head word plus all its dependents.",
+            "3. RANDOMLY ASSIGN sides: For each dependent, randomly assign it to appear either LEFT or RIGHT of the head (coin flip, p=0.5 each side).",
+            "4. RANDOMLY ORDER within sides: Among all dependents assigned to the LEFT, generate a random permutation. Similarly for all dependents on the RIGHT.",
+            "5. CONSTRUCT local linearization: [randomly-ordered LEFT dependents] + [HEAD] + [randomly-ordered RIGHT dependents].",
+            "6. RECURSE: For each dependent in the ordering, recursively apply steps 1-5 to produce its own sub-linearization.",
+            "7. FLATTEN: Replace each dependent token in the local linearization with its recursively computed sub-linearization.",
+            "8. RETURN the flattened linearization of all tokens under the current subtree."
+          ],
+          "projectivity_guarantee": "Projectivity is inherently maintained because at each recursive level, the head and all its dependents form a contiguous block, and recursion only expands within that block. No dependency arcs can cross."
+        },
+        "cliqs_implementation": {
+          "repository": "https://github.com/Futrell/cliqs",
+          "key_function": "mindep.randlin_projective(sentence, head_final_bias=0, move_head=True, move_deps=True)",
+          "internal_function": "_randlin_projective uses expand_randomly() which: (a) collects children via sentence.out_edges(word_id), (b) appends head to children list, (c) calls random.shuffle(children) for the default case (move_head=True, move_deps=True), (d) recursively expands each child.",
+          "head_final_bias": "When head_final_bias > 0 and random() < head_final_bias, children are shuffled and head is appended last (head-final). This creates a biased variant.",
+          "move_head_false_variant": "When move_head=False, the original head position relative to dependents is preserved, but dependents on each side are shuffled independently. This preserves head direction but randomizes sibling order."
+        },
+        "critical_distinction": {
+          "GT_method": "Gildea & Temperley's method: At each node, randomly assign each dependent to LEFT or RIGHT of head (independent coin flips), then randomly order within each side. This is what Futrell et al. (2015) calls 'random projective linearization'.",
+          "uniform_random_projective": "Truly uniform random projective linearization: At each node, insert the head at a uniformly random position among its dependents (i.e., the head can be placed at any of k+1 positions among k dependents). This is subtly different.",
+          "mathematical_difference": "Alemany-Puig & Ferrer-i-Cancho (2022, Computational Linguistics 48(3):491-516) provide the formal mathematical characterization. The GT method and uniform random projective linearizations have different variance properties for expected dependency length. The GT method generates a subset of all projective linearizations, not the full uniform distribution.",
+          "practical_impact": "For baseline comparison, the GT method is the standard in the literature (used by Futrell et al. 2015, Gildea & Temperley 2007/2010). The hypothesis should use this standard method for comparability."
+        },
+        "LAL_library": {
+          "description": "The Linear Arrangement Library (LAL) by Alemany-Puig, Esteban & Ferrer-i-Cancho (2021) provides C++/Python implementations of random projective linearization algorithms with formal specifications.",
+          "url": "https://github.com/LAL-project/linear-arrangement-library",
+          "relevance": "LAL provides O(n)-time exact calculation of expected dependency length under random projective linearizations, potentially replacing Monte Carlo sampling for the expected value (though not for the full distribution needed for autocorrelation analysis)."
+        }
+      }
+    },
+    "section_2_FHD_algorithm": {
+      "title": "FHD Algorithm - Fixed Head-Direction Baseline",
+      "findings": {
+        "origin": "The FHD concept derives from Futrell et al. (2015) 'fixed word order' baseline and Futrell, Levy & Gibson (2020) 'consistent head direction' baseline.",
+        "futrell_2015_description": "Fixed Word Order Random Baseline: Fixed word order random linearizations are generated by assigning each relation type a random weight in [-1,1], collecting the head word and its dependents and ordering them by weight, then repeating the process for each dependent while keeping the same weights. 100 such random grammars per sentence.",
+        "futrell_2020_description": "Consistent head direction baseline: all linearizations are strictly head-final (or equivalently head-initial). The key finding is that all that matters for dependency length is that head direction is consistent. Additionally, a 'fixed word order' baseline simulates grammars where linearization is a deterministic function of tree structure and dependency relation types.",
+        "yadav_2022_description": "Random Linear Arrangements (RLA) baseline: sampled from a uniform distribution over all random linearizations of a given tree structure, preserving all topological properties such as arity, tree depth, hubbiness. Uses rejection sampling for constrained variants. OSF data at https://osf.io/j975y/",
+        "pseudocode": {
+          "function_name": "FHD_linearize",
+          "parameters": ["tree", "root", "head_direction_table"],
+          "steps": [
+            "PRE-COMPUTATION: Build head_direction_table from treebank statistics:",
+            "  For each dependency relation type (deprel) in the treebank:",
+            "    Count instances where head precedes dependent (head-initial)",
+            "    Count instances where dependent precedes head (head-final)",
+            "    Assign majority direction: if head-initial > head-final, direction = 'initial'; else 'final'",
+            "    Store proportion for tie-breaking (e.g., if exactly 50/50, use head-initial as default)",
+            "",
+            "LINEARIZATION (recursive):",
+            "1. For current node (head), collect all direct dependents.",
+            "2. For each dependent, look up the deprel in head_direction_table.",
+            "3. Partition dependents into LEFT (head-final deprels) and RIGHT (head-initial deprels).",
+            "4. RANDOMLY ORDER dependents within each side (this is the residual randomness).",
+            "5. Construct local order: [randomly-ordered LEFT deps] + [HEAD] + [randomly-ordered RIGHT deps].",
+            "6. RECURSE for each dependent.",
+            "7. FLATTEN the nested structure."
+          ],
+          "key_difference_from_RPL": "FHD fixes head direction per relation type (e.g., nsubj always before verb, obj always after verb in English) but still randomizes the relative ordering among co-dependents on the same side. RPL randomizes everything including head direction.",
+          "num_samples": "Since sibling ordering within each side is still random, multiple samples are needed. Futrell et al. used 100 samples. For this hypothesis, 200 samples with convergence checks are proposed.",
+          "tie_breaking": "When a deprel has exactly equal head-initial and head-final counts, break ties by: (a) defaulting to the language's dominant head direction, or (b) random choice frozen across all sentences."
+        },
+        "cliqs_implementation": {
+          "fixed_word_order": "WeightedLin class in linearize.py: applies learned weights to determine fixed ordering of dependents. The weight_of function returns a learned weight per dependency type.",
+          "eisner_model_c": "EisnerModelC class: learns separate distributions for dependents appearing left vs right of heads from training data, with left_hists and right_hists dictionaries keyed by conditioning features.",
+          "grammar_sampling": "The EisnerModelCOrders variant partitions dependents into left/right via weighted choice from learned distributions, then shuffles within each partition."
+        }
+      }
+    },
+    "section_3_SOP_algorithm": {
+      "title": "SOP Algorithm - Sibling-Order-Preserving Baseline (NOVEL)",
+      "findings": {
+        "novelty_confirmation": "No prior work was found that specifically fixes the relative ordering of co-dependents sharing the same head as a baseline for dependency length studies. This is confirmed as a novel contribution.",
+        "related_work": {
+          "dyer_2019": "Dyer (2019) proposed weighted posets for learning surface order from dependency trees, involving: (1) encoding words, (2) learning whether each dependent precedes/follows head, (3) topological sort. This captures ordering templates but was not used as a DLM baseline.",
+          "hahn_futrell_2021": "Hahn, Degen & Futrell (2021) formalized the memory-surprisal tradeoff for word/morpheme order in 54 languages. Their framework explains why certain orderings are preferred but does not define a sibling-order-preserving baseline.",
+          "menezes_quirk_2007": "Menezes & Quirk (2007) used dependency order templates for machine translation, preserving target-language sibling order from templates. Closest analog but in MT, not DLM.",
+          "futrell_2015_linearize": "Futrell's linearize.py EisnerModelC learns left/right distributions conditioned on head features, then shuffles within each side. This is the closest existing implementation to FHD but does not fix intra-side ordering."
+        },
+        "design_document": {
+          "template_extraction": {
+            "algorithm": [
+              "1. For each head node h in the treebank, collect the multiset D(h) of dependency relation types of its direct dependents.",
+              "2. Form the conditioning key K = (UPOS(h), sorted(D(h))). Example: K = (VERB, {nsubj, obj, obl}).",
+              "3. For each unique K, collect all observed linearizations: which deprels appear before the head (and in what relative order) and which after (and in what relative order).",
+              "4. Compute the majority ordering template T(K): the most frequent complete ordering of deprels relative to the head. Example: T((VERB, {nsubj, obj})) = [nsubj, HEAD, obj].",
+              "5. Store the template along with its frequency count."
+            ],
+            "conditioning_options": {
+              "option_a": "Condition on deprel multiset only (most data, least specific)",
+              "option_b": "Condition on head UPOS + deprel multiset (RECOMMENDED default - balances specificity and data coverage)",
+              "option_c": "Condition on head UPOS + deprel multiset + head's own deprel (most specific, risk of sparsity)"
+            },
+            "minimum_count_threshold": "Minimum 5 occurrences for a template to be 'established'. Below threshold, fall back to FHD behavior.",
+            "fallback_hierarchy": "SOP template -> FHD direction -> RPL random (cascading fallback for unseen configurations)"
+          },
+          "linearization_algorithm": {
+            "function_name": "SOP_linearize",
+            "parameters": ["tree", "root", "head_direction_table", "sibling_order_templates"],
+            "steps": [
+              "1. For current node (head), collect all direct dependents with their deprels.",
+              "2. Form conditioning key K = (UPOS(head), sorted deprel multiset of dependents).",
+              "3. Look up K in sibling_order_templates.",
+              "4. IF template T(K) exists with count >= threshold:",
+              "   a. Place dependents according to template ordering (both head direction AND relative sibling order are fixed).",
+              "   b. This is FULLY DETERMINISTIC for this node.",
+              "5. ELSE IF head_direction_table has entries for each deprel:",
+              "   a. Fall back to FHD behavior: fix head direction per deprel, randomly order within each side.",
+              "6. ELSE: Fall back to RPL behavior for this node.",
+              "7. RECURSE for each dependent.",
+              "8. FLATTEN the nested structure."
+            ]
+          },
+          "edge_cases": {
+            "coordination": "Multiple conj dependents: template should capture their typical ordering (e.g., conjuncts in order of appearance). If coordination length varies, condition on the count of conj dependents.",
+            "relative_clauses": "acl:relcl dependents: typically follow the noun they modify. Template captures this but may have low counts for complex embedding patterns.",
+            "single_dependent": "Nodes with only one dependent: SOP reduces to FHD (which itself reduces to just head direction), since there are no siblings to order.",
+            "punctuation": "RECOMMENDATION: Exclude punctuation tokens (deprel=punct) from template computation AND from linearization ordering. Punctuation positions are often arbitrary and add noise.",
+            "rare_configurations": "For deprel multisets seen fewer than 5 times, the template is unreliable. Fall back to FHD, which only requires per-deprel statistics (much more data)."
+          },
+          "determinism_analysis": {
+            "key_property": "SOP is nearly deterministic for common constructions. For frequent configurations (e.g., VERB with {nsubj, obj} in English), the template will match and produce exactly ONE linearization.",
+            "residual_randomness": "Randomness only enters when: (a) a node's configuration has no template (falls back to FHD with random sibling ordering), or (b) the template itself is ambiguous (multiple templates with equal frequency). Estimate: for well-resourced treebanks, >70% of nodes will have a matching template.",
+            "num_samples": "Since SOP may be highly deterministic, generating 200 samples may produce many identical linearizations. RECOMMENDATION: Generate up to 200 samples but record unique linearizations. If >90% are identical for a sentence, flag this and report the effective number of distinct baselines.",
+            "interpretation": "Near-determinism is a FEATURE: excess-SOP autocorrelation measures only the anti-correlation from RARE or UNSEEN ordering patterns, making SOP the most conservative baseline in the hierarchy RPL < FHD < SOP."
+          },
+          "soft_SOP_variant": {
+            "description": "If SOP is too deterministic (>90% of sentences produce only 1 unique linearization), implement 'soft SOP': instead of fixing the majority template, SAMPLE from the distribution of observed templates weighted by frequency.",
+            "advantage": "Produces variation while still respecting grammar-specific ordering preferences.",
+            "when_to_use": "Only if the deterministic SOP variant proves too restrictive in Phase 2 pilot analysis."
+          }
+        }
+      }
+    },
+    "section_4_r1_prime_estimator": {
+      "title": "Huitema & McKean r1-prime Bias-Corrected Autocorrelation Estimator",
+      "findings": {
+        "standard_r1": {
+          "formula": "r1 = sum_{t=1}^{n-1} (x_t - x_bar)(x_{t+1} - x_bar) / sum_{t=1}^{n} (x_t - x_bar)^2",
+          "known_bias": "Negative bias of approximately -1/n for independent series (rho=0). For positive rho, the bias is more severe, leading to systematic underestimation of positive autocorrelation.",
+          "source": "Walker (1931); widely documented in Huitema & McKean (1991), Arnau & Bono (2001), Solanas et al. (2010), Krone et al. (2015)"
+        },
+        "r1_plus": {
+          "formula": "r1+ = r1 + 1/n",
+          "description": "Simple additive correction proposed by Huitema & McKean (1991) in Psychological Bulletin 110:291-304. Corrects the leading-order negative bias term.",
+          "limitations": "Only corrects the constant bias at rho=0. The actual bias is nonlinear in rho (Matyas & Greenwood 1991 showed the relationship between rho and mean r1 is nonlinear), so r1+ overcorrects for negative rho and undercorrects for large positive rho.",
+          "source": "Huitema, B.E. & McKean, J.W. (1991). Autocorrelation estimation and inference with small samples. Psychological Bulletin, 110, 291-304."
+        },
+        "r1_prime": {
+          "formula_description": "r1' = r1 + |P(r1, n)| where P(r1, n) is a polynomial fitted to the empirical bias function for sample size n.",
+          "procedure": [
+            "1. For each sample size n (e.g., n=6, 10, 20, 30), generate M Monte Carlo samples of independent series (rho=0) and AR(1) series at various rho values.",
+            "2. Compute r1 for each Monte Carlo sample.",
+            "3. Calculate empirical bias as: E[r1] - rho for each rho value.",
+            "4. Fit a polynomial P(rho) to the bias function using polynomial regression (using MATLAB polytool).",
+            "5. The corrected estimator is: r1' = r1 + |P(r1, n)| where the absolute value ensures correction always reduces bias magnitude.",
+            "6. Different polynomial coefficients for different sample sizes n."
+          ],
+          "polynomial_coefficients": "The exact polynomial coefficients for each sample size were published by Arnau & Bono (2001) in their Quality & Quantity paper. Models with significant coefficients were derived for n=6, 10, 20, and 30. The coefficients are sample-size-specific and stored in lookup tables.",
+          "properties": "Empirical bias of r1' is less than both r1 and r1+. Mean squared error of r1' is less than r1. Recommended for samples under 50 observations.",
+          "source": "Arnau, J. & Bono, R. (2001). Autocorrelation and Bias in Short Time Series: An Alternative Estimator. Quality & Quantity, 35, 365-387."
+        },
+        "other_estimators_compared": {
+          "c_statistic": {
+            "formula": "C-statistic (Young 1941): related to Durbin-Watson d-statistic. phi_c = phi_r1 + [(y_T - y_bar)^2 + (y_1 - y_bar)^2] / sum(y_t - y_bar)^2",
+            "properties": "Not biased for independent series (rho=0). DeCarlo & Tryon (1993) showed it performs as well or better than r1+ for small samples."
+          },
+          "ols_estimator": {
+            "formula": "phi_ols = sum_{t=2}^{T}(y_t - y_bar)(y_{t-1} - y_bar) / sum_{t=1}^{T-1}(y_{t} - y_bar)^2",
+            "note": "Differs from r1 in denominator: uses sum over t=1 to T-1 instead of t=1 to T."
+          },
+          "bayesian_bsr": {
+            "description": "Bayesian method with symmetrized reference prior (Bsr). Krone et al. (2015) found it had lowest bias overall.",
+            "limitation": "More computationally expensive; may not be practical for millions of short sentences."
+          }
+        },
+        "recommendation_for_hypothesis": {
+          "primary": "Use the standard r1 formula with the polynomial correction (r1') from Arnau & Bono (2001) for sentences of typical length (5-30 words).",
+          "practical_note": "Since the hypothesis involves Phase 1 Monte Carlo validation, the correction polynomial can be DERIVED EMPIRICALLY from the Phase 1 simulations themselves, rather than relying on published coefficients for specific n values. This is actually more robust since it calibrates to the exact sentence-length distribution in the data.",
+          "fallback": "If r1' polynomial coefficients cannot be reproduced, use the simpler r1+ = r1 + 1/n as the bias correction, with Phase 1 Monte Carlo simulations validating that the correction is adequate.",
+          "krone_finding": "Krone et al. (2015, Quality & Quantity 51:1-21) found that for T=10, all estimators perform poorly. For T>=25, Bsr shows smallest bias, followed by MLE and C-statistic among frequentist methods. Since many sentences are short (5-20 words), Monte Carlo calibration is essential."
+        },
+        "solanas_2010_findings": {
+          "description": "Solanas, Manolov & Sierra (2010, Psicologica 31:357-381) compared 10 lag-one autocorrelation estimators.",
+          "key_result": "No single optimal estimator for all conditions. Estimator choice should depend on sample size and the expected direction of serial dependence.",
+          "estimators_reviewed": "Standard r1, r1+, r1', C-statistic, delta-recursive, translated estimator, and several others.",
+          "unbiased_estimators": "Only the delta-recursive, translated, and C-statistic are unbiased for independent series (rho=0)."
+        }
+      }
+    },
+    "section_5_UD_metadata": {
+      "title": "UD Treebank Metadata - Spoken vs. Written Modality Identification",
+      "findings": {
+        "readme_metadata_format": {
+          "location": "Machine-readable metadata appears at the end of each treebank's README.md file, between delimiter lines containing '=== Machine-readable metadata ==='.",
+          "genre_field": "Genre: [space-separated list of genre labels]",
+          "example": "Genre: blog social reviews email web (for English EWT) or Genre: spoken (for spoken treebanks)",
+          "format": "Space-separated list; no dedicated 'modality' field exists. The 'spoken' genre is one of ~18 recognized genre labels."
+        },
+        "known_genre_values": [
+          "academic", "bible", "blog", "fiction", "government", "grammar-examples",
+          "legal", "medical", "news", "nonfiction", "poetry", "reviews",
+          "social", "spoken", "web", "wiki"
+        ],
+        "spoken_treebanks_UD_v2_9": {
+          "source": "Dobrovoljc (2022) LREC paper provides comprehensive list for UD v2.9",
+          "treebanks": [
+            {"name": "UD_Beja-NSC", "language": "Beja"},
+            {"name": "UD_Cantonese-HK", "language": "Cantonese"},
+            {"name": "UD_Chinese-HK", "language": "Chinese (Hong Kong)"},
+            {"name": "UD_Chukchi-HSE", "language": "Chukchi"},
+            {"name": "UD_French-ParisStories", "language": "French"},
+            {"name": "UD_French-Rhapsodie", "language": "French"},
+            {"name": "UD_Frisian_Dutch-Fame", "language": "Frisian Dutch"},
+            {"name": "UD_Komi_Zyrian-IKDP", "language": "Komi-Zyrian"},
+            {"name": "UD_Naija-NSC", "language": "Naija (Nigerian Pidgin)"},
+            {"name": "UD_Norwegian-NynorskLIA", "language": "Norwegian Nynorsk"},
+            {"name": "UD_Slovenian-SST", "language": "Slovenian"},
+            {"name": "UD_Turkish_German-SAGT", "language": "Turkish-German"},
+            {"name": "UD_Swedish_Sign_Language-SSLC", "language": "Swedish Sign Language"}
+          ],
+          "note": "As of UD v2.15, additional spoken treebanks include UD_Hebrew-IAHLTknesset (parliamentary speech). Some treebanks like English-GUM and Danish-DDT contain MIXED genres including spoken, but are not exclusively spoken."
+        },
+        "mixed_genre_challenge": {
+          "problem": "Many treebanks contain mixed genres and do not provide sentence-level genre annotations. The Genre field is treebank-level metadata, not sentence-level.",
+          "muller_eberstein_2021": "Muller-Eberstein et al. (2021) 'How Universal is Genre in UD?' found that genre labels are a noisy signal. They proposed weak-supervision methods for predicting instance-level genre from treebank metadata, but accuracy is limited.",
+          "recommendation": "For the hypothesis: (1) Use exclusively-spoken treebanks (Genre: spoken only) for the spoken modality analysis. (2) For written modality, use treebanks with only written genres (news, fiction, wiki, etc.). (3) Exclude mixed-genre treebanks from the spoken/written comparison, OR use English-GUM which has document-level genre annotations."
+        },
+        "huggingface_access": {
+          "dataset": "universal-dependencies/universal_dependencies on HuggingFace",
+          "config_naming": "Treebank configs are named as language_code-treebank_name (e.g., 'en_ewt', 'sl_sst')",
+          "metadata_access": "Genre metadata is NOT directly accessible via HuggingFace dataset loading. Must parse README files from the GitHub repositories separately, or use the UD tools/validation scripts.",
+          "alternative": "Programmatic approach: clone UD repos, parse README metadata blocks with regex: grep for 'Genre:' line in each treebank's README.md"
+        },
+        "dobrovoljc_2025": {
+          "title": "Counting Trees: A Treebank-Driven Exploration of Syntactic Variation in Speech and Writing across Languages",
+          "arxiv": "2505.22774",
+          "published_in": "Corpus Linguistics and Linguistic Theory (2026)",
+          "relevance": "Compares syntactic structures in speech vs writing using UD treebanks for English and Slovenian. Found spoken corpora contain fewer and less diverse syntactic structures, with very limited overlap between spoken and written syntactic inventories."
+        }
+      }
+    },
+    "section_6_gap_analysis": {
+      "title": "Gap Analysis - Novelty of Studying DD Autocorrelation",
+      "findings": {
+        "search_methodology": [
+          "Searched: 'dependency distance' AND ('autocorrelation' OR 'serial correlation' OR 'lag-1')",
+          "Searched: 'dependency distance' AND 'time series' AND 'sentence'",
+          "Searched: 'dependency distance' AND 'sequential' AND ('compensatory' OR 'anti-correlation' OR 'alternation')",
+          "Searched: 'dependency length' AND ('Hurst exponent' OR 'detrended fluctuation' OR 'long-range correlation')",
+          "Searched: 'dependency distance' sequence within sentence successive adjacent positions",
+          "Searched: Google Scholar combined queries across multiple phrasings"
+        ],
+        "gap_analysis_table": [
+          {
+            "paper": "Futrell, Mahowald & Gibson (2015) PNAS",
+            "what_they_study": "Aggregate mean dependency length per sentence compared to random baselines across 37 languages",
+            "why_different": "Studies the MEAN (first moment) of DD across all positions in a sentence. Does NOT examine the sequential ordering of individual DD values or their autocorrelation."
+          },
+          {
+            "paper": "Petrini & Ferrer-i-Cancho (2022) arXiv:2211.14620",
+            "what_they_study": "The marginal DISTRIBUTION (shape) of dependency distances, proposing a two-regime exponential model",
+            "why_different": "Studies the pooled distribution of DD values across all positions and sentences. Does NOT treat the DD sequence within a sentence as a time series or examine sequential dependencies."
+          },
+          {
+            "paper": "Yadav, Mittal & Husain (2022) Open Mind",
+            "what_they_study": "Aggregate DLM against grammar-preserving baselines, with focus on intervening heads vs intervening words",
+            "why_different": "Compares aggregate measures (mean DL, mean intervener count) between real and baseline trees. Does NOT examine within-sentence sequential patterns of DD values."
+          },
+          {
+            "paper": "Futrell, Levy & Gibson (2020) Language",
+            "what_they_study": "Grammar vs usage contribution to DLM, with multiple baselines (fixed word order, consistent head direction)",
+            "why_different": "Focuses on disentangling grammar-level vs usage-level DLM effects. Studies aggregate DD, not sequential DD patterns within sentences."
+          },
+          {
+            "paper": "Liu (2008) Journal of Cognitive Science",
+            "what_they_study": "Mean dependency distance (MDD) as a complexity measure across 20 languages. Establishes threshold of ~3 words.",
+            "why_different": "Proposes MDD as an aggregate sentence-level metric. Does NOT examine how individual DD values are ordered sequentially within a sentence."
+          },
+          {
+            "paper": "Temperley & Gildea (2018) Annual Review of Linguistics",
+            "what_they_study": "Comprehensive review of DLM evidence from corpora, simulations, and experiments",
+            "why_different": "Reviews the field's findings on aggregate DLM. Discusses short-before-long ordering of constituents but NOT autocorrelation of DD sequences."
+          },
+          {
+            "paper": "Alemany-Puig & Ferrer-i-Cancho (2022) Computational Linguistics",
+            "what_they_study": "Linear-time calculation of EXPECTED sum of edge lengths in random projective linearizations",
+            "why_different": "Provides mathematical tools for computing expected aggregate DD. Does NOT address sequential structure of DD values."
+          },
+          {
+            "paper": "Hahn, Degen & Futrell (2021) Psychological Review",
+            "what_they_study": "Memory-surprisal tradeoff for word/morpheme order in 54 languages",
+            "why_different": "Information-theoretic framework for word order efficiency. Studies mutual information between words at distance t, which is related to but distinct from DD autocorrelation."
+          },
+          {
+            "paper": "Kosmidis et al. (2006) - DFA applied to language",
+            "what_they_study": "Detrended Fluctuation Analysis applied to word-length and word-frequency signals in text",
+            "why_different": "Applies DFA to WORD-LEVEL signals (length, frequency) across sentences, NOT to dependency distance sequences within sentences."
+          },
+          {
+            "paper": "Long-range correlations in child language (Royal Society B, 2022)",
+            "what_they_study": "Power-law decay of statistical dependencies between elements at increasing distances in language",
+            "why_different": "Studies long-range correlations in language SEQUENCES (phonemes, characters, words) but at a DISCOURSE level, not within-sentence DD sequences."
+          }
+        ],
+        "closest_related_work": {
+          "short_before_long": "The 'short-before-long' ordering principle (for head-initial languages) implies that shorter constituents are placed closer to the head. This would produce a pattern where DD values tend to INCREASE with distance from the head within a phrase. However, this has only been studied as a word-order PREFERENCE, never formalized as an autocorrelation property of the DD sequence.",
+          "anti_DDM_short_sentences": "Some evidence of 'anti-DDM' in short sentences (DD tends to increase rather than decrease) has been noted diachronically, but this is about aggregate trends, not sequential autocorrelation."
+        },
+        "conclusion": "NO PRIOR WORK WAS FOUND that treats the dependency distance sequence within a sentence as a time series and studies its lag-1 autocorrelation or any sequential correlation structure. The existing literature focuses exclusively on: (a) aggregate measures (mean DD per sentence), (b) marginal distributions (shape of DD distribution), (c) constituent ordering preferences (short-before-long), and (d) long-range correlations at the discourse level. The hypothesis's proposal to study within-sentence DD autocorrelation represents a genuinely novel contribution to quantitative syntax.",
+        "confidence": "HIGH. Multiple search strategies across different phrasings and related fields consistently failed to find any study of DD autocorrelation. The gap is robust."
+      }
+    },
+    "section_7_WALS_case_marking": {
+      "title": "WALS Chapter 49 and Case-Marking Data",
+      "findings": {
+        "wals_49A_values": [
+          {"code": "49A-1", "label": "No morphological case-marking", "num_languages": 100},
+          {"code": "49A-2", "label": "2 cases", "num_languages": 23},
+          {"code": "49A-3", "label": "3 cases", "num_languages": 9},
+          {"code": "49A-4", "label": "4 cases", "num_languages": 9},
+          {"code": "49A-5", "label": "5 cases", "num_languages": 12},
+          {"code": "49A-6", "label": "6-7 cases", "num_languages": 37},
+          {"code": "49A-7", "label": "8-9 cases", "num_languages": 23},
+          {"code": "49A-8", "label": "10 or more cases", "num_languages": 24},
+          {"code": "49A-9", "label": "Exclusively borderline case-marking", "num_languages": 24}
+        ],
+        "total_languages": 261,
+        "author": "Oliver A. Iggesen",
+        "continuous_scale_mapping": {
+          "method": "Map WALS ordinal values to numeric midpoints: 49A-1=0, 49A-2=2, 49A-3=3, 49A-4=4, 49A-5=5, 49A-6=6.5, 49A-7=8.5, 49A-8=12 (or use log scale), 49A-9=0.5 (borderline).",
+          "note": "49A-9 (exclusively borderline) is problematic for a continuous scale. Recommendation: exclude from continuous analysis or treat as 0.5 (between 0 and 2)."
+        },
+        "data_download": {
+          "cldf_github": "https://github.com/cldf-datasets/wals - contains WALS data in Cross-Linguistic Data Formats",
+          "key_csv_files": {
+            "languages_csv": "cldf/languages.csv - columns: ID, Name, Macroarea, Latitude, Longitude, Glottocode, ISO639P3code, Family, Subfamily, Genus, etc.",
+            "values_csv": "cldf/values.csv - contains concrete values for each feature per language",
+            "codes_csv": "cldf/codes.csv - human-readable value labels for feature codes",
+            "parameters_csv": "cldf/parameters.csv - feature metadata"
+          },
+          "sqlite_conversion": "cldf createdb cldf/StructureDataset-metadata.json wals.sqlite",
+          "direct_download": "https://wals.info/feature/49A supports GeoJSON, CSV, JSON, KML, RDF exports",
+          "zenodo": "All released versions accessible via Zenodo (cldf-datasets/wals)"
+        },
+        "ud_case_proportion_method": {
+          "description": "For each UD treebank, compute the proportion of tokens with Case= in their FEATS column as a UD-derived case-marking intensity measure.",
+          "algorithm": [
+            "1. Parse all CoNLL-U files in the treebank.",
+            "2. For each token, check the FEATS column (column 6) for 'Case=' feature.",
+            "3. Count tokens with any Case= value vs total tokens.",
+            "4. Compute proportion: case_proportion = n_tokens_with_case / n_total_tokens.",
+            "5. Optionally, compute number of distinct case values as an analog to WALS 49A."
+          ],
+          "validation": "Cross-validate UD-derived case proportion against WALS 49A values for languages present in both datasets."
+        },
+        "mapping_WALS_to_UD": {
+          "strategy": "Map via ISO 639-3 codes. WALS languages.csv contains ISO639P3code column. UD treebanks use ISO 639 codes in their naming convention and README metadata.",
+          "glottolog_bridge": "Both WALS and UD reference Glottolog. Use Glottocode as an intermediate identifier when ISO codes don't match directly.",
+          "challenges": [
+            "WALS and UD may cover different dialects/varieties of the same language",
+            "Some WALS languages lack ISO 639-3 codes",
+            "UD treebanks may represent specific registers/genres not captured in WALS typological descriptions",
+            "Mapping is many-to-many: one language may have multiple UD treebanks and multiple WALS datapoints"
+          ],
+          "iso_639_3_download": "https://iso639-3.sil.org/code_tables/download_tables - complete code tables for cross-referencing"
+        }
+      }
+    }
+  },
+  "answer": "This research comprehensively documents the algorithms for three baseline linearization methods (RPL, FHD, SOP), the r1-prime bias-corrected autocorrelation estimator, UD metadata conventions for spoken/written classification, WALS case-marking data access, and a systematic gap analysis confirming the novelty of studying within-sentence dependency distance autocorrelation. Key findings: (1) RPL uses recursive random placement of head among dependents with random left/right assignment, as implemented in Futrell's CLIQS library. (2) FHD extends RPL by fixing head direction per dependency relation type but retaining random sibling ordering. (3) SOP is confirmed as novel and is fully specified here as a further extension that also fixes sibling ordering via majority templates. (4) The r1-prime estimator uses polynomial correction of the standard r1 bias, calibrated per sample size. (5) UD spoken treebanks are identifiable via the Genre: spoken metadata field, with ~13-18 treebanks depending on UD version. (6) No prior work studies within-sentence DD autocorrelation - the gap is robust across multiple search strategies. (7) WALS 49A data is accessible via CLDF format with ISO 639-3 codes for mapping to UD.",
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://aclanthology.org/P07-1024/",
+      "title": "Gildea & Temperley (2007) - Optimizing Grammars for Minimum Dependency Length, ACL 2007",
+      "summary": "Introduced the random projective linearization baseline and optimization of grammars for minimum dependency length"
+    },
+    {
+      "index": 2,
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1551-6709.2009.01073.x",
+      "title": "Gildea & Temperley (2010) - Do Grammars Minimize Dependency Length?, Cognitive Science",
+      "summary": "Refined the random projective linearization description: random left/right assignment with random within-side ordering"
+    },
+    {
+      "index": 3,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4547262/",
+      "title": "Futrell, Mahowald & Gibson (2015) - Large-scale evidence of dependency length minimization in 37 languages, PNAS",
+      "summary": "Provided the canonical RPL algorithm description and fixed word order baseline with 100 random linearizations per sentence"
+    },
+    {
+      "index": 4,
+      "url": "https://github.com/Futrell/cliqs",
+      "title": "Futrell - CLIQS: Crosslinguistic Investigations in Quantitative Syntax (GitHub repository)",
+      "summary": "Contains Python implementation of randlin_projective and linearization functions including WeightedLin and EisnerModelC"
+    },
+    {
+      "index": 5,
+      "url": "https://sites.socsci.uci.edu/~rfutrell/papers/futrell2020dependency.pdf",
+      "title": "Futrell, Levy & Gibson (2020) - Dependency locality as an explanatory principle for word order, Language",
+      "summary": "Described consistent head direction and fixed word order baselines for disentangling grammar vs usage DLM"
+    },
+    {
+      "index": 6,
+      "url": "https://direct.mit.edu/coli/article/48/3/491/110442/Linear-Time-Calculation-of-the-Expected-Sum-of",
+      "title": "Alemany-Puig & Ferrer-i-Cancho (2022) - Linear-Time Calculation of Expected Sum of Edge Lengths, Computational Linguistics",
+      "summary": "Formal mathematical characterization of expected dependency length under random projective linearizations with O(n) algorithm"
+    },
+    {
+      "index": 7,
+      "url": "https://github.com/LAL-project/linear-arrangement-library",
+      "title": "Linear Arrangement Library (LAL) - GitHub repository",
+      "summary": "C++/Python library with state-of-the-art algorithms for random projective linearizations and dependency length calculations"
+    },
+    {
+      "index": 8,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9692064/",
+      "title": "Yadav, Mittal & Husain (2022) - A Reappraisal of Dependency Length Minimization, Open Mind",
+      "summary": "Grammar-preserving baselines using rejection sampling, with RLA and matched variants. Data at https://osf.io/j975y/"
+    },
+    {
+      "index": 9,
+      "url": "https://link.springer.com/article/10.1023/A:1012223430234",
+      "title": "Arnau & Bono (2001) - Autocorrelation and Bias in Short Time Series: An Alternative Estimator, Quality & Quantity",
+      "summary": "Proposed the r1-prime polynomial-corrected autocorrelation estimator for short time series (n < 50)"
+    },
+    {
+      "index": 10,
+      "url": "https://www.semanticscholar.org/paper/8694823bd3760cf2b581437608818f5e6812559d",
+      "title": "Solanas, Manolov & Sierra (2010) - Lag-one autocorrelation in short series: Estimation and hypotheses testing, Psicologica",
+      "summary": "Compared 10 lag-one autocorrelation estimators; found no single optimal estimator for all conditions"
+    },
+    {
+      "index": 11,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5227053/",
+      "title": "Krone, Albers & Timmerman (2015) - A comparative simulation study of AR(1) estimators in short time series, Quality & Quantity",
+      "summary": "Comprehensive comparison of r1, C-statistic, OLS, MLE, and Bayesian estimators; found Bayesian Bsr has lowest bias"
+    },
+    {
+      "index": 12,
+      "url": "https://aclanthology.org/2022.lrec-1.191/",
+      "title": "Dobrovoljc (2022) - Spoken Language Treebanks in Universal Dependencies: an Overview, LREC 2022",
+      "summary": "Comprehensive catalog of spoken UD treebanks with comparative analysis of annotation conventions"
+    },
+    {
+      "index": 13,
+      "url": "https://universaldependencies.org/contributing/repository_files.html",
+      "title": "Universal Dependencies - Repository and Files documentation",
+      "summary": "Documents the README metadata format including Genre field specification for UD treebanks"
+    },
+    {
+      "index": 14,
+      "url": "https://github.com/personads/ud-genre",
+      "title": "Muller-Eberstein et al. (2021) - How Universal is Genre in Universal Dependencies?, SyntaxFest 2021",
+      "summary": "Analysis of 18 UD genres with weak supervision methods for instance-level genre prediction"
+    },
+    {
+      "index": 15,
+      "url": "https://arxiv.org/abs/2505.22774",
+      "title": "Dobrovoljc (2025/2026) - Counting Trees: Treebank-Driven Exploration of Syntactic Variation in Speech and Writing",
+      "summary": "Compared syntactic structures in speech vs writing using UD treebanks; found limited overlap between modalities"
+    },
+    {
+      "index": 16,
+      "url": "https://wals.info/feature/49A",
+      "title": "WALS Online - Feature 49A: Number of Cases (Iggesen)",
+      "summary": "Typological data on morphological case-marking across 261 languages with 9 ordinal categories"
+    },
+    {
+      "index": 17,
+      "url": "https://github.com/cldf-datasets/wals",
+      "title": "WALS in CLDF format (GitHub repository)",
+      "summary": "WALS data in Cross-Linguistic Data Formats with languages.csv containing ISO 639-3 codes and Glottocodes"
+    },
+    {
+      "index": 18,
+      "url": "https://arxiv.org/abs/2211.14620",
+      "title": "Petrini & Ferrer-i-Cancho (2022) - The distribution of syntactic dependency distances",
+      "summary": "Studies marginal distribution shape of DD (two-regime exponential model), NOT sequential ordering within sentences"
+    },
+    {
+      "index": 19,
+      "url": "https://www.researchgate.net/publication/273459859_Dependency_Distance_as_a_Metric_of_Language_Comprehension_Difficulty",
+      "title": "Liu (2008) - Dependency Distance as a Metric of Language Comprehension Difficulty, Journal of Cognitive Science",
+      "summary": "Established mean dependency distance (MDD) as aggregate complexity metric across 20 languages"
+    },
+    {
+      "index": 20,
+      "url": "https://www.cs.rochester.edu/u/gildea/pubs/temperley-gildea-ar18.pdf",
+      "title": "Temperley & Gildea (2018) - Minimizing Syntactic Dependency Lengths, Annual Review of Linguistics",
+      "summary": "Comprehensive review confirming canonical description of random projective linearization algorithm"
+    },
+    {
+      "index": 21,
+      "url": "https://www.mhahn.info/files/hahn_psychreview_2021_final.pdf",
+      "title": "Hahn, Degen & Futrell (2021) - Modeling word and morpheme order, Psychological Review",
+      "summary": "Memory-surprisal tradeoff framework for word order efficiency in 54 languages"
+    },
+    {
+      "index": 22,
+      "url": "https://aclanthology.org/W19-7807.pdf",
+      "title": "Dyer (2019) - Weighted posets: Learning surface order from dependency trees",
+      "summary": "Proposed weighted poset approach for learning linearization including sibling ordering from dependency trees"
+    },
+    {
+      "index": 23,
+      "url": "https://calc.hypotheses.org/2670",
+      "title": "How to work with WALS data in CLDF - Computer-Assisted Language Comparison tutorial",
+      "summary": "Tutorial on accessing WALS data via CLDF Python packages with SQLite conversion"
+    },
+    {
+      "index": 24,
+      "url": "https://aclanthology.org/2021.quasy-1.1/",
+      "title": "Alemany-Puig, Esteban & Ferrer-i-Cancho (2021) - The Linear Arrangement Library, Quasy@SyntaxFest 2021",
+      "summary": "Describes the LAL library with random/exhaustive generation of linear arrangements under projectivity/planarity constraints"
+    },
+    {
+      "index": 25,
+      "url": "https://royalsocietypublishing.org/doi/10.1098/rspb.2021.2657",
+      "title": "Long-range sequential dependencies in language acquisition, Proceedings B (2022)",
+      "summary": "Applied power-law correlation analysis to language sequences at discourse level, not within-sentence DD"
+    }
+  ],
+  "follow_up_questions": [
+    "Which RPL variant should the implementation use: Gildea-Temperley's random left/right assignment method or the simpler random-permutation-of-head-among-dependents method, and does the choice affect autocorrelation baselines differently than it affects mean DD baselines?",
+    "For the SOP baseline, what is the optimal conditioning granularity (deprel multiset only vs head UPOS + deprel multiset) and minimum count threshold, and how deterministic does SOP turn out to be in practice across diverse UD treebanks?",
+    "Since the Arnau & Bono (2001) polynomial coefficients for r1-prime are behind a paywall and sample-size-specific, should the Phase 1 Monte Carlo simulations derive the bias correction empirically from the exact sentence-length distribution, making r1-prime unnecessary as a published formula?",
+    "How should mixed-genre UD treebanks (e.g., English-GUM with both spoken and written portions) be handled in the spoken/written comparison - should they be split using document-level metadata, excluded entirely, or treated as a separate 'mixed' category?"
+  ]
+}
