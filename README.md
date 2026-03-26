@@ -6,9 +6,7 @@ This repository contains artifacts from an AI-generated research project.
 
 [![Download PDF](https://img.shields.io/badge/Download-PDF-red)](https://github.com/AMGrobelnik/ai-invention-c3cfa4-sequential-dependency-distance-anti-corr/blob/main/paper.pdf) [![LaTeX Source](https://img.shields.io/badge/LaTeX-Source-orange)](https://github.com/AMGrobelnik/ai-invention-c3cfa4-sequential-dependency-distance-anti-corr/tree/main/paper_latex)
 
-## Quick Start - Interactive Demos
-
-Click the badges below to open notebooks directly in Google Colab:
+## Artifacts
 
 ### Research
 
