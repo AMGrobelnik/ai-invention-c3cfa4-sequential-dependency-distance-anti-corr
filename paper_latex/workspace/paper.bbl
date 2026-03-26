@@ -1,0 +1,193 @@
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alemany-Puig and Ferrer-i Cancho(2022)]{AlemanyPuig2022}
+Llu\'{i}s Alemany-Puig and Ramon Ferrer-i Cancho.
+\newblock Linear-time calculation of the expected sum of edge lengths in random
+  projective linearizations of trees.
+\newblock \emph{Computational Linguistics}, 48\penalty0 (2):\penalty0 491--516,
+  2022.
+\newblock \doi{10.1162/coli_a_00442}.
+
+\bibitem[Arnau and Bono(2001)]{Arnau2001}
+Jaume Arnau and Roser Bono.
+\newblock Autocorrelation and bias in short time series: An alternative
+  estimator.
+\newblock \emph{Quality and Quantity}, 35:\penalty0 365--387, 2001.
+
+\bibitem[Bentz and Winter(2017)]{Bentz2017}
+Christian Bentz and Bodo Winter.
+\newblock Languages are efficient, but not maximally efficient.
+\newblock \emph{Cognition}, 165:\penalty0 67--83, 2017.
+\newblock \doi{10.1016/j.cognition.2017.04.007}.
+
+\bibitem[Clark et~al.(2023)Clark, Meister, Pimentel, Hahn, Cotterell, and
+  Futrell]{Clark2023}
+Thomas~H. Clark, Clara Meister, Tiago Pimentel, Michael Hahn, Ryan Cotterell,
+  and Richard Futrell.
+\newblock A cross-linguistic pressure for uniform information density in word
+  order.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  11:\penalty0 1048--1065, 2023.
+\newblock \doi{10.1162/tacl_a_00589}.
+
+\bibitem[Demberg and Keller(2008)]{Demberg2008}
+Vera Demberg and Frank Keller.
+\newblock Data from eye-tracking corpora as evidence for theories of syntactic
+  processing complexity.
+\newblock \emph{Cognition}, 109\penalty0 (2):\penalty0 193--210, 2008.
+\newblock \doi{10.1016/j.cognition.2008.07.008}.
+
+\bibitem[Dobrovoljc(2025)]{Dobrovoljc2025}
+Kaja Dobrovoljc.
+\newblock Counting trees: A treebank-driven exploration of syntactic variation
+  in speech and writing across languages.
+\newblock \emph{Corpus Linguistics and Linguistic Theory}, 2025.
+
+\bibitem[Dou et~al.(2026)Dou, Ariens, Ceulemans, and Lafit]{Dou2026}
+Zijin Dou, Sigert Ariens, Eva Ceulemans, and Ginette Lafit.
+\newblock Unravelling the small sample bias in {AR(1)} models: The pros and
+  cons of available bias correction methods.
+\newblock \emph{British Journal of Mathematical and Statistical Psychology},
+  2026.
+
+\bibitem[Dryer and Haspelmath(2013)]{Dryer2013}
+Matthew~S. Dryer and Martin Haspelmath, editors.
+\newblock \emph{The World Atlas of Language Structures Online}.
+\newblock Max Planck Institute for Evolutionary Anthropology, Leipzig, 2013.
+
+\bibitem[Futrell et~al.(2015)Futrell, Mahowald, and Gibson]{Futrell2015}
+Richard Futrell, Kyle Mahowald, and Edward Gibson.
+\newblock Large-scale evidence of dependency length minimization in 37
+  languages.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 112:\penalty0
+  10336--10341, 2015.
+\newblock \doi{10.1073/pnas.1502134112}.
+
+\bibitem[Futrell et~al.(2020{\natexlab{a}})Futrell, Gibson, and
+  Levy]{Futrell2020b}
+Richard Futrell, Edward Gibson, and Roger~P. Levy.
+\newblock Lossy-context surprisal: An information-theoretic model of memory
+  effects in sentence processing.
+\newblock \emph{Cognitive Science}, 44\penalty0 (3):\penalty0 e12814,
+  2020{\natexlab{a}}.
+\newblock \doi{10.1111/cogs.12814}.
+
+\bibitem[Futrell et~al.(2020{\natexlab{b}})Futrell, Levy, and
+  Gibson]{Futrell2020a}
+Richard Futrell, Roger~P. Levy, and Edward Gibson.
+\newblock Dependency locality as an explanatory principle for word order.
+\newblock \emph{Language}, 96\penalty0 (4):\penalty0 371--413,
+  2020{\natexlab{b}}.
+\newblock \doi{10.1353/lan.2020.0068}.
+
+\bibitem[Gildea and Temperley(2007)]{Gildea2007}
+Daniel Gildea and David Temperley.
+\newblock Optimizing grammars for minimum dependency length.
+\newblock In \emph{Proceedings of the 45th Annual Meeting of the Association
+  for Computational Linguistics}, pages 184--191, 2007.
+\newblock \doi{10.3115/1557769.1557794}.
+
+\bibitem[Gildea and Temperley(2010)]{Gildea2010}
+Daniel Gildea and David Temperley.
+\newblock Do grammars minimize dependency length?
+\newblock \emph{Cognitive Science}, 34:\penalty0 286--310, 2010.
+\newblock \doi{10.1111/j.1551-6709.2009.01073.x}.
+
+\bibitem[Hahn et~al.(2021)Hahn, Degen, and Futrell]{Hahn2021}
+Michael Hahn, Judith Degen, and Richard Futrell.
+\newblock Modeling word and morpheme order in natural language as an efficient
+  trade-off of memory and surprisal.
+\newblock \emph{Psychological Review}, 128\penalty0 (4):\penalty0 726--756,
+  2021.
+\newblock \doi{10.1037/rev0000269}.
+
+\bibitem[Jaeger(2010)]{Jaeger2010}
+T.~Florian Jaeger.
+\newblock Redundancy and reduction: Speakers manage syntactic information
+  density.
+\newblock \emph{Cognitive Psychology}, 61\penalty0 (1):\penalty0 23--62, 2010.
+\newblock \doi{10.1016/j.cogpsych.2010.02.002}.
+
+\bibitem[Krone et~al.(2017)Krone, Albers, and Timmerman]{Krone2017}
+Tanja Krone, Casper Albers, and Marieke Timmerman.
+\newblock A comparative simulation study of {AR(1)} estimators in short time
+  series.
+\newblock \emph{Quality \& Quantity}, 51:\penalty0 1--21, 2017.
+\newblock \doi{10.1007/s11135-016-0441-2}.
+
+\bibitem[Liu et~al.(2017)Liu, Xu, and Liang]{Liu2017}
+Haitao Liu, Chunshan Xu, and Junying Liang.
+\newblock Dependency distance: A new perspective on syntactic patterns in
+  natural languages.
+\newblock \emph{Physics of Life Reviews}, 21:\penalty0 171--193, 2017.
+\newblock \doi{10.1016/j.plrev.2017.03.002}.
+
+\bibitem[Meister et~al.(2021)Meister, Pimentel, Haller, Jiao, Cotterell, and
+  Levy]{Meister2021}
+Clara Meister, Tiago Pimentel, Patrick Haller, Lena Jiao, Ryan Cotterell, and
+  Roger Levy.
+\newblock Revisiting the {U}niform {I}nformation {D}ensity hypothesis.
+\newblock In \emph{Proceedings of the 2021 Conference on Empirical Methods in
+  Natural Language Processing}, pages 963--980, 2021.
+
+\bibitem[Nivre et~al.(2020)Nivre, de~Marneffe, Ginter, Haji\v{c}, Manning,
+  Pyysalo, Schuster, Tyers, and Zeman]{Nivre2020}
+Joakim Nivre, Marie-Catherine de~Marneffe, Filip Ginter, Jan Haji\v{c},
+  Christopher~D. Manning, Sampo Pyysalo, Sebastian Schuster, Francis Tyers, and
+  Daniel Zeman.
+\newblock Universal {D}ependencies v2: An evergrowing multilingual treebank
+  collection.
+\newblock In \emph{Proceedings of the 12th Language Resources and Evaluation
+  Conference}, 2020.
+
+\bibitem[Petrini and Ferrer-i Cancho(2022)]{Petrini2022}
+Saverio Petrini and Ramon Ferrer-i Cancho.
+\newblock The distribution of syntactic dependency distances.
+\newblock \emph{Glottometrics}, 58:\penalty0 35--94, 2022.
+
+\bibitem[Shaman and Stine(1988)]{Shaman1988}
+Paul Shaman and Robert Stine.
+\newblock The bias of autoregressive coefficient estimators.
+\newblock \emph{Journal of the American Statistical Association}, 83:\penalty0
+  842--848, 1988.
+\newblock \doi{10.1080/01621459.1988.10478672}.
+
+\bibitem[Temperley and Gildea(2018)]{Temperley2018}
+David Temperley and Daniel Gildea.
+\newblock Minimizing syntactic dependency lengths: Typological/cognitive
+  universal?
+\newblock \emph{Annual Review of Linguistics}, 4:\penalty0 67--80, 2018.
+\newblock \doi{10.1146/annurev-linguistics-011817-045617}.
+
+\bibitem[Tsipidi et~al.(2024)Tsipidi, Nowak, Cotterell, Wilcox, Giulianelli,
+  and Warstadt]{Tsipidi2024}
+Eleftheria Tsipidi, Florian Nowak, Ryan Cotterell, Ethan Wilcox, Mario
+  Giulianelli, and Alex Warstadt.
+\newblock Surprise! {U}niform information density isn't the whole story:
+  Predicting surprisal contours in long-form discourse.
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
+  Natural Language Processing}, pages 18820--18836, 2024.
+
+\bibitem[Veroniki et~al.(2016)Veroniki, Jackson, Viechtbauer, Bender, Bowden,
+  Knapp, Kuss, Higgins, Langan, and Salanti]{Veroniki2016}
+Areti~Angeliki Veroniki, Dan Jackson, Wolfgang Viechtbauer, Ralf Bender, Jack
+  Bowden, Guido Knapp, Oliver Kuss, Julian Higgins, Dean Langan, and Georgia
+  Salanti.
+\newblock Methods to estimate the between-study variance and its uncertainty in
+  meta-analysis.
+\newblock \emph{Research Synthesis Methods}, 7:\penalty0 55--79, 2016.
+\newblock \doi{10.1002/jrsm.1164}.
+
+\bibitem[Yadav et~al.(2022)Yadav, Mittal, and Husain]{Yadav2022}
+Himanshu Yadav, Samar Mittal, and Samar Husain.
+\newblock A reappraisal of dependency length minimization as a linguistic
+  universal.
+\newblock \emph{Open Mind}, 6:\penalty0 147--164, 2022.
+\newblock \doi{10.1162/opmi_a_00063}.
+
+\end{thebibliography}
